@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:include schemaLocation="tiposBasico.xsd"/>
+    <xs:complexType name="TConfig">
+        <xs:annotation>
+            <xs:documentation>Tipo Nota Fiscal Eletrônica</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="myLocale" type="Tstr_120"/>
+            <xs:element name="timeOut" type="Tint_2"/>
+            <xs:element name="versao" type="Tstr_14"/>
+            <xs:element name="sis">
+                <xs:annotation>
+                    <xs:documentation>Informações de requisitos não funcionais</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="connect_DB">
+                            <xs:annotation>
+                                <xs:documentation>Informações de requisitos não funcionais referente conexão
+                                    com banco de dados
+                                </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="dbDriver" type="Tstr_120"/>
+
+                                    <xs:element name="dbDriverConn" type="Tstr_120"/>
+                                    <xs:element name="dbHost" type="Tstr_120"/>
+                                    <xs:element name="dbPorta" type="Tstr_120"/>
+                                    <xs:element name="dbDatabase" type="Tstr_120"/>
+                                    <xs:element name="dbAddConfig" type="Tstr_120"/>
+                                    <xs:element name="dbUrl" type="Tstr_120"/>
+
+                                    <xs:element name="dbUser" type="Tstr_120"/>
+                                    <xs:element name="dbPass" type="Tstr_120"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="FilesType">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="token" type="Tstr_14"/>
+                                    <xs:element name="imagem" type="Tstr_14"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="maskCaracter">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="digit" type="Tstr_120"/>
+                                    <xs:element name="upper" type="Tstr_120"/>
+                                    <xs:element name="lower" type="Tstr_120"/>
+                                    <xs:element name="digitoAndText" type="Tstr_120"/>
+                                    <xs:element name="interrogacao" type="Tstr_120"/>
+                                    <xs:element name="asterisco" type="Tstr_120"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="infLoja">
+                <xs:annotation>
+                    <xs:documentation>Informações da loja de uso para o sistema</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="id" type="Tint_3"/>
+                        <xs:element name="cnpj" type="Tstr_14"/>
+                        <xs:element name="titulo" type="Tstr_120"/>
+                        <xs:element name="copyright" type="Tstr_120"/>
+                        <!--<xs:element name="theme" type="Tstring"/>-->
+                        <xs:element name="uf" type="Tstr_120"/>
+                        <xs:element name="cUF" type="Tint_2"/>
+                        <xs:element name="municipio" type="Tstr_120"/>
+                        <xs:element name="ddd" type="Tint_2"/>
+                        <xs:element name="descMax" type="TDec_3_2"/>
+                        <xs:element name="banco" type="Tstr_120"/>
+                        <xs:element name="agencia" type="Tstr_120"/>
+                        <xs:element name="contaCorrente" type="Tstr_120"/>
+                        <xs:element name="imageDefaultProduto">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="width" type="Tint_3"/>
+                                    <xs:element name="height" type="Tint_3"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="personalizacao">
+                <xs:annotation>
+                    <xs:documentation>Informações de requisitos não funcionais referente a personalização do sistema
+                    </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <!--<xs:element name="regex">-->
+                        <!--<xs:complexType>-->
+                        <!--<xs:sequence>-->
+                        <!--<xs:element name=""-->
+                        <!--</xs:sequence>-->
+                        <!--</xs:complexType>-->
+                        <!--</xs:element>-->
+                        <xs:element name="tema" type="Tstr_120"/>
+                        <xs:element name="style-sheets" type="Tstr_120"/>
+                        <xs:element name="style-sheets-min" type="Tstr_120"/>
+                        <xs:element name="splash-imagens">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="image" type="Tstr_120" minOccurs="1" maxOccurs="unbounded"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="paths">
+                <xs:annotation>
+                    <xs:documentation>Informações de paths de arquivos</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="versaoDanfeNFe" type="Tstr"/>
+                        <xs:element name="versaoRecibo" type="Tstr"/>
+                        <xs:element name="pathDanfeNFe" type="Tstr"/>
+                        <xs:element name="pathRecibo" type="Tstr"/>
+                        <xs:element name="pathSalvarArquivo" type="Tstr"/>
+                        <xs:element name="pathIconeSistema" type="Tstr"/>
+                        <xs:element name="pathStyleSheets" type="Tstr"/>
+                        <xs:element name="pathFXML" type="Tstr"/>
+                        <xs:element name="pathDownloadImage" type="Tstr"/>
+                        <xs:element name="pathNFeSaveXmlOut" type="Tstr"/>
+                        <xs:element name="pathNFeSaveXmlIn" type="Tstr"/>
+                        <xs:element name="pathCTeSaveXmlOut" type="Tstr"/>
+                        <xs:element name="pathCTeSaveXmlIn" type="Tstr"/>
+                        <xs:element name="pathNFeGetXmlOut" type="Tstr"/>
+                        <xs:element name="pathNFeGetXmlIn" type="Tstr"/>
+                        <xs:element name="pathCTeGetXmlOut" type="Tstr"/>
+                        <xs:element name="pathCTeGetXmlIn" type="Tstr"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="fxml">
+                <xs:annotation>
+                    <xs:documentation>Informações sobre personalização dos fxmls</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="login">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="fxml" type="Tstr"/>
+                                    <xs:element name="titulo" type="Tstr"/>
+                                    <xs:element name="icone" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="principal">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="fxml" type="Tstr"/>
+                                    <xs:element name="titulo" type="Tstr"/>
+                                    <xs:element name="iconeAtivo" type="Tstr"/>
+                                    <xs:element name="iconeDesativo" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="cadastroProduto">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="fxml" type="Tstr"/>
+                                    <xs:element name="titulo" type="Tstr"/>
+                                    <xs:element name="icone" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="cadastroEmpresa">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="fxml" type="Tstr"/>
+                                    <xs:element name="titulo" type="Tstr"/>
+                                    <xs:element name="icone" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="entradaProduto">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="fxml" type="Tstr"/>
+                                    <xs:element name="titulo" type="Tstr"/>
+                                    <xs:element name="icone" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="saidaProduto">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="fxml" type="Tstr"/>
+                                    <xs:element name="titulo" type="Tstr"/>
+                                    <xs:element name="icone" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="contasAReceber">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="fxml" type="Tstr"/>
+                                    <xs:element name="titulo" type="Tstr"/>
+                                    <xs:element name="icone" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="pedidoNFe">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="fxml" type="Tstr"/>
+                                    <xs:element name="titulo" type="Tstr"/>
+                                    <xs:element name="icone" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="recebimento">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="fxml" type="Tstr"/>
+                                    <xs:element name="titulo" type="Tstr"/>
+                                    <xs:element name="icone" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="contasAPagar">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="fxml" type="Tstr"/>
+                                    <xs:element name="titulo" type="Tstr"/>
+                                    <xs:element name="icone" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="ws">
+                <xs:annotation>
+                    <xs:documentation>Informações sobre Web services urls, senhas e tokens</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="barcode">
+                            <xs:annotation>
+                                <xs:documentation></xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="url" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="cosmos">
+                            <xs:annotation>
+                                <xs:documentation></xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="url" type="Tstr"/>
+                                    <xs:element name="consulta_ncm" type="Tstr"/>
+                                    <xs:element name="consulta_gtins" type="Tstr"/>
+                                    <xs:element name="consulta_gpcs" type="Tstr"/>
+                                    <xs:element name="token" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="receitaws">
+                            <xs:annotation>
+                                <xs:documentation></xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="url" type="Tstr"/>
+                                    <xs:element name="token" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="webmania">
+                            <xs:annotation>
+                                <xs:documentation></xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="url" type="Tstr"/>
+                                    <xs:element name="appkey" type="Tstr"/>
+                                    <xs:element name="appsecret" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="postmon">
+                            <xs:annotation>
+                                <xs:documentation>busca cep</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="url" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="portabilidadecelular">
+                            <xs:annotation>
+                                <xs:documentation></xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="pass" type="Tstr"/>
+                                    <xs:element name="user" type="Tstr"/>
+                                    <xs:element name="url" type="Tstr"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="statusBars" type="StatusBars"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="StatusBars">
+        <xs:sequence>
+            <xs:element name="my_form" type="My_Form" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="My_Form">
+        <xs:sequence>
+            <xs:element name="status" type="Status" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="Tstr"/>
+    </xs:complexType>
+
+    <xs:complexType name="Status">
+        <xs:sequence>
+            <xs:element name="stat" type="Stat" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Stat">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="tipo" type="Tstr_14" use="required"/>
+        <xs:attribute name="descricao" type="Tstr" use="required"/>
+    </xs:complexType>
+
+
+</xs:schema>

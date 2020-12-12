@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+    <persistence-unit name="cafeperfeitoPU">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>br.com.tlmacedo.cafeperfeito.model.vo.MenuPrincipal</class>
+
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://127.0.0.1:3306/cafeperfeito_v2.03"/>
+            <property name="hibernate.connection.password" value="Tlm487901"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <!--            <property name="hibernate.connection.url" value="jdbc:mysql://127.0.0.1:3306/cafeperfeito"/>-->
+            <!--            <property name="hibernate.connection.password" value="Tlm@487901"/>-->
+
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+
+    </persistence-unit>
+
+    <!--    <persistence-unit name="ftpcafeperfeito">-->
+    <!--        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.Cargo</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.Colaborador</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.Contato</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.EmailHomePage</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.Empresa</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.Endereco</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.FiscalCestNcm</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.FiscalCstOrigem</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.FiscalFreteSituacaoTributaria</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.FiscalIcms</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.FiscalPisCofins</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.FiscalTributosSefazAm</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.InfoReceitaFederal</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.MenuPrincipal</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.Municipio</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.Produto</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.ProdutoCodigoBarra</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.Telefone</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.TelefoneOperadora</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.Uf</class>-->
+    <!--        <class>br.com.tlmacedo.cafeperfeito.model.vo.Usuario</class>-->
+
+    <!--        <properties>-->
+    <!--            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>-->
+    <!--            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>-->
+    <!--            <property name="hibernate.connection.url"-->
+    <!--                      value="jdbc:mysql://mysql.cafeperfeito.com.br:3306/cafeperfeito?useSSL=false"/>-->
+    <!--            <property name="hibernate.connection.username" value="cafeperfeito"/>-->
+    <!--            <property name="hibernate.connection.password" value="Tlm487901"/>-->
+
+    <!--            <property name="hibernate.archive.autodetection" value="class"/>-->
+    <!--            <property name="hibernate.show_sql" value="true"/>-->
+    <!--            <property name="hibernate.format_sql" value="true"/>-->
+    <!--            &lt;!&ndash;<property name="hibernate.hbm2ddl.auto" value="update"/>&ndash;&gt;-->
+
+    <!--            &lt;!&ndash;<property name="hibernate.dbcp.initialSize" value="8"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;<property name="hibernate.dbcp.maxActive" value="20"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;<property name="hibernate.dbcp.maxIdle" value="20"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;<property name="hibernate.dbcp.minIdle" value="0"/>&ndash;&gt;-->
+    <!--        </properties>-->
+
+    <!--    </persistence-unit>-->
+
+</persistence>

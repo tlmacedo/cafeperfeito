@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="painelViewPrincipal" stylesheets="@../style/css/cafeperfeito.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="br.com.tlmacedo.cafeperfeito.controller.ControllerPrincipal">
+
+    <center>
+        <AnchorPane BorderPane.alignment="TOP_LEFT">
+            <children>
+                <TabPane fx:id="tabPaneViewPrincipal" prefHeight="782.0" prefWidth="1350.0" tabMaxHeight="20.0"
+                         tabMinHeight="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                         AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                <!--AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"-->
+                <!--AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>-->
+                <Label fx:id="lblImageLogoViewPrincipal" prefHeight="782.0" prefWidth="1350.0"
+                       styleClass="img_background_principal" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                       AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                <!--AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"-->
+                <!--AnchorPane.topAnchor="0.0"/>-->
+            </children>
+        </AnchorPane>
+    </center>
+    <left>
+        <AnchorPane BorderPane.alignment="TOP_LEFT">
+            <children>
+                <ScrollPane fitToHeight="true" fitToWidth="true">
+                    <content>
+                        <AnchorPane>
+                            <children>
+                                <TreeView fx:id="treeMenuViewPrincipal" prefHeight="780.0" prefWidth="248.0"
+                                          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                                <ImageView fx:id="imgMenuPrincipalExpande" fitHeight="24.0" fitWidth="24.0"
+                                           layoutX="193.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/ico/ic_circle_mais_dp24.png"/>
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="imgMenuPrincipalRetrair" fitHeight="24.0" fitWidth="24.0"
+                                           layoutX="219.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/ico/ic_circle_menos_dp24.png"/>
+                                    </image>
+                                </ImageView>
+                                <Label fx:id="lblCopyRight" alignment="CENTER_RIGHT" maxHeight="-Infinity"
+                                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0"
+                                       prefWidth="248.0" styleClass="copyright" AnchorPane.bottomAnchor="5.0">
+                                    <padding>
+                                        <Insets left="5.0" right="5.0"/>
+                                    </padding>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+    </left>
+    <bottom>
+        <ToolBar fx:id="statusBar_ViewPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                 minWidth="-Infinity" prefHeight="20.0" prefWidth="1600.0" BorderPane.alignment="BOTTOM_LEFT">
+            <Label fx:id="stbLogadoInf" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefHeight="20.0" prefWidth="240.0" styleClass="status-bar-logado-inf"
+                   text="Usuário" BorderPane.alignment="CENTER_LEFT"/>
+            <Label fx:id="stbTeclas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefHeight="20.0" prefWidth="1200.0" styleClass="status-bar-teclas" text=""
+                   BorderPane.alignment="CENTER_LEFT"/>
+            <Label fx:id="stbRelogio" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity"
+                   minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="135.0"
+                   styleClass="status-bar-horario" text="Relogio" textAlignment="RIGHT"
+                   BorderPane.alignment="CENTER_LEFT"/>
+        </ToolBar>
+    </bottom>
+    <!--   <bottom>-->
+    <!--      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">-->
+    <!--        <items>-->
+    <!--            <Label text="Label" />-->
+    <!--            <Label text="Label" />-->
+    <!--            <Label text="Label" />-->
+    <!--        </items>-->
+    <!--      </ToolBar>-->
+    <!--   </bottom>-->
+</BorderPane>

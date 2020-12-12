@@ -1,0 +1,46 @@
+.jfx-tool-bar, .tool-bar {
+  -fx-background-color: $sisColor_transparent;
+  -fx-font-family: $fontFamily;
+  -fx-text-fill: $sisColor_black;
+  -fx-font-size: $fontSizeh5;
+  -fx-alignment: center-left;
+
+  //-fx-border-color: black;
+  //-fx-border-width: 2;
+  //-fx-border-style: segments(10, 15, 15, 15) line-cap round;
+
+  .status-bar-logado-inf {
+    //-fx-pref-height: 20px;
+    //-fx-pref-width: 250px;
+    -fx-padding: 2 10 2 5;
+    -fx-font-size: $fontSizeh5;
+    -fx-alignment: center-left;
+  }
+
+  .status-bar-teclas {
+    //-fx-pref-height: 20px;
+    //-fx-pref-width: 1150px;
+    -fx-padding: 2 10 2 10;
+    -fx-font-size: $fontSizeh6;
+    -fx-alignment: center-left;
+  }
+
+  //.status-bar-ico-relogio {
+  //  //-fx-padding: 1 10;
+  //  //-fx-font-size: $fontSizeh4;
+  //  //-fx-alignment: center;
+  //
+  //  -fx-padding: 3 14 3 4;
+  //  //-fx-font-size: $fontSizeh5;
+  //  //-fx-alignment: center-right;
+  //  -fx-background-image: url("../../image/ico/principal/ic_relogio_vazado_16dp.png");
+  //  //-fx-background-repeat: no-repeat;
+  //}
+
+  .status-bar-horario {
+    -fx-padding: 2 6;
+    -fx-font-size: $fontSizeh6;
+    -fx-alignment: center-right;
+    -fx-graphic: url("../../image/ico/principal/ic_relogio_dp16.png") no-repeat center;
+  }
+}

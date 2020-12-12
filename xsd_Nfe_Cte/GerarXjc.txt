@@ -1,0 +1,150 @@
+Comandos para gerar os
+
+executor:
+    /Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc
+diretorio que vai ficar:
+    -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java
+pacote que vai ser gerado:
+    -p br.inf.portalfiscal.xsd.nfe.consReciNFe
+arquivo XSD
+    /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/consReciNFe_v4.00.xsd
+
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.consReciNFe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/consReciNFe_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.consSitNFe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/consSitNFe_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.consStatServ /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/consStatServ_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.enviNFe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/enviNFe_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.inutNFe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/inutNFe_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.leiauteConsSitNFe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/leiauteConsSitNFe_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.leiauteConsStatServ /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/leiauteConsStatServ_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.leiauteInutNFe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/leiauteInutNFe_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.leiauteNFe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/leiauteNFe_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.nfe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/nfe_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.procInutNFe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/procInutNFe_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.procNFe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/procNFe_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.retConsReciNFe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/retConsReciNFe_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.retConsSitNFe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/retConsSitNFe_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.retConsStatServ /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/retConsStatServ_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.retEnviNFe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/retEnviNFe_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.retInutNFe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/retInutNFe_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.tiposBasico /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/tiposBasico_v4.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.nfe.xmldsig_core_schema_v101 /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_009_V4_00_NT_2019_001_v1.20a/xmldsig-core-schema_v1.01.xsd
+
+
+
+
+
+
+
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.consReciCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/consReciCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.consReciCTeTiposBasico /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/consReciCTeTiposBasico_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.consSitCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/consSitCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.consSitCTeTiposBasico /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/consSitCTeTiposBasico_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.consStatServCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/consStatServCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.consStatServTiposBasico /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/consStatServTiposBasico_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.cte /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/cte_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.cteModalAereo /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/cteModalAereo_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.cteModalAquaviario /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/cteModalAquaviario_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.cteModalDutoviario /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/cteModalDutoviario_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.cteModalFerroviario /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/cteModalFerroviario_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.cteModalRodoviario /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/cteModalRodoviario_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.cteModalRodoviarioOS /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/cteModalRodoviarioOS_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.cteMultiModal /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/cteMultiModal_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.cteOS /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/cteOS_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.cteTiposBasico /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/cteTiposBasico_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.enviCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/enviCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.evCancCECTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/evCancCECTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.evCancCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/evCancCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.evCCeCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/evCCeCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.evCECTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/evCECTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.eventoCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/eventoCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.eventoCTeTiposBasico /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/eventoCTeTiposBasico_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.evEPECCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/evEPECCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.evGTV /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/evGTV_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.evPrestDesacordo /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/evPrestDesacordo_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.evRegMultimodal /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/evRegMultimodal_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.inutCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/inutCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.inutCTeTiposBasico /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/inutCTeTiposBasico_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.procCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/procCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.procCTeOS /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/procCTeOS_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.procEventoCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/procEventoCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.procInutCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/procInutCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.retConsReciCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/retConsReciCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.retConsSitCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/retConsSitCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.retConsStatServCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/retConsStatServCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.retCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/retCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.retCTeOS /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/retCTeOS_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.retEnviCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/retEnviCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.retEventoCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/retEventoCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.retInutCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/retInutCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.tiposGeralCTe /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/tiposGeralCTe_v3.00.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/src/main/java -p br.inf.portalfiscal.xsd.cte.xmldsig_core_schema_v101 /Volumes/150GB-Development/CafePerfeito/xsd_Nfe_Cte/xsd/PL_CTe_300a/xmldsig-core-schema_v1.01.xsd
+
+
+
+
+
+
+
+

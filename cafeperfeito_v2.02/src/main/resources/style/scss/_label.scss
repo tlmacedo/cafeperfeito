@@ -1,0 +1,170 @@
+.label {
+  -fx-font-size: $fontSizeh6;
+  -fx-font-family: $fontFamily;
+  -fx-text-fill: white;
+  //-fx-opacity: 0.6;
+  &.float {
+    -fx-font-size: $fontSizeh5;
+    -fx-background-color: #ff6600;
+    //-fx-border-radius: 10 10 0 0;
+    -fx-background-radius: 8 8 0 0;
+    -fx-background-insets: 0 0 0 0;
+    -fx-text-fill: #ffffff;
+  }
+
+  &.lbl_informacao {
+    -fx-border-base: black;
+    -fx-border-shadow: -fx-base;
+    -fx-light-border: derive(-fx-border-base, 25%);
+    -fx-border-color: -fx-light-border -fx-border-base -fx-border-base -fx-light-border;
+    -fx-border-insets: 0 1 1 0;
+    -fx-background-color: -fx-border-shadow, -fx-background;
+    -fx-background-insets: 1 0 0 1, 2;
+    -fx-background-radius: 4;
+    -fx-padding: 2;
+  }
+
+  &.label-total-valor, &.label-total-valor-recebimento-pendente,
+  &.label-total-valor-recebimento-vencido, &.label-total-valor-recebimento-pago,
+  &.label-total-valor-recebimento-cancelado, &.label-total-valor-recebimento-retirada,
+  &.label-total-valor-recebimento-total, &.label-total-valor-lucro {
+    -fx-border-base: black;
+    -fx-border-shadow: -fx-base;
+    -fx-light-border: derive(-fx-border-base, 25%);
+    -fx-border-color: -fx-light-border -fx-border-base -fx-border-base -fx-light-border;
+    -fx-border-insets: 0 1 1 0;
+    -fx-background-color: -fx-border-shadow, -fx-background;
+    -fx-background-insets: 1 0 0 1, 2;
+    -fx-background-radius: 4;
+    -fx-padding: 2;
+    //-fx-padding: 0 0;
+    //-fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-alignment: center-right;
+    -fx-font-weight: bold;
+    -fx-font-size: $fontSizeh2;
+
+    &-lucro {
+      -fx-text-fill: $sisColor_white;
+    }
+
+    &-recebimento-total {
+      -fx-text-fill: $corPricipal;
+    }
+
+    &-recebimento-pendente {
+      -fx-text-fill: $recebimento-pendente-back;
+    }
+
+    &-recebimento-vencido {
+      -fx-text-fill: $recebimento-vencido-back;
+    }
+
+    &-recebimento-pago {
+      -fx-text-fill: $recebimento-pago-back;
+    }
+
+    &-recebimento-cancelado {
+      -fx-text-fill: $recebimento-cancelado-back;
+    }
+
+    &-recebimento-retirada {
+      -fx-text-fill: $recebimento-retirada-back;
+    }
+  }
+
+  &.lbl_titulo {
+    -fx-font-size: $fontSizeh1;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+  }
+
+  &.img_background_principal {
+    -fx-background-color: transparent;
+    //-fx-background-size: ;
+    -fx-background-image: url("../../image/painel/principal.png") no-repeat center;
+  }
+
+  &.copyright {
+    -fx-text-fill: #ff6600;
+    -fx-font-size: $fontSizeh5;
+  }
+
+  &.lucro {
+    -fx-pref-height: 15px;
+    -fx-padding: 0 4;
+    -fx-background-radius: 8 8 0 0;
+    -fx-background-insets: 0 0 0 0;
+
+    -fx-background-color: $sisColor_white;
+    -fx-text-fill: $sisColor_black;
+    -fx-font-size: $fontSizeh5;
+  }
+
+  &.recebimento-recebimento {
+    -fx-pref-height: 15px;
+    -fx-padding: 0 4;
+    -fx-background-radius: 8 8 0 0;
+    -fx-background-insets: 0 0 0 0;
+
+    -fx-background-color: $recebimento-recebimento-back;
+    -fx-text-fill: $recebimento-recebimento-text;
+    -fx-font-size: $fontSizeh5;
+  }
+
+  &.recebimento-pendente {
+    -fx-pref-height: 15px;
+    -fx-padding: 0 4;
+    -fx-background-radius: 8 8 0 0;
+    -fx-background-insets: 0 0 0 0;
+
+    -fx-background-color: $recebimento-pendente-back;
+    -fx-text-fill: $recebimento-pendente-text;
+    -fx-font-size: $fontSizeh5;
+  }
+
+  &.recebimento-vencido {
+    -fx-pref-height: 15px;
+    -fx-padding: 0 4;
+    -fx-background-radius: 8 8 0 0;
+    -fx-background-insets: 0 0 0 0;
+
+    -fx-background-color: $recebimento-vencido-back;
+    -fx-text-fill: $recebimento-vencido-text;
+    -fx-font-size: $fontSizeh5;
+  }
+
+  &.recebimento-pago {
+    -fx-pref-height: 15px;
+    -fx-padding: 0 4;
+    -fx-background-radius: 8 8 0 0;
+    -fx-background-insets: 0 0 0 0;
+
+    -fx-background-color: $recebimento-pago-back;
+    -fx-text-fill: $recebimento-pago-text;
+    -fx-font-size: $fontSizeh5;
+  }
+
+  &.recebimento-cancelado {
+    -fx-pref-height: 15px;
+    -fx-padding: 0 4;
+    -fx-background-radius: 8 8 0 0;
+    -fx-background-insets: 0 0 0 0;
+
+    -fx-background-color: $recebimento-cancelado-back;
+    -fx-text-fill: $recebimento-cancelado-text;
+    -fx-font-size: $fontSizeh5;
+  }
+
+  &.recebimento-retirada {
+    -fx-pref-height: 15px;
+    -fx-padding: 0 4;
+    -fx-background-radius: 8 8 0 0;
+    -fx-background-insets: 0 0 0 0;
+
+    -fx-background-color: $recebimento-retirada-back;
+    -fx-text-fill: $recebimento-retirada-text;
+    -fx-font-size: $fontSizeh5;
+  }
+
+}

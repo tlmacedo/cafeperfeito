@@ -1,0 +1,23 @@
+<retConsReciNFe xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00">
+    <tpAmb>2</tpAmb>
+    <verAplic>AM4.00</verAplic>
+    <nRec>130000155390587</nRec>
+    <cStat>104</cStat>
+    <xMotivo>Lote processado</xMotivo>
+    <cUF>13</cUF>
+    <dhRecbto>2020-06-23T15:10:17-04:00</dhRecbto>
+    <cMsg>1300</cMsg>
+    <xMsg>Continue Tentando</xMsg>
+    <protNFe versao="4.00">
+        <infProt>
+            <tpAmb>2</tpAmb>
+            <verAplic>AM4.00</verAplic>
+            <chNFe>13200608009246000136550010000006151202020066</chNFe>
+            <dhRecbto>2020-06-23T15:10:17-04:00</dhRecbto>
+            <nProt>113200008696476</nProt>
+            <digVal>+H54RVKbEgNu5GNNENpGr6aa2lU=</digVal>
+            <cStat>100</cStat>
+            <xMotivo>Autorizado o uso da NF-e</xMotivo>
+        </infProt>
+    </protNFe>
+</retConsReciNFe>

@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="painelViewCadastroEmpresa" maxHeight="-Infinity"
+            maxWidth="-Infinity" minHeight="0.0"
+            minWidth="0.0" prefHeight="780.0" prefWidth="1350.0"
+            styleClass="view-cadastro-empresa" stylesheets="@../style/css/cafeperfeito.css"
+            xmlns="http://javafx.com/javafx/9"
+            fx:controller="br.com.tlmacedo.cafeperfeito.controller.ControllerCadastroEmpresa">
+    <children>
+        <TitledPane fx:id="tpnCadastroEmpresa" collapsible="false" focusTraversable="false" layoutX="5.0"
+                    maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                    prefHeight="175.0" prefWidth="1340.0" text="Cadastro de empresas">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0">
+                    <children>
+                        <JFXTextField fx:id="txtPesquisaEmpresa"
+                                      accessibleText="len::60;type::TEXTO;value::;seteditable::;" labelFloat="true"
+                                      layoutX="10.0" layoutY="10.0" maxHeight="20.0" prefColumnCount="8"
+                                      prefHeight="20.0" prefWidth="360.0" promptText="Pesquisar empresas">
+                            <tooltip>
+                                <Tooltip text="campo de pesquisa."/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="cboFiltroTipo" labelFloat="true" layoutX="655.0" layoutY="10.0"
+                                     prefHeight="20.0" prefWidth="200.0" promptText="Filtro tipo [F8]">
+                            <tooltip>
+                                <Tooltip text="filtro para pesquisa"/>
+                            </tooltip>
+                        </JFXComboBox>
+                        <JFXComboBox fx:id="cboFiltroSituacao" labelFloat="true" layoutX="865.0" layoutY="10.0"
+                                     prefHeight="20.0" prefWidth="200.0" promptText="Filtro situação [F9]">
+                            <tooltip>
+                                <Tooltip text="filtro para pesquisa"/>
+                            </tooltip>
+                        </JFXComboBox>
+                        <TreeTableView fx:id="ttvEmpresa" accessibleText="len::;type::;value::;seteditable::;"
+                                       layoutX="5.0" layoutY="37.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="110.0"
+                                       prefWidth="1330.0">
+                            <tooltip>
+                                <Tooltip text="tabela com lista de empresa"/>
+                            </tooltip>
+                        </TreeTableView>
+                        <Label fx:id="lblStatus"
+                               accessibleText="len::;type::;value::[] registro(s) localizado(s).;seteditable::;"
+                               layoutX="380.0" layoutY="20.0" styleClass="lbl-informacoes" text="[Status]">
+                            <tooltip>
+                                <Tooltip text="informações de status"/>
+                            </tooltip>
+                        </Label>
+                        <Label fx:id="lblRegistrosLocalizados"
+                               accessibleText="len::;type::;value::[] registro(s) localizado(s).;seteditable::;"
+                               layoutX="440.0" layoutY="20.0" styleClass="lbl-informacoes" text="Registros localizados">
+                            <tooltip>
+                                <Tooltip text="Quantidade de registros localizados"/>
+                            </tooltip>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+        <TitledPane fx:id="tpnDadoCadastral" collapsible="false" focusTraversable="false" layoutX="5.0" layoutY="180.0"
+                    minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1340.0"
+                    text="Informação Cadastral">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0">
+                    <children>
+                        <JFXComboBox fx:id="cboClassificacaoJuridica"
+                                     accessibleText="len::;type::;value::0;seteditable::;" labelFloat="true"
+                                     layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                     minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                     promptText="Classif. Jurídica">
+                            <tooltip>
+                                <Tooltip text="classificação jurídica da empresa"/>
+                            </tooltip>
+                        </JFXComboBox>
+                        <JFXTextField fx:id="txtCNPJ" layoutX="110.0" layoutY="10.0" maxHeight="-Infinity"
+                                      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0"
+                                      prefWidth="110.0" promptText="C.N.P.J / C.P.F." styleClass="a-direita"
+                                      text="C.N.P.J. / C.P.F.">
+                            <tooltip>
+                                <Tooltip text="C.N.P.J ou C.P.F. da empresa"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXCheckBox fx:id="chkIeIsento" accessibleText="len::;type::;value::false;seteditable::;"
+                                     layoutX="230.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                     minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                     text="I.E. Isento">
+                            <tooltip>
+                                <Tooltip text="empresaDAO isenta de inscrição estadual"/>
+                            </tooltip>
+                        </JFXCheckBox>
+                        <JFXTextField fx:id="txtIE" layoutX="330.0" layoutY="10.0" maxHeight="-Infinity"
+                                      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0"
+                                      prefWidth="90.0" promptText="I.E. / R.G." styleClass="a-direita"
+                                      text="I.E. / R.G.">
+                            <tooltip>
+                                <Tooltip text="inscrição estadual da empresa"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtRazao" accessibleText="len::80;type::TEXTO;value::;seteditable::;"
+                                      layoutX="430.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="455.0"
+                                      promptText="Razão / Nome" text="Razão / Nome">
+                            <tooltip>
+                                <Tooltip text="razão ou nome da empresa"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtFantasia" accessibleText="len::80;type::TEXTO;value::;seteditable::;"
+                                      layoutX="10.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="455.0"
+                                      promptText="Fantasia / Apelido" text="Fantasia / Apelido">
+                            <tooltip>
+                                <Tooltip text="nome fantasia ou apelido da empresa"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="cboSituacaoSistema" accessibleText="len::;type::;value::0;seteditable::;"
+                                     labelFloat="true" layoutX="475.0" layoutY="40.0" maxHeight="-Infinity"
+                                     maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0"
+                                     prefWidth="130.0" promptText="Situação empresa">
+                            <tooltip>
+                                <Tooltip text="situação da empresa no sistema"/>
+                            </tooltip>
+                        </JFXComboBox>
+                        <JFXCheckBox fx:id="chkIsCliente" accessibleText="len::;type::;value::true;seteditable::;"
+                                     contentDisplay="GRAPHIC_ONLY" layoutX="615.0" layoutY="40.0" maxHeight="-Infinity"
+                                     maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0"
+                                     prefWidth="49.0" selected="true" text="Cliente">
+                            <graphic>
+                                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                       minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0"
+                                       styleClass="lbl_ico_cliente"/>
+
+                            </graphic>
+                            <tooltip>
+                                <Tooltip text="Empresa é cliente."/>
+                            </tooltip>
+                        </JFXCheckBox>
+                        <JFXCheckBox fx:id="chkIsFornecedor" accessibleText="len::;type::;value::false;seteditable::;"
+                                     contentDisplay="GRAPHIC_ONLY" layoutX="674.0" layoutY="40.0" maxHeight="-Infinity"
+                                     maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0"
+                                     prefWidth="49.0" text="Fornecedor">
+                            <graphic>
+                                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                       minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0"
+                                       styleClass="lbl_ico_fornecedor"/>
+                            </graphic>
+                            <tooltip>
+                                <Tooltip text="Empresa é fornecedor"/>
+                            </tooltip>
+                        </JFXCheckBox>
+                        <JFXCheckBox fx:id="chkIsTransportadora"
+                                     accessibleText="len::;type::;value::false;seteditable::;"
+                                     contentDisplay="GRAPHIC_ONLY" layoutX="733.0" layoutY="40.0" maxHeight="-Infinity"
+                                     maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0"
+                                     prefWidth="49.0" text="Transportadora">
+                            <graphic>
+                                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                       minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0"
+                                       styleClass="lbl_ico_transportadora"/>
+                            </graphic>
+                            <tooltip>
+                                <Tooltip text="Empresa é transportadora"/>
+                            </tooltip>
+                        </JFXCheckBox>
+                        <Label fx:id="lblDataCadastro"
+                               accessibleText="len::;type::;value::Data cadastro: ;seteditable::;"
+                               alignment="CENTER_RIGHT" layoutX="1000.0" layoutY="5.0" prefHeight="10.0"
+                               prefWidth="335.0" styleClass="lbl-informacoes" text="lblDataCadastro"
+                               textAlignment="RIGHT">
+                            <tooltip>
+                                <Tooltip text="data de cadastro da empresa no sistema"/>
+                            </tooltip>
+                        </Label>
+                        <Label fx:id="lblDataCadastroDiff"
+                               accessibleText="len::;type::;value::Tempo cadastro: ;seteditable::;"
+                               alignment="CENTER_RIGHT" layoutX="1000.0" layoutY="15.0" prefHeight="10.0"
+                               prefWidth="335.0" styleClass="lbl-informacoes" text="lblDataCadastroDiff"
+                               textAlignment="RIGHT">
+                            <tooltip>
+                                <Tooltip text="tempo que a empresa está cadastrada no sistema"/>
+                            </tooltip>
+                        </Label>
+                        <Label fx:id="lblDataAtualizacao"
+                               accessibleText="len::;type::;value::Data atualização: ;seteditable::;"
+                               alignment="CENTER_RIGHT" layoutX="1000.0" layoutY="25.0" prefHeight="10.0"
+                               prefWidth="335.0" styleClass="lbl-informacoes" text="lblDataAtualizacao"
+                               textAlignment="RIGHT">
+                            <tooltip>
+                                <Tooltip text="data da ultima atualizacao feita no cadastro da empresa no sistema"/>
+                            </tooltip>
+                        </Label>
+                        <Label fx:id="lblDataAtualizacaoDiff"
+                               accessibleText="len::;type::;value::Tempo atualização: ;seteditable::;"
+                               alignment="CENTER_RIGHT" layoutX="1000.0" layoutY="35.0" prefHeight="10.0"
+                               prefWidth="335.0" styleClass="lbl-informacoes" text="lblDataAtualizacaoDiff"
+                               textAlignment="RIGHT">
+                            <tooltip>
+                                <Tooltip
+                                        text="tempo que a foi feita a ultima atualizacao no cadastro da empresa no sistema"/>
+                            </tooltip>
+                        </Label>
+                        <TitledPane fx:id="tpnEndereco" collapsible="false" focusTraversable="false" layoutX="5.0"
+                                    layoutY="68.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0"
+                                    minWidth="0.0" prefHeight="92.0" prefWidth="1330.0" text="Enderecos">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                    <children>
+                                        <JFXListView fx:id="listEndereco"
+                                                     accessibleText="len::;type::;value::;seteditable::;" layoutX="5.0"
+                                                     layoutY="5.0" prefHeight="60.0" prefWidth="130.0"
+                                                     styleClass="endereco">
+                                            <tooltip>
+                                                <Tooltip text="lista de endereços da empresa"/>
+                                            </tooltip>
+                                        </JFXListView>
+                                        <JFXTextField fx:id="txtEndCEP"
+                                                      accessibleText="len::10;type::cep;value::;seteditable::;"
+                                                      alignment="CENTER_RIGHT" layoutX="145.0" layoutY="10.0"
+                                                      maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                                      minWidth="-Infinity" prefHeight="20.0" prefWidth="60.0"
+                                                      promptText="C.E.P." styleClass="a-direita">
+                                            <tooltip>
+                                                <Tooltip text="cep do endereço selecionado"/>
+                                            </tooltip>
+                                        </JFXTextField>
+                                        <JFXTextField fx:id="txtEndLogradouro"
+                                                      accessibleText="len::80;type::TEXTO;value::;seteditable::;"
+                                                      layoutX="215.0" layoutY="10.0" maxHeight="-Infinity"
+                                                      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                                      prefHeight="20.0" prefWidth="455.0" promptText="Logradouro">
+                                            <tooltip>
+                                                <Tooltip text="logradouro do endereço selecionado"/>
+                                            </tooltip>
+                                        </JFXTextField>
+                                        <JFXTextField fx:id="txtEndNumero"
+                                                      accessibleText="len::10;type::TEXTO;value::0;seteditable::;"
+                                                      alignment="CENTER_RIGHT" layoutX="680.0" layoutY="10.0"
+                                                      maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                                      minWidth="-Infinity" prefHeight="20.0" prefWidth="65.0"
+                                                      promptText="Número" styleClass="a-direita">
+                                            <tooltip>
+                                                <Tooltip text="número do endereço selecionado"/>
+                                            </tooltip>
+                                        </JFXTextField>
+                                        <JFXTextField fx:id="txtEndComplemento"
+                                                      accessibleText="len::80;type::TEXTO;value::;seteditable::;"
+                                                      layoutX="755.0" layoutY="10.0" maxHeight="-Infinity"
+                                                      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                                      prefHeight="20.0" prefWidth="285.0" promptText="Complemento">
+                                            <tooltip>
+                                                <Tooltip text="complemento do endereço selecionado"/>
+                                            </tooltip>
+                                        </JFXTextField>
+                                        <JFXTextField fx:id="txtEndBairro"
+                                                      accessibleText="len::50;type::TEXTO;value::;seteditable::;"
+                                                      layoutX="145.0" layoutY="40.0" maxHeight="-Infinity"
+                                                      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                                      prefHeight="20.0" prefWidth="230.0" promptText="Bairro">
+                                            <tooltip>
+                                                <Tooltip text="bairro do endereço selecionado"/>
+                                            </tooltip>
+                                        </JFXTextField>
+                                        <JFXComboBox fx:id="cboEndUF"
+                                                     accessibleText="len::;type::;value::;seteditable::;"
+                                                     labelFloat="true" layoutX="385.0" layoutY="40.0"
+                                                     maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                                     minWidth="-Infinity" prefHeight="20.0" prefWidth="60.0"
+                                                     promptText="U.F.">
+                                            <tooltip>
+                                                <Tooltip text="UF do endereço selecionado"/>
+                                            </tooltip>
+                                        </JFXComboBox>
+                                        <JFXComboBox fx:id="cboEndMunicipio"
+                                                     accessibleText="len::;type::;value::;seteditable::;"
+                                                     labelFloat="true" layoutX="455.0" layoutY="40.0"
+                                                     maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                                     minWidth="-Infinity" prefHeight="20.0" prefWidth="320.0"
+                                                     promptText="Município">
+                                            <tooltip>
+                                                <Tooltip text="municipio do endereço selecionado"/>
+                                            </tooltip>
+                                        </JFXComboBox>
+                                        <JFXTextField fx:id="txtEndPontoReferencia"
+                                                      accessibleText="len::80;type::TEXTO;value::;seteditable::;"
+                                                      layoutX="785.0" layoutY="40.0" maxHeight="-Infinity"
+                                                      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                                      prefHeight="20.0" prefWidth="455.0"
+                                                      promptText="Ponto de referência">
+                                            <tooltip>
+                                                <Tooltip text="ponto de referência do endereco selecionado"/>
+                                            </tooltip>
+                                        </JFXTextField>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                            <graphic>
+                                <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/ico/principal/ic_tpn_enderecos_dp24.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TitledPane>
+                        <TitledPane collapsible="false" layoutX="5.0" layoutY="165.0" minHeight="0.0" minWidth="0.0"
+                                    prefHeight="235.0" prefWidth="1330.0" text="Contato">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                    <children>
+                                        <TitledPane collapsible="false" focusTraversable="false" layoutX="5.0"
+                                                    layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                                    minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="365.0"
+                                                    text="home page">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                                    <children>
+                                                        <JFXListView fx:id="listHomePage"
+                                                                     accessibleText="len::120;type::homepage;value::;seteditable::;"
+                                                                     minHeight="0.0" minWidth="0.0" prefHeight="77.0"
+                                                                     prefWidth="363.0">
+                                                            <tooltip>
+                                                                <Tooltip text="lista de home page da empresa"/>
+                                                            </tooltip>
+                                                        </JFXListView>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                            <font>
+                                                <Font name="SansSerif Bold Italic" size="11.0"/>
+                                            </font>
+                                            <graphic>
+                                                <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../image/ico/principal/ic_tpn_webhome_dp24.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </TitledPane>
+                                        <TitledPane collapsible="false" focusTraversable="false" layoutX="5.0"
+                                                    layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                                    minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="365.0"
+                                                    text="e-mail">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                                    <children>
+                                                        <JFXListView fx:id="listEmail"
+                                                                     accessibleText="len::120;type::email;value::;seteditable::;"
+                                                                     minHeight="0.0" minWidth="0.0" prefHeight="77.0"
+                                                                     prefWidth="363.0">
+                                                            <tooltip>
+                                                                <Tooltip text="lista de email da empresa"/>
+                                                            </tooltip>
+                                                        </JFXListView>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                            <font>
+                                                <Font name="SansSerif Bold Italic" size="11.0"/>
+                                            </font>
+                                            <graphic>
+                                                <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../image/ico/principal/ic_tpn_email@_dp24.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </TitledPane>
+                                        <TitledPane collapsible="false" focusTraversable="false" layoutX="375.0"
+                                                    layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                                    minHeight="0.0" minWidth="0.0" prefHeight="205.0" prefWidth="210.0"
+                                                    text="Telefone">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                                    <children>
+                                                        <JFXListView fx:id="listTelefone"
+                                                                     accessibleText="len::;type::telefone;value::;seteditable::;"
+                                                                     minHeight="0.0" minWidth="0.0" prefHeight="182.0"
+                                                                     prefWidth="208.0">
+                                                            <tooltip>
+                                                                <Tooltip text="lista de telefone da empresa"/>
+                                                            </tooltip>
+                                                        </JFXListView>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                            <font>
+                                                <Font name="SansSerif Bold Italic" size="11.0"/>
+                                            </font>
+                                            <graphic>
+                                                <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../image/ico/principal/ic_tpn_telefone_dp24.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </TitledPane>
+                                        <TitledPane fx:id="tpnPessoaContato" collapsible="false"
+                                                    focusTraversable="false" layoutX="600.0" layoutY="5.0"
+                                                    maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0"
+                                                    minWidth="0.0" prefHeight="205.0" prefWidth="725.0"
+                                                    text="Pessoa de contato">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                                    <children>
+                                                        <JFXListView fx:id="listContatoNome"
+                                                                     accessibleText="len::40;type::TEXTO;value::;seteditable::;"
+                                                                     layoutX="5.0" layoutY="5.0" maxHeight="-Infinity"
+                                                                     maxWidth="-Infinity" minHeight="0.0" minWidth="0.0"
+                                                                     prefHeight="175.0" prefWidth="170.0">
+                                                            <tooltip>
+                                                                <Tooltip text="lista de pessoa de contato da empresa"/>
+                                                            </tooltip>
+                                                        </JFXListView>
+                                                        <TitledPane collapsible="false" focusTraversable="false"
+                                                                    layoutX="180.0" layoutY="5.0" maxHeight="-Infinity"
+                                                                    maxWidth="-Infinity" minHeight="0.0" minWidth="0.0"
+                                                                    prefHeight="175.0" prefWidth="320.0"
+                                                                    text="email / home page">
+                                                            <content>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                                                    <children>
+                                                                        <JFXListView fx:id="listContatoEmailHomePage"
+                                                                                     accessibleText="len::120;type::homepage;value::;seteditable::;"
+                                                                                     minHeight="0.0" minWidth="0.0"
+                                                                                     prefHeight="152.0"
+                                                                                     prefWidth="318.0">
+                                                                            <tooltip>
+                                                                                <Tooltip
+                                                                                        text="lista de endereços eletrônicos para o contato selecionado da empresa"/>
+                                                                            </tooltip>
+                                                                        </JFXListView>
+                                                                    </children>
+                                                                </AnchorPane>
+                                                            </content>
+                                                            <font>
+                                                                <Font name="SansSerif Bold Italic" size="11.0"/>
+                                                            </font>
+                                                            <graphic>
+                                                                <ImageView fitHeight="14.0" fitWidth="14.0"
+                                                                           pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@../image/ico/principal/ic_tpn_webhome_dp24.png"/>
+                                                                    </image>
+                                                                </ImageView>
+                                                            </graphic>
+                                                        </TitledPane>
+                                                        <TitledPane collapsible="false" focusTraversable="false"
+                                                                    layoutX="507.0" layoutY="5.0" maxHeight="-Infinity"
+                                                                    maxWidth="-Infinity" minHeight="0.0" minWidth="0.0"
+                                                                    prefHeight="175.0" prefWidth="210.0"
+                                                                    text="Telefone">
+                                                            <content>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                                                    <children>
+                                                                        <JFXListView fx:id="listContatoTelefone"
+                                                                                     minHeight="0.0" minWidth="0.0"
+                                                                                     prefHeight="152.0"
+                                                                                     prefWidth="208.0">
+                                                                            <tooltip>
+                                                                                <Tooltip
+                                                                                        text="lista de telefone para o contato selecionado da empresa"/>
+                                                                            </tooltip>
+                                                                        </JFXListView>
+                                                                    </children>
+                                                                </AnchorPane>
+                                                            </content>
+                                                            <font>
+                                                                <Font name="SansSerif Bold Italic" size="11.0"/>
+                                                            </font>
+                                                            <graphic>
+                                                                <ImageView fitHeight="14.0" fitWidth="14.0"
+                                                                           pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@../image/ico/principal/ic_tpn_telefone_dp24.png"/>
+                                                                    </image>
+                                                                </ImageView>
+                                                            </graphic>
+                                                        </TitledPane>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                            <font>
+                                                <Font name="SansSerif Bold Italic" size="11.0"/>
+                                            </font>
+                                            <graphic>
+                                                <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../image/ico/principal/ic_tpn_contato_dp24.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </TitledPane>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                            <graphic>
+                                <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/ico/principal/ic_tpn_contatos_dp24.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TitledPane>
+                        <TitledPane fx:id="tpnObservacoes" collapsible="false" focusTraversable="false" layoutX="5.0"
+                                    layoutY="405.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0"
+                                    minWidth="0.0" prefHeight="170.0" prefWidth="450.0" text="Observações">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                    <children>
+                                        <JFXTextArea fx:id="txaObservacoes"
+                                                     accessibleText="len::1500;type::Texto;value::;seteditable::;"
+                                                     minHeight="0.0" minWidth="0.0" prefHeight="150.0"
+                                                     prefWidth="448.0">
+                                            <tooltip>
+                                                <Tooltip text="observações para empresa"/>
+                                            </tooltip>
+                                        </JFXTextArea>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                            <font>
+                                <Font name="SansSerif Bold Italic" size="11.0"/>
+                            </font>
+                        </TitledPane>
+                        <TitledPane collapsible="false" focusTraversable="false" layoutX="455.0" layoutY="405.0"
+                                    maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0"
+                                    prefHeight="170.0" prefWidth="880.0" text="Informação receita federal">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                    <children>
+                                        <Label fx:id="lblDataAbertura"
+                                               accessibleText="len::;type::;value::Data abertura: ;seteditable::;"
+                                               layoutX="428.0" layoutY="30.0" prefHeight="10.0" prefWidth="440.0"
+                                               styleClass="lbl-informacoes">
+                                            <tooltip>
+                                                <Tooltip text="data de abertura da empresa na receita federal"/>
+                                            </tooltip>
+                                        </Label>
+                                        <Label fx:id="lblDataAberturaDiff"
+                                               accessibleText="len::;type::;value::Tempo abertura;seteditable::;"
+                                               layoutX="428.0" layoutY="40.0" prefHeight="10.0" prefWidth="440.0"
+                                               styleClass="lbl-informacoes">
+                                            <tooltip>
+                                                <Tooltip text="tempo de abertura da empresa na receita federal"/>
+                                            </tooltip>
+                                        </Label>
+                                        <Label fx:id="lblNaturezaJuridica"
+                                               accessibleText="len::;type::;value::Natureza júridica: ;seteditable::;"
+                                               layoutX="428.0" layoutY="50.0" prefHeight="10.0" prefWidth="440.0"
+                                               styleClass="lbl-informacoes">
+                                            <tooltip>
+                                                <Tooltip text="natureza júridica da empresa na receita federal"/>
+                                            </tooltip>
+                                        </Label>
+                                        <TitledPane fx:id="tpnReceitaAtividadePrincipal" collapsible="false"
+                                                    focusTraversable="false" layoutX="3.0" maxHeight="-Infinity"
+                                                    maxWidth="-Infinity" minHeight="0.0" minWidth="0.0"
+                                                    prefHeight="65.0" prefWidth="420.0" text="Atividade principal">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                                    <children>
+                                                        <JFXListView fx:id="listAtividadePrincipal"
+                                                                     accessibleText="len::;type::;value::;seteditable::;"
+                                                                     minHeight="0.0" minWidth="0.0" prefHeight="45.0"
+                                                                     prefWidth="418.0">
+                                                            <tooltip>
+                                                                <Tooltip
+                                                                        text="atividade principal da empresa na receita federal"/>
+                                                            </tooltip>
+                                                        </JFXListView>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                            <font>
+                                                <Font name="SansSerif Bold Italic" size="11.0"/>
+                                            </font>
+                                        </TitledPane>
+                                        <TitledPane fx:id="tpnReceitaAtividadeSecundaria" collapsible="false"
+                                                    focusTraversable="false" layoutX="3.0" layoutY="65.0"
+                                                    maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0"
+                                                    minWidth="0.0" prefHeight="85.0" prefWidth="475.0"
+                                                    text="Atividade secundaria">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                                    <children>
+                                                        <JFXListView fx:id="listAtividadeSecundaria"
+                                                                     accessibleText="len::;type::;value::;seteditable::;"
+                                                                     minHeight="0.0" minWidth="0.0" prefHeight="65.0"
+                                                                     prefWidth="473.0">
+                                                            <tooltip>
+                                                                <Tooltip
+                                                                        text="atividade secundaria da empresa na receita federal"/>
+                                                            </tooltip>
+                                                        </JFXListView>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                            <font>
+                                                <Font name="SansSerif Bold Italic" size="11.0"/>
+                                            </font>
+                                        </TitledPane>
+                                        <TitledPane fx:id="tpnReceitaQsa" collapsible="false" focusTraversable="false"
+                                                    layoutX="478.0" layoutY="65.0" maxHeight="-Infinity"
+                                                    maxWidth="-Infinity" minHeight="0.0" minWidth="0.0"
+                                                    prefHeight="85.0" prefWidth="397.0" text="Informação complementar">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                                    <children>
+                                                        <JFXListView fx:id="listQsaReceitaFederal"
+                                                                     accessibleText="len::;type::;value::;seteditable::;"
+                                                                     minHeight="0.0" minWidth="0.0" prefHeight="65.0"
+                                                                     prefWidth="395.0">
+                                                            <tooltip>
+                                                                <Tooltip
+                                                                        text="informações complementares da empresa na receita federal"/>
+                                                            </tooltip>
+                                                        </JFXListView>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                            <font>
+                                                <Font name="SansSerif Bold Italic" size="11.0"/>
+                                            </font>
+                                        </TitledPane>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                            <font>
+                                <Font name="SansSerif Bold Italic" size="11.0"/>
+                            </font>
+                        </TitledPane>
+                    </children>
+                </AnchorPane>
+            </content>
+            <font>
+                <Font name="SansSerif Bold Italic" size="11.0"/>
+            </font>
+            <graphic>
+                <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/ico/principal/ic_tpn_infcadastral_dp24.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </TitledPane>
+    </children>
+</AnchorPane>

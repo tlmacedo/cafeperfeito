@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+    <xs:include schemaLocation="tiposBasico.xsd"/>
+    <xs:complexType name="MyInfNfe">
+        <xs:sequence>
+            <xs:element name="meusBancos" type="MeusBancos"/>
+            <xs:element name="myConfig" type="MyConfig"/>
+            <xs:element name="ide" type="Ide"/>
+            <xs:element name="emit" type="Emit"/>
+            <xs:element name="dest" type="Dest"/>
+            <xs:element name="transp" type="Transp"/>
+            <xs:element name="sefaz" type="Sefaz"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="MeusBancos">
+        <xs:annotation>
+            <xs:documentation>Minhas Informações bancárias</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Bancos">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="banco" type="Banco" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="MyConfig">
+        <xs:annotation>
+            <xs:documentation>Minhas Informações de preencimento</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="certificadoCfgs">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="certificadoCfg" type="CertificadoCfg" minOccurs="1" maxOccurs="2"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="certificadoToken" type="Tstr" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="certificadoCacerts" type="Tstr" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="portaSSl" type="Tint_3" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="versao" type="Tstr" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="indSinc" type="Tint_1" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="natOp" type="Tint_1" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="mod" type="Tint_1" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="serie" type="Tint_3" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="tpNF" type="Tint_1" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="idDest" type="Tint_1" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="cMunFG" type="Tint_7" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="tpImp" type="Tint_1" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="tpEmis" type="Tint_1" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="tpAmb" type="Tint_1" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="finNFe" type="Tint_1" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="indPres" type="Tint_1" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="procEmi" type="Tint_1" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="verProc" type="Tstr" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="indPag" type="Tint_1" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="cPais" type="Tint_4" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="nPais" type="Tstr" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="CRT" type="Tint_1" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="infAdic" type="Tstr" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="homCNPJ" type="Tstr" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="homRazao" type="Tstr" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="infRespTecs">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="infRespTec" type="InfRespTec" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="Banco">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="nome" type="Tstr_120" use="required"/>
+        <xs:attribute name="agencia" type="Tstr_14" use="required"/>
+        <xs:attribute name="conta" type="Tstr_14" use="required"/>
+        <xs:attribute name="padrão" type="xs:boolean" use="required"/>
+    </xs:complexType>
+
+
+    <xs:complexType name="InfAdic">
+        <xs:attribute name="campo" type="Tstr_14" use="required"/>
+        <xs:attribute name="texto" type="Tstr_120" use="required"/>
+        <xs:attribute name="variavel" type="Tstr_60"/>
+        <xs:attribute name="quebraPag" type="xs:boolean" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="InfRespTec">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="cnpj" type="Tcnpj" use="required"/>
+        <xs:attribute name="xContato" type="Tstr_60" use="required"/>
+        <xs:attribute name="email" type="Tstr_60" use="required"/>
+        <xs:attribute name="fone" type="Tstr_14" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="CertificadoCfg">
+        <xs:attribute name="tipo" type="Tstr_14" use="required"/>
+        <xs:attribute name="path" type="Tstr" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="Ide">
+        <xs:annotation>
+            <xs:documentation>Informações de identificação da NF-e</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="natOps">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="natOp" type="NatOp" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="indPags">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="indPag" type="IndPag" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="mods">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mod" type="Mod" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="idDests">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="idDest" type="IdDest" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="tpImps">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="tpImp" type="TpImp" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="tpEmiss">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="tpEmis" type="TpEmis" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="tpAmbs">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="tpAmb" type="TpAmb" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="finNFes">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="finNFe" type="FinNFe" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="indFinals">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="indFinal" type="IndFinal" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="indPress">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="indPres" type="IndPres" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="procEmis">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="procEmi" type="ProcEmi" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Emit">
+        <xs:annotation>
+            <xs:documentation>Identificação do Emitente da Nota Fiscal eletrônica</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="crts">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="crt" type="Crt" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Dest">
+        <xs:annotation>
+            <xs:documentation>Identificação do Destinatário da Nota Fiscal eletrônica</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="indIEDests">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="indIEDest" type="IndIEDest" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Transp">
+        <xs:annotation>
+            <xs:documentation>Informações do Transporte da NF-e</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="modFretes">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="modFrete" type="ModFrete" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Sefaz">
+        <xs:sequence>
+            <xs:element name="statuss">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="status" type="Status" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="NatOp">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="descricao" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="IndPag">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="descricao" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="Mod">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="descricao" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="IdDest">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="descricao" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="TpImp">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="descricao" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="TpEmis">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="descricao" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="TpAmb">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="descricao" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="FinNFe">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="descricao" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="IndFinal">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="descricao" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="IndPres">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="descricao" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="ProcEmi">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="descricao" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="Crt">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="descricao" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="IndIEDest">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="descricao" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="ModFrete">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="descricao" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="Status">
+        <xs:attribute name="id" type="xs:long" use="required"/>
+        <xs:attribute name="descricao" type="xs:string" use="required"/>
+        <xs:attribute name="simplificada" type="xs:string" use="required"/>
+    </xs:complexType>
+
+
+</xs:schema>

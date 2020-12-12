@@ -1,0 +1,25 @@
+Comandos para gerar os
+
+executor:
+    /Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc
+diretorio que vai ficar:
+    -d /Volumes/150GB-Development/CafePerfeito/xsd_Config_Sis/src/main/java
+pacote que vai ser gerado:
+    -p br.com.cafeperfeito.xsd.config_sis.config
+arquivo XSD
+    /Volumes/150GB-Development/CafePerfeito/xsd_Config_Sis/config.xsd
+
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Config_Sis/src/main/java -p br.com.cafeperfeito.xsd.config_sis.config /Volumes/150GB-Development/CafePerfeito/xsd_Config_Sis/config.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Config_Sis/src/main/java -p br.com.cafeperfeito.xsd.config_sis.layoutConfig /Volumes/150GB-Development/CafePerfeito/xsd_Config_Sis/layoutConfig.xsd
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/xjc -d /Volumes/150GB-Development/CafePerfeito/xsd_Config_Sis/src/main/java -p br.com.cafeperfeito.xsd.config_sis.tiposBasico /Volumes/150GB-Development/CafePerfeito/xsd_Config_Sis/tiposBasico.xsd
+
+
+
+
+
+
+
+

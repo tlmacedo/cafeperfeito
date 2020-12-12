@@ -1,0 +1,71 @@
+$sisHeightDialogPane_Loading: 380px;
+$sisWidthDialogPane_Loading: 450px;
+$sisHeightDialogPane: 150px;
+$sisWidthDialogPane: 570px;
+$sisHeightDialogPane_whith_text_field: 166px;
+$sisWidthDialogPane_whith_text_field: 570px;
+
+$sisColor_transparent: transparent;
+$sisColor_cafe-perfeito: #FF6600;
+$sisColor_red: #F44336;
+$sisColor_pink: #E91E63;
+$sisColor_purple: #9C27B0;
+$sisColor_deep-purple: #673AB7;
+$sisColor_indigo: #3F51B5;
+$sisColor_blue: #2196F3;
+$sisColor_light-blue: #03A9F4;
+$sisColor_cyan: #00BCD4;
+$sisColor_teal: #009688;
+$sisColor_green: #4CAF50;
+$sisColor_light-green: #8BC34A;
+$sisColor_lime: #CDDC39;
+$sisColor_yellow: #ffe821;
+$sisColor_amber: #FFC107;
+$sisColor_orange: #FF9800;
+$sisColor_deep-orange: #FF5722;
+$sisColor_brown: #795548;
+$sisColor_grey: #9E9E9E;
+$sisColor_blue-grey: #607D8B;
+$sisColor_black: #000000;
+$sisColor_white: #ffffff;
+$sisColor_whiteblack: #e9e9e9;
+$sisCorCertValido: #0091ff;
+$sisCorCertInValido: #ff1c00;
+
+$corPricipal: $sisColor_cafe-perfeito;
+$corSecundaria: $sisColor_whiteblack;
+$corPricipalBorda: $sisColor_yellow;
+$corBackground: $sisColor_whiteblack;
+$corTransparenciaPreta: rgba(0, 0, 0, 0.5);
+$corTransparenciaBranca: rgba(255, 255, 255, 0.5);
+
+$corJFX-Focus: $corPricipal;
+$corJFX-Unforcus: $sisColor_black;
+
+$fontFamily: "Segoe UI Semibold";
+$fontFamily1: sans-serif;
+$fontSizeh7: 8px;
+$fontSizeh6: 10px;
+$fontSizeh5: 12px;
+$fontSizeh4: 16px;
+$fontSizeh3: 18px;
+$fontSizeh2: 22px;
+$fontSizeh1: 24px;
+
+$recebimento-recebimento-back: rgba(255, 111, 0, 0.7);
+$recebimento-recebimento-text: $sisColor_whiteblack;
+
+$recebimento-pendente-back: rgba(255, 219, 0, 0.8);
+$recebimento-pendente-text: $sisColor_black;
+
+$recebimento-vencido-back: rgba(255, 0, 0, 0.8);
+$recebimento-vencido-text: $sisColor_yellow;
+
+$recebimento-pago-back: rgba(91, 255, 0, 0.8);
+$recebimento-pago-text: $sisColor_black;
+
+$recebimento-cancelado-back: rgba(0, 0, 0, 0.8);
+$recebimento-cancelado-text: $sisColor_whiteblack;
+
+$recebimento-retirada-back: rgba(148, 0, 255, 0.8);
+$recebimento-retirada-text: $sisColor_whiteblack;

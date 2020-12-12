@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0"
+            prefWidth="450.0" styleClass="view-login" stylesheets="@../style/css/cafeperfeito.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="br.com.tlmacedo.cafeperfeito.controller.ControllerLogin">
+    <!--    stylesheets="@../style/css/cafeperfeito.css"-->
+    <children>
+        <VBox layoutX="93.0" layoutY="24.0" spacing="8.0" styleClass="vbox" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="lblTitulo" alignment="CENTER" prefWidth="450.0" styleClass="lbl_titulo"
+                       text="login no sistema"/>
+                <HBox>
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <HBox.margin>
+                                <Insets left="5.0" right="5.0" top="8.0"/>
+                            </HBox.margin>
+                            <image>
+                                <Image url="@../image/ico/ic_usuario_dp32.png"/>
+                            </image>
+                        </ImageView>
+                        <VBox alignment="CENTER_LEFT" prefWidth="400.0">
+                            <children>
+                                <Label prefWidth="434.0" styleClass="float" text="Usuário">
+                                    <VBox.margin>
+                                        <Insets/>
+                                    </VBox.margin>
+                                    <padding>
+                                        <Insets left="5.0"/>
+                                    </padding>
+                                </Label>
+                                <ComboBox fx:id="cboUsuario" prefWidth="434.0">
+                                    <VBox.margin>
+                                        <Insets/>
+                                    </VBox.margin>
+                                </ComboBox>
+                            </children>
+                            <HBox.margin>
+                                <Insets right="15.0"/>
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox layoutX="20.0" layoutY="45.0">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <HBox.margin>
+                                <Insets left="5.0" right="5.0" top="8.0"/>
+                            </HBox.margin>
+                            <image>
+                                <Image url="@../image/ico/ic_password_dp32.png"/>
+                            </image>
+                        </ImageView>
+                        <VBox prefWidth="423.0">
+                            <children>
+                                <Label prefWidth="395.0" styleClass="float" text="Senha">
+                                    <padding>
+                                        <Insets left="5.0"/>
+                                    </padding>
+                                </Label>
+                                <PasswordField fx:id="pswSenha"/>
+                            </children>
+                            <HBox.margin>
+                                <Insets right="15.0"/>
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="431.0" spacing="10.0">
+                    <children>
+                        <ImageView fitHeight="33.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/ico/assinatura_logo.png"/>
+                            </image>
+                            <HBox.margin>
+                                <Insets right="150.0"/>
+                            </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="btnOK" defaultButton="true" mnemonicParsing="false" text="OK" textFill="WHITE"/>
+                        <Button fx:id="btnCancel" cancelButton="true" mnemonicParsing="false" text="Cancela"/>
+                    </children>
+                    <VBox.margin>
+                        <Insets right="15.0" top="5.0"/>
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

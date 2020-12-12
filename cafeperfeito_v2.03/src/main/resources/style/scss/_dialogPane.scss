@@ -1,0 +1,50 @@
+.dialog-pane {
+  .header-panel {
+    -fx-background-color: $sisColor_transparent;
+
+    .label {
+      -fx-text-fill: $sisColor_white;
+      -fx-font-size: $fontSizeh4;
+      -fx-font-weight: bold;
+      -fx-font-style: italic;
+    }
+  }
+
+  .content {
+    -fx-alignment: center-left;
+
+    &.label {
+      -fx-text-fill: $sisColor_white;
+      -fx-font-size: $fontSizeh5;
+      -fx-font-weight: bold;
+    }
+  }
+
+  .button-bar {
+    -fx-background-color: $sisColor_whiteblack;
+  }
+
+  &.alertMsg_progress {
+    .content {
+      -fx-alignment: center;
+    }
+
+    //-fx-background-color: $corTransparenciaPreta;
+    //-fx-pref-width: $sisWidthDialogPane_Loading;
+    //-fx-pref-height: $sisHeightDialogPane_Loading;
+    -fx-background-image: none !important;
+  }
+
+  &.alertMsg_return {
+    //-fx-pref-width: $sisWidthDialogPane;
+    //-fx-pref-height: $sisHeightDialogPane;
+    //-fx-background-image: url("../../image/painel/dialogPane.png") no-repeat center;
+  }
+
+  &.alertMsg_with_text_field {
+    //-fx-pref-width: $sisWidthDialogPane_whith_text_field;
+    //-fx-pref-height: $sisHeightDialogPane_whith_text_field;
+    //-fx-background-image: url("../../image/painel/dialogPane_text_field_e_combo_box.png") no-repeat center;
+  }
+
+}
