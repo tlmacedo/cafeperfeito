@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CafePerfeito.iml" filepath="$PROJECT_DIR$/CafePerfeito.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cafeperfeito_v2.02/cafeperfeito_v2.02.iml" filepath="$PROJECT_DIR$/cafeperfeito_v2.02/cafeperfeito_v2.02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cafeperfeito_v2.03/cafeperfeito_v2.03.iml" filepath="$PROJECT_DIR$/cafeperfeito_v2.03/cafeperfeito_v2.03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nfe_v400/nfe_v400.iml" filepath="$PROJECT_DIR$/nfe_v400/nfe_v400.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wsdl_Nfe_v400/wsdl_Nfe_v400.iml" filepath="$PROJECT_DIR$/wsdl_Nfe_v400/wsdl_Nfe_v400.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xsd_Config_Nfe/xsd_Config_Nfe.iml" filepath="$PROJECT_DIR$/xsd_Config_Nfe/xsd_Config_Nfe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xsd_Config_Sis/xsd_Config_Sis.iml" filepath="$PROJECT_DIR$/xsd_Config_Sis/xsd_Config_Sis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xsd_Nfe_Cte/xsd_Nfe_Cte.iml" filepath="$PROJECT_DIR$/xsd_Nfe_Cte/xsd_Nfe_Cte.iml" />
+    </modules>
+  </component>
+</project>

@@ -48,6 +48,10 @@
     -fx-text-fill: #ff6600;
 }
 
+.anchor-pane .fxml-login {
+    -fx-border-radius: 8;
+}
+
 .combo-box {
     -fx-font-family: "Segoe UI Semibold";
     -fx-font-size: 10px;
@@ -331,37 +335,30 @@
     -fx-background-color: rgba(255, 219, 0, 0.8);
     -fx-text-fill: #000000;
 }
-
 .tree-table-view .tree-table-row-cell.recebimento-pendente:selected .cell {
     -fx-background-color: -fx-selection-bar;
     -fx-text-fill: -fx-selection-bar-text;
 }
-
 .tree-table-view .tree-table-row-cell.recebimento-vencido .cell {
     -fx-background-color: rgba(255, 0, 0, 0.8);
     -fx-text-fill: #ffe821;
 }
-
 .tree-table-view .tree-table-row-cell.recebimento-vencido:selected .cell {
     -fx-background-color: -fx-selection-bar;
     -fx-text-fill: -fx-selection-bar-text;
 }
-
 .tree-table-view .tree-table-row-cell.recebimento-pago .cell {
     -fx-background-color: rgba(91, 255, 0, 0.8);
     -fx-text-fill: #000000;
 }
-
 .tree-table-view .tree-table-row-cell.recebimento-pago:selected .cell {
     -fx-background-color: -fx-selection-bar;
     -fx-text-fill: -fx-selection-bar-text;
 }
-
 .tree-table-view .tree-table-row-cell.recebimento-cancelado .cell {
     -fx-background-color: rgba(0, 0, 0, 0.8);
     -fx-text-fill: #e9e9e9;
 }
-
 .tree-table-view .tree-table-row-cell.recebimento-cancelado:selected .cell {
     -fx-background-color: -fx-selection-bar;
     -fx-text-fill: -fx-selection-bar-text;

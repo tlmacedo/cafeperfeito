@@ -1,0 +1,35 @@
+
+.list-view {
+  .list-cell {
+    -fx-padding: 0 4;
+    -fx-border-style: solid;
+    -fx-alignment: center-left;
+    -fx-font-family: $fontFamily;
+    -fx-font-size: $fontSizeh6;
+    -fx-text-fill: white;
+    -fx-border-color: #a4a4a4;
+    -fx-padding: 5;
+
+    &:odd {
+      -fx-background-color: -fx-base, derive(-fx-base, 35%);
+    }
+
+    &:filled:selected {
+      -fx-background-color: -fx-selection-bar;
+      -fx-text-fill: -fx-selection-bar-text;
+
+      &:hover {
+        -fx-background-color: -fx-cell-hover-color;
+        -fx-text-fill: black;
+      }
+    }
+
+    &:filled:hover {
+      -fx-background-color: -fx-cell-hover-color;
+      -fx-text-fill: black;
+    }
+  }
+
+
+}
+

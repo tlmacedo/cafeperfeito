@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmlDataAdapter class="net.sf.jasperreports.data.xml.XmlDataAdapterImpl">
+    <name>dtAdapter_v2.02.xml</name>
+    <dataFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="repositoryDataLocation">
+        <location>
+            /Volumes/150GB-Development/cafeperfeito/cafeperfeito_v2.01/src/main/resources/xml/nfe/out/NFe13200408009246000136550010000006031202004208.xml
+        </location>
+    </dataFile>
+    <useConnection>true</useConnection>
+    <namespaceAware>false</namespaceAware>
+    <selectExpression></selectExpression>
+    <locale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://java.sun.com"
+            xsi:type="java:java.lang.String">pt_BR
+    </locale>
+    <timeZone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://java.sun.com"
+              xsi:type="java:java.lang.String">GMT
+    </timeZone>
+</xmlDataAdapter>

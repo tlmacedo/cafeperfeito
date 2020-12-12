@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xsd_Config_Nfe">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.my_lib/xsd_Config_Nfe.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

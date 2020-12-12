@@ -1,0 +1,145 @@
+.tree-table-view {
+  //-fx-background-color: linear-gradient(to top, -fx-base, derive(-fx-base, 30%));
+
+  .column-header {
+    -fx-pref-height: 22px;
+
+    .label {
+      -fx-alignment: center-left;
+      -fx-text-fill: $corPricipal;
+      -fx-font-size: $fontSizeh5;
+      -fx-padding: 0 4;
+    }
+  }
+
+  &:row-selection .tree-table-row-cell:selected .cell, &:cell-selection .cell:selected {
+    -fx-background-color: -fx-selection-bar;
+    -fx-text-fill: -fx-selection-bar-text;
+  }
+
+  .tree-table-row-cell {
+    .cell {
+      -fx-background-color: linear-gradient(to top, -fx-base, derive(-fx-base, 30%));
+      -fx-pref-height: 20px;
+      -fx-text-fill: $sisColor_whiteblack;
+      -fx-font-size: $fontSizeh6;
+
+      -fx-padding: 0 4;
+      -fx-border-style: solid;
+      -fx-border-color: #a4a4a4;
+
+      &:odd {
+        -fx-background-color: -fx-base, derive(-fx-base, 35%);
+      }
+
+      //&:empty {
+      //  -fx-padding: 0;
+      //  -fx-border-style: null;
+      //  -fx-border-color: transparent;
+      //  -fx-background-color: transparent;
+      //}
+    }
+
+    &:selected {
+      -fx-background-color: transparent;
+    }
+
+    &:empty .cell {
+      -fx-padding: 0;
+      -fx-border-style: null;
+      -fx-border-color: transparent;
+      -fx-background-color: transparent;
+    }
+
+
+    &.produto-estoque {
+      .cell {
+        -fx-background-color: $corPricipal;
+
+        &:odd {
+          -fx-background-color: $corPricipal, derive($corPricipal, -25%);
+        }
+      }
+
+      &:selected .cell {
+        -fx-background-color: -fx-selection-bar;
+        -fx-text-fill: -fx-selection-bar-text;
+      }
+    }
+
+    &.recebimento-recebimento {
+      .cell {
+        -fx-background-color: rgba(255, 111, 0, 0.7);
+        //-fx-background-color: $corPricipal, derive($corPricipal, -75%);
+      }
+
+      &:selected .cell {
+        -fx-background-color: -fx-selection-bar;
+        -fx-text-fill: -fx-selection-bar-text;
+      }
+    }
+
+    &.recebimento-pendente {
+      .cell {
+        -fx-background-color: $recebimento-pendente-back;
+        -fx-text-fill: $recebimento-pendente-text;
+      }
+
+      &:selected .cell {
+        -fx-background-color: -fx-selection-bar;
+        -fx-text-fill: -fx-selection-bar-text;
+      }
+    }
+
+    &.recebimento-vencido {
+      .cell {
+        -fx-background-color: $recebimento-vencido-back;
+        -fx-text-fill: $recebimento-vencido-text;
+      }
+
+      &:selected .cell {
+        -fx-background-color: -fx-selection-bar;
+        -fx-text-fill: -fx-selection-bar-text;
+      }
+    }
+
+    &.recebimento-pago {
+      .cell {
+        -fx-background-color: $recebimento-pago-back;
+        -fx-text-fill: $recebimento-pago-text;
+      }
+
+      &:selected .cell {
+        -fx-background-color: -fx-selection-bar;
+        -fx-text-fill: -fx-selection-bar-text;
+      }
+    }
+
+    &.recebimento-cancelado {
+      .cell {
+        -fx-background-color: $recebimento-cancelado-back;
+        -fx-text-fill: $recebimento-cancelado-text;
+      }
+
+      &:selected .cell {
+        -fx-background-color: -fx-selection-bar;
+        -fx-text-fill: -fx-selection-bar-text;
+      }
+    }
+
+    &.recebimento-retirada {
+      .cell {
+        -fx-background-color: $recebimento-retirada-back;
+        -fx-text-fill: $recebimento-retirada-text;
+      }
+
+      &:selected .cell {
+        -fx-background-color: -fx-selection-bar;
+        -fx-text-fill: -fx-selection-bar-text;
+      }
+    }
+  }
+
+
+}
+

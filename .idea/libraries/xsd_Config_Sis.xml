@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xsd_Config_Sis">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.my_lib/xsd_Config_Sis.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

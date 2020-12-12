@@ -23,8 +23,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="nfe_v400" level="project" />
-    <orderEntry type="library" name="xsd_Config_Sis" level="project" />
     <orderEntry type="library" name="xsd_Config_Nfe" level="project" />
-    <orderEntry type="library" name="javaFX-15.0.1" level="project" />
+    <orderEntry type="library" name="xsd_Config_Sis" level="project" />
   </component>
 </module>

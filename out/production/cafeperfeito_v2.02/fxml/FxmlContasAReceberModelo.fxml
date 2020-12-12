@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="painelViewContasAReceber" maxHeight="-Infinity"
+            maxWidth="-Infinity" minHeight="0.0"
+            minWidth="0.0" prefHeight="780.0" prefWidth="1350.0"
+            stylesheets="@../style/css/cafeperfeito.css" xmlns="http://javafx.com/javafx/9"
+            fx:controller="br.com.tlmacedo.cafeperfeito.controller.ControllerContasAReceber">
+    <children>
+        <TitledPane fx:id="tpnContasAReceber" collapsible="false" focusTraversable="false" layoutX="5.0" layoutY="5.0"
+                    minHeight="0.0" minWidth="0.0" prefHeight="770.0" prefWidth="1340.0" text="Contas a receber">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="1340.0">
+                    <children>
+                        <TitledPane fx:id="tpnDetalhesContasAReceber" collapsible="false" layoutX="5.0" layoutY="5.0"
+                                    minHeight="0.0" minWidth="0.0" prefHeight="670.0" prefWidth="1330.0"
+                                    text="Detalhes">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <JFXDatePicker fx:id="dtpPesq1" defaultColor="#ff6600" layoutX="5.0"
+                                                       layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="20.0"
+                                                       prefWidth="90.0"/>
+                                        <JFXDatePicker fx:id="dtpPesq2" defaultColor="#ff6600" layoutX="105.0"
+                                                       layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="20.0"
+                                                       prefWidth="90.0"/>
+                                        <JFXCheckBox fx:id="chkDtVenda"
+                                                     accessibleText="len::;type::;value::true;seteditable::;"
+                                                     layoutX="205.0" layoutY="10.0" maxHeight="-Infinity"
+                                                     maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                                     prefHeight="20.0" prefWidth="80.0" selected="true"
+                                                     text="Dt. Venda"/>
+                                        <JFXTextField fx:id="txtPesquisaContasAReceber"
+                                                      accessibleText="len::80;type::TEXTO;value::;seteditable::;"
+                                                      labelFloat="true" layoutX="5.0" layoutY="40.0" maxHeight="20.0"
+                                                      prefColumnCount="8" prefHeight="20.0" prefWidth="360.0"
+                                                      promptText="Pesquisar conta">
+                                            <tooltip>
+                                                <Tooltip text="campo de pesquisa."/>
+                                            </tooltip>
+                                        </JFXTextField>
+                                        <Label fx:id="lblRegistrosLocalizados"
+                                               accessibleText="len::;type::;value::     registros localizados.;seteditable::;binding::true"
+                                               layoutX="440.0" layoutY="50.0" styleClass="lbl-informacoes"
+                                               text="Registros localizados">
+                                            <tooltip>
+                                                <Tooltip text="Quantidade de registros localizados"/>
+                                            </tooltip>
+                                        </Label>
+                                        <TreeTableView fx:id="ttvContasAReceber"
+                                                       accessibleText="len::;type::;value::;seteditable::;"
+                                                       layoutX="5.0" layoutY="70.0" minHeight="0.0" minWidth="0.0"
+                                                       nodeOrientation="LEFT_TO_RIGHT" prefHeight="358.0"
+                                                       prefWidth="1320.0">
+                                            <tooltip>
+                                                <Tooltip text="tabela com lista de produto"/>
+                                            </tooltip>
+                                        </TreeTableView>
+                                        <TitledPane fx:id="tpnRecebimento" collapsible="false" focusTraversable="false"
+                                                    layoutX="5.0" layoutY="435.0" minHeight="0.0" minWidth="0.0"
+                                                    prefHeight="209.0" prefWidth="1320.0" text="Recebimentos">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="1330.0">
+                                                    <children>
+                                                        <TableView fx:id="tvRecebimento"
+                                                                   accessibleText="len::;type::;value::;seteditable::;"
+                                                                   layoutX="5.0" layoutY="5.0" minHeight="0.0"
+                                                                   minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT"
+                                                                   prefHeight="120.0" prefWidth="1310.0">
+                                                            <tooltip>
+                                                                <Tooltip text="tabela com lista de produto"/>
+                                                            </tooltip>
+                                                        </TableView>
+                                                        <Label fx:id="labelTotalRecebimentoPago" layoutX="990.0"
+                                                               layoutY="126.0" prefHeight="20.0" prefWidth="150.0"
+                                                               styleClass="label-total-label" text="Total Pago"
+                                                               AnchorPane.bottomAnchor="30.0"/>
+                                                        <Label fx:id="lblTotalRecebimentoPago" layoutX="990.0"
+                                                               layoutY="150.0" prefHeight="20.0" prefWidth="150.0"
+                                                               styleClass="label-total-valor" text="Total Contas Aberta"
+                                                               AnchorPane.bottomAnchor="0.0"/>
+                                                        <Label fx:id="labelTotalRecebimentoAberto" layoutX="1160.0"
+                                                               layoutY="121.0" prefHeight="20.0" prefWidth="150.0"
+                                                               styleClass="label-total-label" text="Total Aberto"
+                                                               AnchorPane.bottomAnchor="30.0"/>
+                                                        <Label fx:id="lblTotalRecebimentoAberto" layoutX="1160.0"
+                                                               layoutY="145.0" prefHeight="20.0" prefWidth="150.0"
+                                                               styleClass="label-total-valor" text="Total Contas Aberta"
+                                                               AnchorPane.bottomAnchor="0.0"/>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </TitledPane>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </TitledPane>
+                        <Label fx:id="labelQtdClientes" layoutX="150.0" layoutY="165.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-label" text="Qtd Clientes"
+                               AnchorPane.bottomAnchor="30.0"/>
+                        <Label fx:id="lblQtdClientes" layoutX="150.0" layoutY="190.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-valor" text="Qtd Clientes"
+                               AnchorPane.bottomAnchor="0.0"/>
+                        <Label fx:id="labelQtdContas" layoutX="320.0" layoutY="165.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-label" text="Qtd Contas"
+                               AnchorPane.bottomAnchor="30.0"/>
+                        <Label fx:id="lblQtdContas" layoutX="320.0" layoutY="190.0" prefHeight="20.0" prefWidth="150.0"
+                               styleClass="label-total-valor" text="Qtd Contas" AnchorPane.bottomAnchor="0.0"/>
+                        <Label fx:id="labelQtdContasPaga" layoutX="490.0" layoutY="165.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-label" text="Qtd Contas Paga"
+                               AnchorPane.bottomAnchor="30.0"/>
+                        <Label fx:id="lblQtdContasPaga" layoutX="490.0" layoutY="190.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-valor" text="Qtd Contas Paga"
+                               AnchorPane.bottomAnchor="0.0"/>
+                        <Label fx:id="labelQtdContasAberta" layoutX="660.0" layoutY="165.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-label" text="Qtd Contas Aberta"
+                               AnchorPane.bottomAnchor="30.0"/>
+                        <Label fx:id="lblQtdContasAberta" layoutX="660.0" layoutY="190.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-valor" text="Qtd Contas Aberta"
+                               AnchorPane.bottomAnchor="0.0"/>
+                        <Label fx:id="labelTotalContas" layoutX="830.0" layoutY="165.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-label" text="Total Contas"
+                               AnchorPane.bottomAnchor="30.0"/>
+                        <Label fx:id="lblTotalContas" layoutX="830.0" layoutY="190.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-valor" text="Total Contas"
+                               AnchorPane.bottomAnchor="0.0"/>
+                        <Label fx:id="labelTotalContasPaga" layoutX="1000.0" layoutY="165.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-label" text="Total Pago"
+                               AnchorPane.bottomAnchor="30.0"/>
+                        <Label fx:id="lblTotalContasPaga" layoutX="1000.0" layoutY="190.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-valor" text="Total Contas Paga"
+                               AnchorPane.bottomAnchor="0.0"/>
+                        <Label fx:id="labelTotalContasAberta" layoutX="1170.0" layoutY="165.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-label" text="Total Aberto"
+                               AnchorPane.bottomAnchor="30.0"/>
+                        <Label fx:id="lblTotalContasAberta" layoutX="1170.0" layoutY="190.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-valor" text="Total Contas Aberta"
+                               AnchorPane.bottomAnchor="0.0"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+    </children>
+</AnchorPane>

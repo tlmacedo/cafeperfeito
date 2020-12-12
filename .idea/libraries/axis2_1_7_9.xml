@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="axis2-1.7.9">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/.my_lib/axis2-1.7.9/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/.my_lib/axis2-1.7.9/lib" recursive="false" />
+  </library>
+</component>

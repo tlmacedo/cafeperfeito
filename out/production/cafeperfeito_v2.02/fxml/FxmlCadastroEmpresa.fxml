@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ExpansionPanel?>
+<?import com.gluonhq.charm.glisten.control.ExpansionPanel.CollapsedPanel?>
+<?import com.gluonhq.charm.glisten.control.ExpansionPanel.ExpandedPanel?>
+<?import com.gluonhq.charm.glisten.mvc.View?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<View prefHeight="800.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="br.com.tlmacedo.cafeperfeito.controller.ControllerCadastroEmpresa">
+    <left>
+        <ExpansionPanel BorderPane.alignment="CENTER">
+            <expandedContent>
+                <ExpansionPanel.ExpandedPanel/>
+            </expandedContent>
+            <collapsedContent>
+                <ExpansionPanel.CollapsedPanel prefWidth="252">
+                    <titleNodes>
+                        <Label text="TripName"/>
+                        <Label text="Caribbean cruise"/>
+                    </titleNodes>
+                </ExpansionPanel.CollapsedPanel>
+            </collapsedContent>
+        </ExpansionPanel>
+    </left>
+</View>

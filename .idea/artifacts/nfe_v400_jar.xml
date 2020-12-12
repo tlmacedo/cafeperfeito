@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="nfe_v400:jar">
+    <output-path>$PROJECT_DIR$/.my_lib</output-path>
+    <root id="archive" name="nfe_v400.jar">
+      <element id="module-output" name="nfe_v400" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/.my_lib/xsd_Nfe_Cte.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/.my_lib/wsdl_Nfe_v400.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/16-ea+2/javafx-base-16-ea+2-mac.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/16-ea+2/javafx-graphics-16-ea+2-mac.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
