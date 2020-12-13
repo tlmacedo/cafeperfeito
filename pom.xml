@@ -186,7 +186,7 @@
 </project>
 
 
-        <!--        &#45;&#45;add-exports=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED-->
+<!--                &#45;&#45;add-exports=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED-->
         <!--        &#45;&#45;add-exports=javafx.graphics/com.sun.javafx.css=ALL-UNNAMED-->
         <!--        &#45;&#45;add-exports=javafx.graphics/com.sun.javafx.geom=ALL-UNNAMED-->
         <!--        &#45;&#45;add-exports=javafx.graphics/com.sun.javafx.scene=ALL-UNNAMED-->

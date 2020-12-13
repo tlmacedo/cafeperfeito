@@ -15,7 +15,7 @@ public class Main extends Application {
 
 //        new ViewLogin().openViewLogin(false);
 
-        new ViewPrincipal().openViewPrincipal();
+        new ViewPrincipal().openView();
 
     }
 }

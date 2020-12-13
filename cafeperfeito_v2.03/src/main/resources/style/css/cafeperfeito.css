@@ -48,10 +48,6 @@
     -fx-text-fill: #ff6600;
 }
 
-.anchor-pane .fxml-login {
-    -fx-border-radius: 8;
-}
-
 .combo-box {
     -fx-font-family: "Segoe UI Semibold";
     -fx-font-size: 10px;

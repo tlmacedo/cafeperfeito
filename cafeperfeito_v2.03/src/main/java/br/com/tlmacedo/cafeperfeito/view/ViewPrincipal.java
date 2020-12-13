@@ -1,6 +1,5 @@
 package br.com.tlmacedo.cafeperfeito.view;
 
-
 import br.com.tlmacedo.cafeperfeito.service.ServiceOpenView;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -20,7 +19,8 @@ public class ViewPrincipal {
         return stage;
     }
 
-    public void openViewPrincipal() {
+    public void openView() {
+
         stage = new Stage();
         Parent parent;
         Scene scene = null;
@@ -39,5 +39,7 @@ public class ViewPrincipal {
         scene.getStylesheets().setAll(getClass().getResource(TCONFIG.getPersonalizacao().getStyleSheetsMin()).toString());
 
         new ServiceOpenView(stage, false);
+
     }
+
 }

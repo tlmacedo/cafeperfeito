@@ -25,5 +25,27 @@
     <orderEntry type="library" name="nfe_v400" level="project" />
     <orderEntry type="library" name="xsd_Config_Nfe" level="project" />
     <orderEntry type="library" name="xsd_Config_Sis" level="project" />
+    <orderEntry type="library" name="Maven: com.jfoenix:jfoenix:9.0.10" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:mac:16-ea+2" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:mac:16-ea+2" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:mac:16-ea+2" level="project" />
+    <orderEntry type="library" name="Maven: javax.persistence:javax.persistence-api:2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:5.4.22.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.3.2.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.9" level="project" />
+    <orderEntry type="library" name="Maven: com.google.zxing:core:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: com.google.zxing:javase:3.3.3" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:28.2-jre" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-swing:mac:16-ea+2" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.10.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.10.3" level="project" />
+    <orderEntry type="library" name="Maven: org.json:json:20200518" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk15on:1.62" level="project" />
+    <orderEntry type="library" name="Maven: net.bytebuddy:byte-buddy:1.10.10" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate.common:hibernate-commons-annotations:5.1.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml:classmate:1.5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.dom4j:dom4j:2.1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss:jandex:2.1.3.Final" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.21" level="project" />
   </component>
 </module>
