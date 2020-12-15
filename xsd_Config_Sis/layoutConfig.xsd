@@ -165,7 +165,7 @@
                                     <xs:element name="fxml" type="Tstr"/>
                                     <xs:element name="titulo" type="Tstr"/>
                                     <xs:element name="iconeAtivo" type="Tstr"/>
-                                    <xs:element name="iconeDesativo" type="Tstr"/>
+                                    <xs:element name="iconeInativo" type="Tstr"/>
                                 </xs:sequence>
                             </xs:complexType>
                         </xs:element>

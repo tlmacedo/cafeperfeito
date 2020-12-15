@@ -7,7 +7,8 @@ import java.util.List;
 public enum FORM_VIEW {
 
     LOGIN(0, "Login"),
-    PRINCIPAL(1, "Principal");
+    PRINCIPAL(1, "Principal"),
+    EMPRESA(2, "Cadastro de Empresa");
 
     private Integer cod;
     private String descricao;
@@ -23,6 +24,14 @@ public enum FORM_VIEW {
             if (view.getCod().equals(codigo))
                 return view;
         throw new IllegalArgumentException("Id inválido!");
+    }
+
+    public static FORM_VIEW toEnum(String descricao) {
+        if (descricao == null) return null;
+        for (FORM_VIEW view : FORM_VIEW.values())
+            if (view.toString().equals(descricao))
+                return view;
+        throw new IllegalArgumentException("Descricao inválida!");
     }
 
     public static List<FORM_VIEW> getList() {

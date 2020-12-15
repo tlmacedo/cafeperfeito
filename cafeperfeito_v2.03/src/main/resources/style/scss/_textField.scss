@@ -1,7 +1,18 @@
-.text-field {
+.jfx-text-field, .text-field {
   -fx-font-size: $fontSizeh6;
   -fx-font-family: $fontFamily;
   -fx-text-fill: white;
   -fx-prompt-text-fill: #91939b;
 
+  -jfx-focus-color: $corJFX-Focus;
+  -jfx-unfocus-color: $corJFX-Unforcus;
+  -jfx-label-float: true;
+
+  .fxml-login & {
+    -fx-padding: 0 5;
+  }
+
+  &.a-direita {
+    -fx-alignment: center-right;
+  }
 }

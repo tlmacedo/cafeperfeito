@@ -19,30 +19,29 @@ public class ServiceConfigSis {
 
     private FileReader arqConfgSistema = null;
 
-//    public ServiceConfigSis() throws FileNotFoundException {
-//        System.setProperty("senhaDoCertificado", "4879");
-//        arqConfgSistema = new FileReader(getClass().getClassLoader().getResource("configSis.xml").getFile());
+    public ServiceConfigSis() throws FileNotFoundException {
+        arqConfgSistema = new FileReader(getClass().getClassLoader().getResource("configSis.xml").getFile());
 //        if (UsuarioLogado.getUsuario() == null) {
 //            UsuarioDAO usuarioDAO = new UsuarioDAO();
 //            UsuarioLogado.setUsuario(usuarioDAO.getById(Usuario.class, 1L));
 //        }
-//        new ServiceConfigNFe().getVariaveisNFe();
-//    }
-//
-//    public void getVariaveisSistema() {
-//        try {
-//            String xml = ServiceUtilXml.FileXml4String(getArqConfgSistema());
-//            TCONFIG = ServiceUtilXml.xmlToObject(xml, TConfig.class);
-//            MY_LOCALE = new Locale(TCONFIG.getMyLocale().substring(0, 2), TCONFIG.getMyLocale().substring(3));
-//            Locale.setDefault(MY_LOCALE);
-//            PATHICONE = TCONFIG.getPaths().getPathIconeSistema();
-//            PATHFXML = TCONFIG.getPaths().getPathFXML();
-//            SPLASH_IMAGENS = TCONFIG.getPersonalizacao().getSplashImagens().getImage();
-//            //IMG_DEFAULT_PRODUTO = new Image(getClass().getResource("image/default_produto.png").toString());
-//        } catch (JAXBException e) {
-//            e.printStackTrace();
-//        }
-//    }
+        new ServiceConfigNFe().getVariaveisNFe();
+    }
+
+    public void getVariaveisSistema() {
+        try {
+            String xml = ServiceUtilXml.FileXml4String(getArqConfgSistema());
+            TCONFIG = ServiceUtilXml.xmlToObject(xml, TConfig.class);
+            MY_LOCALE = new Locale(TCONFIG.getMyLocale().substring(0, 2), TCONFIG.getMyLocale().substring(3));
+            Locale.setDefault(MY_LOCALE);
+            PATHICONE = TCONFIG.getPaths().getPathIconeSistema();
+            PATHFXML = TCONFIG.getPaths().getPathFXML();
+            SPLASH_IMAGENS = TCONFIG.getPersonalizacao().getSplashImagens().getImage();
+            //IMG_DEFAULT_PRODUTO = new Image(getClass().getResource("image/default_produto.png").toString());
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void getVariaveisSistemaSimples() {
         try {

@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="xsd_Nfe_Cte:jar">
+  <artifact type="jar" name="xsd_Nfe_Cte:jar">
     <output-path>$PROJECT_DIR$/.my_lib</output-path>
     <root id="archive" name="xsd_Nfe_Cte.jar">
       <element id="module-output" name="xsd_Nfe_Cte" />

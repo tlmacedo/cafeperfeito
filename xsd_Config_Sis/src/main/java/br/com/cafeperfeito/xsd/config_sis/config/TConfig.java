@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementaxe7xe3o de Referxeancia (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificaxe7xf5es neste arquivo serxe3o perdidas apxf3s a recompilaxe7xe3o do esquema de origem. 
-// Gerado em: 2020.12.09 xe0s 02:25:00 PM AMT 
+// Gerado em: 2020.12.14 xe0s 07:23:44 PM AMT 
 //
 
 
@@ -201,7 +201,7 @@ import javax.xml.bind.annotation.XmlType;
  *                             &lt;element name="fxml" type="{}Tstr"/&gt;
  *                             &lt;element name="titulo" type="{}Tstr"/&gt;
  *                             &lt;element name="iconeAtivo" type="{}Tstr"/&gt;
- *                             &lt;element name="iconeDesativo" type="{}Tstr"/&gt;
+ *                             &lt;element name="iconeInativo" type="{}Tstr"/&gt;
  *                           &lt;/sequence&gt;
  *                         &lt;/restriction&gt;
  *                       &lt;/complexContent&gt;
@@ -407,6 +407,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "TConfig", propOrder = {
@@ -467,8 +469,10 @@ public class TConfig {
     /**
      * ObtxE9m o valor da propriedade timeOut.
      *
-     * @return possible object is
-     * {@link BigInteger }
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *
      */
     public BigInteger getTimeOut() {
         return timeOut;
@@ -477,8 +481,10 @@ public class TConfig {
     /**
      * Define o valor da propriedade timeOut.
      *
-     * @param value allowed object is
-     *              {@link BigInteger }
+     * @param value
+     *     allowed object is
+     *     {@link BigInteger }
+     *
      */
     public void setTimeOut(BigInteger value) {
         this.timeOut = value;
@@ -487,8 +493,10 @@ public class TConfig {
     /**
      * ObtxE9m o valor da propriedade versao.
      *
-     * @return possible object is
-     * {@link String }
+     * @return
+     *     possible object is
+     *     {@link String }
+     *
      */
     public String getVersao() {
         return versao;
@@ -497,8 +505,10 @@ public class TConfig {
     /**
      * Define o valor da propriedade versao.
      *
-     * @param value allowed object is
-     *              {@link String }
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *
      */
     public void setVersao(String value) {
         this.versao = value;
@@ -507,8 +517,10 @@ public class TConfig {
     /**
      * ObtxE9m o valor da propriedade sis.
      *
-     * @return possible object is
-     * {@link TConfig.Sis }
+     * @return
+     *     possible object is
+     *     {@link TConfig.Sis }
+     *
      */
     public TConfig.Sis getSis() {
         return sis;
@@ -517,8 +529,10 @@ public class TConfig {
     /**
      * Define o valor da propriedade sis.
      *
-     * @param value allowed object is
-     *              {@link TConfig.Sis }
+     * @param value
+     *     allowed object is
+     *     {@link TConfig.Sis }
+     *
      */
     public void setSis(TConfig.Sis value) {
         this.sis = value;
@@ -527,8 +541,10 @@ public class TConfig {
     /**
      * ObtxE9m o valor da propriedade infLoja.
      *
-     * @return possible object is
-     * {@link TConfig.InfLoja }
+     * @return
+     *     possible object is
+     *     {@link TConfig.InfLoja }
+     *
      */
     public TConfig.InfLoja getInfLoja() {
         return infLoja;
@@ -537,8 +553,10 @@ public class TConfig {
     /**
      * Define o valor da propriedade infLoja.
      *
-     * @param value allowed object is
-     *              {@link TConfig.InfLoja }
+     * @param value
+     *     allowed object is
+     *     {@link TConfig.InfLoja }
+     *
      */
     public void setInfLoja(TConfig.InfLoja value) {
         this.infLoja = value;
@@ -547,8 +565,10 @@ public class TConfig {
     /**
      * ObtxE9m o valor da propriedade personalizacao.
      *
-     * @return possible object is
-     * {@link TConfig.Personalizacao }
+     * @return
+     *     possible object is
+     *     {@link TConfig.Personalizacao }
+     *
      */
     public TConfig.Personalizacao getPersonalizacao() {
         return personalizacao;
@@ -557,8 +577,10 @@ public class TConfig {
     /**
      * Define o valor da propriedade personalizacao.
      *
-     * @param value allowed object is
-     *              {@link TConfig.Personalizacao }
+     * @param value
+     *     allowed object is
+     *     {@link TConfig.Personalizacao }
+     *
      */
     public void setPersonalizacao(TConfig.Personalizacao value) {
         this.personalizacao = value;
@@ -567,8 +589,10 @@ public class TConfig {
     /**
      * ObtxE9m o valor da propriedade paths.
      *
-     * @return possible object is
-     * {@link TConfig.Paths }
+     * @return
+     *     possible object is
+     *     {@link TConfig.Paths }
+     *
      */
     public TConfig.Paths getPaths() {
         return paths;
@@ -577,8 +601,10 @@ public class TConfig {
     /**
      * Define o valor da propriedade paths.
      *
-     * @param value allowed object is
-     *              {@link TConfig.Paths }
+     * @param value
+     *     allowed object is
+     *     {@link TConfig.Paths }
+     *
      */
     public void setPaths(TConfig.Paths value) {
         this.paths = value;
@@ -587,8 +613,10 @@ public class TConfig {
     /**
      * ObtxE9m o valor da propriedade fxml.
      *
-     * @return possible object is
-     * {@link TConfig.Fxml }
+     * @return
+     *     possible object is
+     *     {@link TConfig.Fxml }
+     *
      */
     public TConfig.Fxml getFxml() {
         return fxml;
@@ -597,8 +625,10 @@ public class TConfig {
     /**
      * Define o valor da propriedade fxml.
      *
-     * @param value allowed object is
-     *              {@link TConfig.Fxml }
+     * @param value
+     *     allowed object is
+     *     {@link TConfig.Fxml }
+     *
      */
     public void setFxml(TConfig.Fxml value) {
         this.fxml = value;
@@ -607,8 +637,10 @@ public class TConfig {
     /**
      * ObtxE9m o valor da propriedade ws.
      *
-     * @return possible object is
-     * {@link TConfig.Ws }
+     * @return
+     *     possible object is
+     *     {@link TConfig.Ws }
+     *
      */
     public TConfig.Ws getWs() {
         return ws;
@@ -617,8 +649,10 @@ public class TConfig {
     /**
      * Define o valor da propriedade ws.
      *
-     * @param value allowed object is
-     *              {@link TConfig.Ws }
+     * @param value
+     *     allowed object is
+     *     {@link TConfig.Ws }
+     *
      */
     public void setWs(TConfig.Ws value) {
         this.ws = value;
@@ -627,8 +661,10 @@ public class TConfig {
     /**
      * ObtxE9m o valor da propriedade statusBars.
      *
-     * @return possible object is
-     * {@link StatusBars }
+     * @return
+     *     possible object is
+     *     {@link StatusBars }
+     *
      */
     public StatusBars getStatusBars() {
         return statusBars;
@@ -637,8 +673,10 @@ public class TConfig {
     /**
      * Define o valor da propriedade statusBars.
      *
-     * @param value allowed object is
-     *              {@link StatusBars }
+     * @param value
+     *     allowed object is
+     *     {@link StatusBars }
+     *
      */
     public void setStatusBars(StatusBars value) {
         this.statusBars = value;
@@ -676,7 +714,7 @@ public class TConfig {
      *                   &lt;element name="fxml" type="{}Tstr"/&gt;
      *                   &lt;element name="titulo" type="{}Tstr"/&gt;
      *                   &lt;element name="iconeAtivo" type="{}Tstr"/&gt;
-     *                   &lt;element name="iconeDesativo" type="{}Tstr"/&gt;
+     *                   &lt;element name="iconeInativo" type="{}Tstr"/&gt;
      *                 &lt;/sequence&gt;
      *               &lt;/restriction&gt;
      *             &lt;/complexContent&gt;
@@ -791,6 +829,8 @@ public class TConfig {
      *   &lt;/complexContent&gt;
      * &lt;/complexType&gt;
      * </pre>
+     *
+     *
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -831,8 +871,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade login.
          *
-         * @return possible object is
-         * {@link TConfig.Fxml.Login }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Fxml.Login }
+         *
          */
         public TConfig.Fxml.Login getLogin() {
             return login;
@@ -841,8 +883,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade login.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Fxml.Login }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Fxml.Login }
+         *
          */
         public void setLogin(TConfig.Fxml.Login value) {
             this.login = value;
@@ -851,8 +895,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade principal.
          *
-         * @return possible object is
-         * {@link TConfig.Fxml.Principal }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Fxml.Principal }
+         *
          */
         public TConfig.Fxml.Principal getPrincipal() {
             return principal;
@@ -861,8 +907,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade principal.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Fxml.Principal }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Fxml.Principal }
+         *
          */
         public void setPrincipal(TConfig.Fxml.Principal value) {
             this.principal = value;
@@ -871,8 +919,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade cadastroProduto.
          *
-         * @return possible object is
-         * {@link TConfig.Fxml.CadastroProduto }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Fxml.CadastroProduto }
+         *
          */
         public TConfig.Fxml.CadastroProduto getCadastroProduto() {
             return cadastroProduto;
@@ -881,8 +931,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade cadastroProduto.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Fxml.CadastroProduto }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Fxml.CadastroProduto }
+         *
          */
         public void setCadastroProduto(TConfig.Fxml.CadastroProduto value) {
             this.cadastroProduto = value;
@@ -891,8 +943,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade cadastroEmpresa.
          *
-         * @return possible object is
-         * {@link TConfig.Fxml.CadastroEmpresa }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Fxml.CadastroEmpresa }
+         *
          */
         public TConfig.Fxml.CadastroEmpresa getCadastroEmpresa() {
             return cadastroEmpresa;
@@ -901,8 +955,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade cadastroEmpresa.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Fxml.CadastroEmpresa }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Fxml.CadastroEmpresa }
+         *
          */
         public void setCadastroEmpresa(TConfig.Fxml.CadastroEmpresa value) {
             this.cadastroEmpresa = value;
@@ -911,8 +967,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade entradaProduto.
          *
-         * @return possible object is
-         * {@link TConfig.Fxml.EntradaProduto }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Fxml.EntradaProduto }
+         *
          */
         public TConfig.Fxml.EntradaProduto getEntradaProduto() {
             return entradaProduto;
@@ -921,8 +979,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade entradaProduto.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Fxml.EntradaProduto }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Fxml.EntradaProduto }
+         *
          */
         public void setEntradaProduto(TConfig.Fxml.EntradaProduto value) {
             this.entradaProduto = value;
@@ -931,8 +991,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade saidaProduto.
          *
-         * @return possible object is
-         * {@link TConfig.Fxml.SaidaProduto }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Fxml.SaidaProduto }
+         *
          */
         public TConfig.Fxml.SaidaProduto getSaidaProduto() {
             return saidaProduto;
@@ -941,8 +1003,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade saidaProduto.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Fxml.SaidaProduto }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Fxml.SaidaProduto }
+         *
          */
         public void setSaidaProduto(TConfig.Fxml.SaidaProduto value) {
             this.saidaProduto = value;
@@ -951,8 +1015,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade contasAReceber.
          *
-         * @return possible object is
-         * {@link TConfig.Fxml.ContasAReceber }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Fxml.ContasAReceber }
+         *
          */
         public TConfig.Fxml.ContasAReceber getContasAReceber() {
             return contasAReceber;
@@ -961,8 +1027,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade contasAReceber.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Fxml.ContasAReceber }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Fxml.ContasAReceber }
+         *
          */
         public void setContasAReceber(TConfig.Fxml.ContasAReceber value) {
             this.contasAReceber = value;
@@ -971,8 +1039,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pedidoNFe.
          *
-         * @return possible object is
-         * {@link TConfig.Fxml.PedidoNFe }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Fxml.PedidoNFe }
+         *
          */
         public TConfig.Fxml.PedidoNFe getPedidoNFe() {
             return pedidoNFe;
@@ -981,8 +1051,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pedidoNFe.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Fxml.PedidoNFe }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Fxml.PedidoNFe }
+         *
          */
         public void setPedidoNFe(TConfig.Fxml.PedidoNFe value) {
             this.pedidoNFe = value;
@@ -991,8 +1063,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade recebimento.
          *
-         * @return possible object is
-         * {@link TConfig.Fxml.Recebimento }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Fxml.Recebimento }
+         *
          */
         public TConfig.Fxml.Recebimento getRecebimento() {
             return recebimento;
@@ -1001,8 +1075,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade recebimento.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Fxml.Recebimento }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Fxml.Recebimento }
+         *
          */
         public void setRecebimento(TConfig.Fxml.Recebimento value) {
             this.recebimento = value;
@@ -1011,8 +1087,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade contasAPagar.
          *
-         * @return possible object is
-         * {@link TConfig.Fxml.ContasAPagar }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Fxml.ContasAPagar }
+         *
          */
         public TConfig.Fxml.ContasAPagar getContasAPagar() {
             return contasAPagar;
@@ -1021,8 +1099,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade contasAPagar.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Fxml.ContasAPagar }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Fxml.ContasAPagar }
+         *
          */
         public void setContasAPagar(TConfig.Fxml.ContasAPagar value) {
             this.contasAPagar = value;
@@ -1047,6 +1127,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -1066,8 +1148,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade fxml.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getFxml() {
                 return fxml;
@@ -1076,8 +1160,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade fxml.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setFxml(String value) {
                 this.fxml = value;
@@ -1086,8 +1172,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade titulo.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getTitulo() {
                 return titulo;
@@ -1096,8 +1184,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade titulo.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setTitulo(String value) {
                 this.titulo = value;
@@ -1106,8 +1196,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade icone.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getIcone() {
                 return icone;
@@ -1116,8 +1208,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade icone.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setIcone(String value) {
                 this.icone = value;
@@ -1144,6 +1238,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -1163,8 +1259,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade fxml.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getFxml() {
                 return fxml;
@@ -1173,8 +1271,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade fxml.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setFxml(String value) {
                 this.fxml = value;
@@ -1183,8 +1283,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade titulo.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getTitulo() {
                 return titulo;
@@ -1193,8 +1295,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade titulo.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setTitulo(String value) {
                 this.titulo = value;
@@ -1203,8 +1307,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade icone.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getIcone() {
                 return icone;
@@ -1213,8 +1319,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade icone.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setIcone(String value) {
                 this.icone = value;
@@ -1241,6 +1349,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -1260,8 +1370,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade fxml.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getFxml() {
                 return fxml;
@@ -1270,8 +1382,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade fxml.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setFxml(String value) {
                 this.fxml = value;
@@ -1280,8 +1394,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade titulo.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getTitulo() {
                 return titulo;
@@ -1290,8 +1406,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade titulo.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setTitulo(String value) {
                 this.titulo = value;
@@ -1300,8 +1418,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade icone.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getIcone() {
                 return icone;
@@ -1310,8 +1430,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade icone.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setIcone(String value) {
                 this.icone = value;
@@ -1338,6 +1460,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -1357,8 +1481,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade fxml.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getFxml() {
                 return fxml;
@@ -1367,8 +1493,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade fxml.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setFxml(String value) {
                 this.fxml = value;
@@ -1377,8 +1505,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade titulo.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getTitulo() {
                 return titulo;
@@ -1387,8 +1517,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade titulo.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setTitulo(String value) {
                 this.titulo = value;
@@ -1397,8 +1529,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade icone.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getIcone() {
                 return icone;
@@ -1407,8 +1541,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade icone.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setIcone(String value) {
                 this.icone = value;
@@ -1435,6 +1571,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -1454,8 +1592,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade fxml.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getFxml() {
                 return fxml;
@@ -1464,8 +1604,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade fxml.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setFxml(String value) {
                 this.fxml = value;
@@ -1474,8 +1616,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade titulo.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getTitulo() {
                 return titulo;
@@ -1484,8 +1628,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade titulo.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setTitulo(String value) {
                 this.titulo = value;
@@ -1494,8 +1640,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade icone.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getIcone() {
                 return icone;
@@ -1504,8 +1652,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade icone.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setIcone(String value) {
                 this.icone = value;
@@ -1532,6 +1682,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -1551,8 +1703,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade fxml.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getFxml() {
                 return fxml;
@@ -1561,8 +1715,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade fxml.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setFxml(String value) {
                 this.fxml = value;
@@ -1571,8 +1727,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade titulo.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getTitulo() {
                 return titulo;
@@ -1581,8 +1739,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade titulo.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setTitulo(String value) {
                 this.titulo = value;
@@ -1591,8 +1751,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade icone.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getIcone() {
                 return icone;
@@ -1601,8 +1763,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade icone.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setIcone(String value) {
                 this.icone = value;
@@ -1629,6 +1793,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -1648,8 +1814,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade fxml.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getFxml() {
                 return fxml;
@@ -1658,8 +1826,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade fxml.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setFxml(String value) {
                 this.fxml = value;
@@ -1668,8 +1838,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade titulo.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getTitulo() {
                 return titulo;
@@ -1678,8 +1850,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade titulo.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setTitulo(String value) {
                 this.titulo = value;
@@ -1688,8 +1862,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade icone.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getIcone() {
                 return icone;
@@ -1698,8 +1874,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade icone.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setIcone(String value) {
                 this.icone = value;
@@ -1721,19 +1899,21 @@ public class TConfig {
          *         &lt;element name="fxml" type="{}Tstr"/&gt;
          *         &lt;element name="titulo" type="{}Tstr"/&gt;
          *         &lt;element name="iconeAtivo" type="{}Tstr"/&gt;
-         *         &lt;element name="iconeDesativo" type="{}Tstr"/&gt;
+         *         &lt;element name="iconeInativo" type="{}Tstr"/&gt;
          *       &lt;/sequence&gt;
          *     &lt;/restriction&gt;
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
                 "fxml",
                 "titulo",
                 "iconeAtivo",
-                "iconeDesativo"
+                "iconeInativo"
         })
         public static class Principal {
 
@@ -1744,13 +1924,15 @@ public class TConfig {
             @XmlElement(required = true)
             protected String iconeAtivo;
             @XmlElement(required = true)
-            protected String iconeDesativo;
+            protected String iconeInativo;
 
             /**
              * ObtxE9m o valor da propriedade fxml.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getFxml() {
                 return fxml;
@@ -1759,8 +1941,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade fxml.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setFxml(String value) {
                 this.fxml = value;
@@ -1769,8 +1953,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade titulo.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getTitulo() {
                 return titulo;
@@ -1779,8 +1965,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade titulo.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setTitulo(String value) {
                 this.titulo = value;
@@ -1789,8 +1977,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade iconeAtivo.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getIconeAtivo() {
                 return iconeAtivo;
@@ -1799,31 +1989,37 @@ public class TConfig {
             /**
              * Define o valor da propriedade iconeAtivo.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setIconeAtivo(String value) {
                 this.iconeAtivo = value;
             }
 
             /**
-             * ObtxE9m o valor da propriedade iconeDesativo.
+             * ObtxE9m o valor da propriedade iconeInativo.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
-            public String getIconeDesativo() {
-                return iconeDesativo;
+            public String getIconeInativo() {
+                return iconeInativo;
             }
 
             /**
-             * Define o valor da propriedade iconeDesativo.
+             * Define o valor da propriedade iconeInativo.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
-            public void setIconeDesativo(String value) {
-                this.iconeDesativo = value;
+            public void setIconeInativo(String value) {
+                this.iconeInativo = value;
             }
 
         }
@@ -1847,6 +2043,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -1866,8 +2064,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade fxml.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getFxml() {
                 return fxml;
@@ -1876,8 +2076,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade fxml.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setFxml(String value) {
                 this.fxml = value;
@@ -1886,8 +2088,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade titulo.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getTitulo() {
                 return titulo;
@@ -1896,8 +2100,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade titulo.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setTitulo(String value) {
                 this.titulo = value;
@@ -1906,8 +2112,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade icone.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getIcone() {
                 return icone;
@@ -1916,8 +2124,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade icone.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setIcone(String value) {
                 this.icone = value;
@@ -1944,6 +2154,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -1963,8 +2175,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade fxml.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getFxml() {
                 return fxml;
@@ -1973,8 +2187,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade fxml.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setFxml(String value) {
                 this.fxml = value;
@@ -1983,8 +2199,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade titulo.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getTitulo() {
                 return titulo;
@@ -1993,8 +2211,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade titulo.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setTitulo(String value) {
                 this.titulo = value;
@@ -2003,8 +2223,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade icone.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getIcone() {
                 return icone;
@@ -2013,8 +2235,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade icone.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setIcone(String value) {
                 this.icone = value;
@@ -2064,6 +2288,8 @@ public class TConfig {
      *   &lt;/complexContent&gt;
      * &lt;/complexType&gt;
      * </pre>
+     *
+     *
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -2113,8 +2339,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade id.
          *
-         * @return possible object is
-         * {@link BigInteger }
+         * @return
+         *     possible object is
+         *     {@link BigInteger }
+         *
          */
         public BigInteger getId() {
             return id;
@@ -2123,8 +2351,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade id.
          *
-         * @param value allowed object is
-         *              {@link BigInteger }
+         * @param value
+         *     allowed object is
+         *     {@link BigInteger }
+         *
          */
         public void setId(BigInteger value) {
             this.id = value;
@@ -2133,8 +2363,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade cnpj.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getCnpj() {
             return cnpj;
@@ -2143,8 +2375,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade cnpj.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setCnpj(String value) {
             this.cnpj = value;
@@ -2153,8 +2387,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade titulo.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getTitulo() {
             return titulo;
@@ -2163,8 +2399,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade titulo.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setTitulo(String value) {
             this.titulo = value;
@@ -2173,8 +2411,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade copyright.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getCopyright() {
             return copyright;
@@ -2183,8 +2423,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade copyright.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setCopyright(String value) {
             this.copyright = value;
@@ -2193,8 +2435,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade uf.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getUf() {
             return uf;
@@ -2203,8 +2447,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade uf.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setUf(String value) {
             this.uf = value;
@@ -2213,8 +2459,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade cuf.
          *
-         * @return possible object is
-         * {@link BigInteger }
+         * @return
+         *     possible object is
+         *     {@link BigInteger }
+         *
          */
         public BigInteger getCUF() {
             return cuf;
@@ -2223,8 +2471,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade cuf.
          *
-         * @param value allowed object is
-         *              {@link BigInteger }
+         * @param value
+         *     allowed object is
+         *     {@link BigInteger }
+         *
          */
         public void setCUF(BigInteger value) {
             this.cuf = value;
@@ -2233,8 +2483,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade municipio.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getMunicipio() {
             return municipio;
@@ -2243,8 +2495,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade municipio.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setMunicipio(String value) {
             this.municipio = value;
@@ -2253,8 +2507,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade ddd.
          *
-         * @return possible object is
-         * {@link BigInteger }
+         * @return
+         *     possible object is
+         *     {@link BigInteger }
+         *
          */
         public BigInteger getDdd() {
             return ddd;
@@ -2263,8 +2519,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade ddd.
          *
-         * @param value allowed object is
-         *              {@link BigInteger }
+         * @param value
+         *     allowed object is
+         *     {@link BigInteger }
+         *
          */
         public void setDdd(BigInteger value) {
             this.ddd = value;
@@ -2273,8 +2531,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade descMax.
          *
-         * @return possible object is
-         * {@link BigDecimal }
+         * @return
+         *     possible object is
+         *     {@link BigDecimal }
+         *
          */
         public BigDecimal getDescMax() {
             return descMax;
@@ -2283,8 +2543,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade descMax.
          *
-         * @param value allowed object is
-         *              {@link BigDecimal }
+         * @param value
+         *     allowed object is
+         *     {@link BigDecimal }
+         *
          */
         public void setDescMax(BigDecimal value) {
             this.descMax = value;
@@ -2293,8 +2555,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade banco.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getBanco() {
             return banco;
@@ -2303,8 +2567,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade banco.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setBanco(String value) {
             this.banco = value;
@@ -2313,8 +2579,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade agencia.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getAgencia() {
             return agencia;
@@ -2323,8 +2591,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade agencia.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setAgencia(String value) {
             this.agencia = value;
@@ -2333,8 +2603,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade contaCorrente.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getContaCorrente() {
             return contaCorrente;
@@ -2343,8 +2615,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade contaCorrente.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setContaCorrente(String value) {
             this.contaCorrente = value;
@@ -2353,8 +2627,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade imageDefaultProduto.
          *
-         * @return possible object is
-         * {@link TConfig.InfLoja.ImageDefaultProduto }
+         * @return
+         *     possible object is
+         *     {@link TConfig.InfLoja.ImageDefaultProduto }
+         *
          */
         public TConfig.InfLoja.ImageDefaultProduto getImageDefaultProduto() {
             return imageDefaultProduto;
@@ -2363,8 +2639,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade imageDefaultProduto.
          *
-         * @param value allowed object is
-         *              {@link TConfig.InfLoja.ImageDefaultProduto }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.InfLoja.ImageDefaultProduto }
+         *
          */
         public void setImageDefaultProduto(TConfig.InfLoja.ImageDefaultProduto value) {
             this.imageDefaultProduto = value;
@@ -2388,6 +2666,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -2404,8 +2684,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade width.
              *
-             * @return possible object is
-             * {@link BigInteger }
+             * @return
+             *     possible object is
+             *     {@link BigInteger }
+             *
              */
             public BigInteger getWidth() {
                 return width;
@@ -2414,8 +2696,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade width.
              *
-             * @param value allowed object is
-             *              {@link BigInteger }
+             * @param value
+             *     allowed object is
+             *     {@link BigInteger }
+             *
              */
             public void setWidth(BigInteger value) {
                 this.width = value;
@@ -2424,8 +2708,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade height.
              *
-             * @return possible object is
-             * {@link BigInteger }
+             * @return
+             *     possible object is
+             *     {@link BigInteger }
+             *
              */
             public BigInteger getHeight() {
                 return height;
@@ -2434,8 +2720,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade height.
              *
-             * @param value allowed object is
-             *              {@link BigInteger }
+             * @param value
+             *     allowed object is
+             *     {@link BigInteger }
+             *
              */
             public void setHeight(BigInteger value) {
                 this.height = value;
@@ -2478,6 +2766,8 @@ public class TConfig {
      *   &lt;/complexContent&gt;
      * &lt;/complexType&gt;
      * </pre>
+     *
+     *
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -2539,8 +2829,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade versaoDanfeNFe.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getVersaoDanfeNFe() {
             return versaoDanfeNFe;
@@ -2549,8 +2841,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade versaoDanfeNFe.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setVersaoDanfeNFe(String value) {
             this.versaoDanfeNFe = value;
@@ -2559,8 +2853,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade versaoRecibo.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getVersaoRecibo() {
             return versaoRecibo;
@@ -2569,8 +2865,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade versaoRecibo.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setVersaoRecibo(String value) {
             this.versaoRecibo = value;
@@ -2579,8 +2877,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pathDanfeNFe.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getPathDanfeNFe() {
             return pathDanfeNFe;
@@ -2589,8 +2889,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pathDanfeNFe.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setPathDanfeNFe(String value) {
             this.pathDanfeNFe = value;
@@ -2599,8 +2901,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pathRecibo.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getPathRecibo() {
             return pathRecibo;
@@ -2609,8 +2913,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pathRecibo.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setPathRecibo(String value) {
             this.pathRecibo = value;
@@ -2619,8 +2925,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pathSalvarArquivo.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getPathSalvarArquivo() {
             return pathSalvarArquivo;
@@ -2629,8 +2937,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pathSalvarArquivo.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setPathSalvarArquivo(String value) {
             this.pathSalvarArquivo = value;
@@ -2639,8 +2949,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pathIconeSistema.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getPathIconeSistema() {
             return pathIconeSistema;
@@ -2649,8 +2961,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pathIconeSistema.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setPathIconeSistema(String value) {
             this.pathIconeSistema = value;
@@ -2659,8 +2973,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pathStyleSheets.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getPathStyleSheets() {
             return pathStyleSheets;
@@ -2669,8 +2985,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pathStyleSheets.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setPathStyleSheets(String value) {
             this.pathStyleSheets = value;
@@ -2679,8 +2997,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pathFXML.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getPathFXML() {
             return pathFXML;
@@ -2689,8 +3009,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pathFXML.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setPathFXML(String value) {
             this.pathFXML = value;
@@ -2699,8 +3021,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pathDownloadImage.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getPathDownloadImage() {
             return pathDownloadImage;
@@ -2709,8 +3033,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pathDownloadImage.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setPathDownloadImage(String value) {
             this.pathDownloadImage = value;
@@ -2719,8 +3045,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pathNFeSaveXmlOut.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getPathNFeSaveXmlOut() {
             return pathNFeSaveXmlOut;
@@ -2729,8 +3057,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pathNFeSaveXmlOut.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setPathNFeSaveXmlOut(String value) {
             this.pathNFeSaveXmlOut = value;
@@ -2739,8 +3069,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pathNFeSaveXmlIn.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getPathNFeSaveXmlIn() {
             return pathNFeSaveXmlIn;
@@ -2749,8 +3081,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pathNFeSaveXmlIn.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setPathNFeSaveXmlIn(String value) {
             this.pathNFeSaveXmlIn = value;
@@ -2759,8 +3093,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pathCTeSaveXmlOut.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getPathCTeSaveXmlOut() {
             return pathCTeSaveXmlOut;
@@ -2769,8 +3105,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pathCTeSaveXmlOut.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setPathCTeSaveXmlOut(String value) {
             this.pathCTeSaveXmlOut = value;
@@ -2779,8 +3117,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pathCTeSaveXmlIn.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getPathCTeSaveXmlIn() {
             return pathCTeSaveXmlIn;
@@ -2789,8 +3129,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pathCTeSaveXmlIn.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setPathCTeSaveXmlIn(String value) {
             this.pathCTeSaveXmlIn = value;
@@ -2799,8 +3141,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pathNFeGetXmlOut.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getPathNFeGetXmlOut() {
             return pathNFeGetXmlOut;
@@ -2809,8 +3153,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pathNFeGetXmlOut.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setPathNFeGetXmlOut(String value) {
             this.pathNFeGetXmlOut = value;
@@ -2819,8 +3165,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pathNFeGetXmlIn.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getPathNFeGetXmlIn() {
             return pathNFeGetXmlIn;
@@ -2829,8 +3177,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pathNFeGetXmlIn.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setPathNFeGetXmlIn(String value) {
             this.pathNFeGetXmlIn = value;
@@ -2839,8 +3189,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pathCTeGetXmlOut.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getPathCTeGetXmlOut() {
             return pathCTeGetXmlOut;
@@ -2849,8 +3201,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pathCTeGetXmlOut.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setPathCTeGetXmlOut(String value) {
             this.pathCTeGetXmlOut = value;
@@ -2859,8 +3213,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade pathCTeGetXmlIn.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getPathCTeGetXmlIn() {
             return pathCTeGetXmlIn;
@@ -2869,8 +3225,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade pathCTeGetXmlIn.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setPathCTeGetXmlIn(String value) {
             this.pathCTeGetXmlIn = value;
@@ -2908,6 +3266,8 @@ public class TConfig {
      *   &lt;/complexContent&gt;
      * &lt;/complexType&gt;
      * </pre>
+     *
+     *
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -2930,8 +3290,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade tema.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getTema() {
             return tema;
@@ -2940,8 +3302,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade tema.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setTema(String value) {
             this.tema = value;
@@ -2950,8 +3314,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade styleSheets.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getStyleSheets() {
             return styleSheets;
@@ -2960,8 +3326,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade styleSheets.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setStyleSheets(String value) {
             this.styleSheets = value;
@@ -2970,8 +3338,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade styleSheetsMin.
          *
-         * @return possible object is
-         * {@link String }
+         * @return
+         *     possible object is
+         *     {@link String }
+         *
          */
         public String getStyleSheetsMin() {
             return styleSheetsMin;
@@ -2980,8 +3350,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade styleSheetsMin.
          *
-         * @param value allowed object is
-         *              {@link String }
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *
          */
         public void setStyleSheetsMin(String value) {
             this.styleSheetsMin = value;
@@ -2990,8 +3362,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade splashImagens.
          *
-         * @return possible object is
-         * {@link TConfig.Personalizacao.SplashImagens }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Personalizacao.SplashImagens }
+         *
          */
         public TConfig.Personalizacao.SplashImagens getSplashImagens() {
             return splashImagens;
@@ -3000,8 +3374,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade splashImagens.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Personalizacao.SplashImagens }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Personalizacao.SplashImagens }
+         *
          */
         public void setSplashImagens(TConfig.Personalizacao.SplashImagens value) {
             this.splashImagens = value;
@@ -3024,6 +3400,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -3053,6 +3431,8 @@ public class TConfig {
              * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link String }
+             *
+             *
              */
             public List<String> getImage() {
                 if (image == null) {
@@ -3128,6 +3508,8 @@ public class TConfig {
      *   &lt;/complexContent&gt;
      * &lt;/complexType&gt;
      * </pre>
+     *
+     *
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -3147,8 +3529,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade connectDB.
          *
-         * @return possible object is
-         * {@link TConfig.Sis.ConnectDB }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Sis.ConnectDB }
+         *
          */
         public TConfig.Sis.ConnectDB getConnectDB() {
             return connectDB;
@@ -3157,8 +3541,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade connectDB.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Sis.ConnectDB }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Sis.ConnectDB }
+         *
          */
         public void setConnectDB(TConfig.Sis.ConnectDB value) {
             this.connectDB = value;
@@ -3167,8 +3553,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade filesType.
          *
-         * @return possible object is
-         * {@link TConfig.Sis.FilesType }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Sis.FilesType }
+         *
          */
         public TConfig.Sis.FilesType getFilesType() {
             return filesType;
@@ -3177,8 +3565,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade filesType.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Sis.FilesType }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Sis.FilesType }
+         *
          */
         public void setFilesType(TConfig.Sis.FilesType value) {
             this.filesType = value;
@@ -3187,8 +3577,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade maskCaracter.
          *
-         * @return possible object is
-         * {@link TConfig.Sis.MaskCaracter }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Sis.MaskCaracter }
+         *
          */
         public TConfig.Sis.MaskCaracter getMaskCaracter() {
             return maskCaracter;
@@ -3197,8 +3589,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade maskCaracter.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Sis.MaskCaracter }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Sis.MaskCaracter }
+         *
          */
         public void setMaskCaracter(TConfig.Sis.MaskCaracter value) {
             this.maskCaracter = value;
@@ -3229,6 +3623,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -3266,8 +3662,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade dbDriver.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getDbDriver() {
                 return dbDriver;
@@ -3276,8 +3674,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade dbDriver.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setDbDriver(String value) {
                 this.dbDriver = value;
@@ -3286,8 +3686,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade dbDriverConn.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getDbDriverConn() {
                 return dbDriverConn;
@@ -3296,8 +3698,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade dbDriverConn.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setDbDriverConn(String value) {
                 this.dbDriverConn = value;
@@ -3306,8 +3710,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade dbHost.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getDbHost() {
                 return dbHost;
@@ -3316,8 +3722,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade dbHost.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setDbHost(String value) {
                 this.dbHost = value;
@@ -3326,8 +3734,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade dbPorta.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getDbPorta() {
                 return dbPorta;
@@ -3336,8 +3746,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade dbPorta.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setDbPorta(String value) {
                 this.dbPorta = value;
@@ -3346,8 +3758,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade dbDatabase.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getDbDatabase() {
                 return dbDatabase;
@@ -3356,8 +3770,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade dbDatabase.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setDbDatabase(String value) {
                 this.dbDatabase = value;
@@ -3366,8 +3782,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade dbAddConfig.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getDbAddConfig() {
                 return dbAddConfig;
@@ -3376,8 +3794,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade dbAddConfig.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setDbAddConfig(String value) {
                 this.dbAddConfig = value;
@@ -3386,8 +3806,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade dbUrl.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getDbUrl() {
                 return dbUrl;
@@ -3396,8 +3818,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade dbUrl.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setDbUrl(String value) {
                 this.dbUrl = value;
@@ -3406,8 +3830,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade dbUser.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getDbUser() {
                 return dbUser;
@@ -3416,8 +3842,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade dbUser.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setDbUser(String value) {
                 this.dbUser = value;
@@ -3426,8 +3854,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade dbPass.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getDbPass() {
                 return dbPass;
@@ -3436,8 +3866,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade dbPass.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setDbPass(String value) {
                 this.dbPass = value;
@@ -3463,6 +3895,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -3479,8 +3913,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade token.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getToken() {
                 return token;
@@ -3489,8 +3925,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade token.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setToken(String value) {
                 this.token = value;
@@ -3499,8 +3937,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade imagem.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getImagem() {
                 return imagem;
@@ -3509,8 +3949,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade imagem.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setImagem(String value) {
                 this.imagem = value;
@@ -3540,6 +3982,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -3568,8 +4012,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade digit.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getDigit() {
                 return digit;
@@ -3578,8 +4024,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade digit.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setDigit(String value) {
                 this.digit = value;
@@ -3588,8 +4036,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade upper.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getUpper() {
                 return upper;
@@ -3598,8 +4048,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade upper.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setUpper(String value) {
                 this.upper = value;
@@ -3608,8 +4060,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade lower.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getLower() {
                 return lower;
@@ -3618,8 +4072,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade lower.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setLower(String value) {
                 this.lower = value;
@@ -3628,8 +4084,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade digitoAndText.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getDigitoAndText() {
                 return digitoAndText;
@@ -3638,8 +4096,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade digitoAndText.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setDigitoAndText(String value) {
                 this.digitoAndText = value;
@@ -3648,8 +4108,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade interrogacao.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getInterrogacao() {
                 return interrogacao;
@@ -3658,8 +4120,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade interrogacao.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setInterrogacao(String value) {
                 this.interrogacao = value;
@@ -3668,8 +4132,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade asterisco.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getAsterisco() {
                 return asterisco;
@@ -3678,8 +4144,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade asterisco.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setAsterisco(String value) {
                 this.asterisco = value;
@@ -3780,6 +4248,8 @@ public class TConfig {
      *   &lt;/complexContent&gt;
      * &lt;/complexType&gt;
      * </pre>
+     *
+     *
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -3808,8 +4278,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade barcode.
          *
-         * @return possible object is
-         * {@link TConfig.Ws.Barcode }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Ws.Barcode }
+         *
          */
         public TConfig.Ws.Barcode getBarcode() {
             return barcode;
@@ -3818,8 +4290,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade barcode.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Ws.Barcode }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Ws.Barcode }
+         *
          */
         public void setBarcode(TConfig.Ws.Barcode value) {
             this.barcode = value;
@@ -3828,8 +4302,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade cosmos.
          *
-         * @return possible object is
-         * {@link TConfig.Ws.Cosmos }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Ws.Cosmos }
+         *
          */
         public TConfig.Ws.Cosmos getCosmos() {
             return cosmos;
@@ -3838,8 +4314,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade cosmos.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Ws.Cosmos }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Ws.Cosmos }
+         *
          */
         public void setCosmos(TConfig.Ws.Cosmos value) {
             this.cosmos = value;
@@ -3848,8 +4326,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade receitaws.
          *
-         * @return possible object is
-         * {@link TConfig.Ws.Receitaws }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Ws.Receitaws }
+         *
          */
         public TConfig.Ws.Receitaws getReceitaws() {
             return receitaws;
@@ -3858,8 +4338,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade receitaws.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Ws.Receitaws }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Ws.Receitaws }
+         *
          */
         public void setReceitaws(TConfig.Ws.Receitaws value) {
             this.receitaws = value;
@@ -3868,8 +4350,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade webmania.
          *
-         * @return possible object is
-         * {@link TConfig.Ws.Webmania }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Ws.Webmania }
+         *
          */
         public TConfig.Ws.Webmania getWebmania() {
             return webmania;
@@ -3878,8 +4362,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade webmania.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Ws.Webmania }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Ws.Webmania }
+         *
          */
         public void setWebmania(TConfig.Ws.Webmania value) {
             this.webmania = value;
@@ -3888,8 +4374,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade postmon.
          *
-         * @return possible object is
-         * {@link TConfig.Ws.Postmon }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Ws.Postmon }
+         *
          */
         public TConfig.Ws.Postmon getPostmon() {
             return postmon;
@@ -3898,8 +4386,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade postmon.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Ws.Postmon }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Ws.Postmon }
+         *
          */
         public void setPostmon(TConfig.Ws.Postmon value) {
             this.postmon = value;
@@ -3908,8 +4398,10 @@ public class TConfig {
         /**
          * ObtxE9m o valor da propriedade portabilidadecelular.
          *
-         * @return possible object is
-         * {@link TConfig.Ws.Portabilidadecelular }
+         * @return
+         *     possible object is
+         *     {@link TConfig.Ws.Portabilidadecelular }
+         *
          */
         public TConfig.Ws.Portabilidadecelular getPortabilidadecelular() {
             return portabilidadecelular;
@@ -3918,8 +4410,10 @@ public class TConfig {
         /**
          * Define o valor da propriedade portabilidadecelular.
          *
-         * @param value allowed object is
-         *              {@link TConfig.Ws.Portabilidadecelular }
+         * @param value
+         *     allowed object is
+         *     {@link TConfig.Ws.Portabilidadecelular }
+         *
          */
         public void setPortabilidadecelular(TConfig.Ws.Portabilidadecelular value) {
             this.portabilidadecelular = value;
@@ -3942,6 +4436,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -3955,8 +4451,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade url.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getUrl() {
                 return url;
@@ -3965,8 +4463,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade url.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setUrl(String value) {
                 this.url = value;
@@ -3995,6 +4495,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -4020,8 +4522,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade url.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getUrl() {
                 return url;
@@ -4030,8 +4534,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade url.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setUrl(String value) {
                 this.url = value;
@@ -4040,8 +4546,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade consultaNcm.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getConsultaNcm() {
                 return consultaNcm;
@@ -4050,8 +4558,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade consultaNcm.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setConsultaNcm(String value) {
                 this.consultaNcm = value;
@@ -4060,8 +4570,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade consultaGtins.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getConsultaGtins() {
                 return consultaGtins;
@@ -4070,8 +4582,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade consultaGtins.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setConsultaGtins(String value) {
                 this.consultaGtins = value;
@@ -4080,8 +4594,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade consultaGpcs.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getConsultaGpcs() {
                 return consultaGpcs;
@@ -4090,8 +4606,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade consultaGpcs.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setConsultaGpcs(String value) {
                 this.consultaGpcs = value;
@@ -4100,8 +4618,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade token.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getToken() {
                 return token;
@@ -4110,8 +4630,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade token.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setToken(String value) {
                 this.token = value;
@@ -4138,6 +4660,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -4157,8 +4681,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade pass.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getPass() {
                 return pass;
@@ -4167,8 +4693,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade pass.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setPass(String value) {
                 this.pass = value;
@@ -4177,8 +4705,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade user.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getUser() {
                 return user;
@@ -4187,8 +4717,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade user.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setUser(String value) {
                 this.user = value;
@@ -4197,8 +4729,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade url.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getUrl() {
                 return url;
@@ -4207,8 +4741,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade url.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setUrl(String value) {
                 this.url = value;
@@ -4233,6 +4769,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -4246,8 +4784,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade url.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getUrl() {
                 return url;
@@ -4256,8 +4796,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade url.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setUrl(String value) {
                 this.url = value;
@@ -4283,6 +4825,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -4299,8 +4843,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade url.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getUrl() {
                 return url;
@@ -4309,8 +4855,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade url.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setUrl(String value) {
                 this.url = value;
@@ -4319,8 +4867,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade token.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getToken() {
                 return token;
@@ -4329,8 +4879,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade token.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setToken(String value) {
                 this.token = value;
@@ -4357,6 +4909,8 @@ public class TConfig {
          *   &lt;/complexContent&gt;
          * &lt;/complexType&gt;
          * </pre>
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -4376,8 +4930,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade url.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getUrl() {
                 return url;
@@ -4386,8 +4942,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade url.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setUrl(String value) {
                 this.url = value;
@@ -4396,8 +4954,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade appkey.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getAppkey() {
                 return appkey;
@@ -4406,8 +4966,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade appkey.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setAppkey(String value) {
                 this.appkey = value;
@@ -4416,8 +4978,10 @@ public class TConfig {
             /**
              * ObtxE9m o valor da propriedade appsecret.
              *
-             * @return possible object is
-             * {@link String }
+             * @return
+             *     possible object is
+             *     {@link String }
+             *
              */
             public String getAppsecret() {
                 return appsecret;
@@ -4426,8 +4990,10 @@ public class TConfig {
             /**
              * Define o valor da propriedade appsecret.
              *
-             * @param value allowed object is
-             *              {@link String }
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *
              */
             public void setAppsecret(String value) {
                 this.appsecret = value;

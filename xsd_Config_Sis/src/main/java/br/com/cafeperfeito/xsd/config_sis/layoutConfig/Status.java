@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementaxe7xe3o de Referxeancia (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificaxe7xf5es neste arquivo serxe3o perdidas apxf3s a recompilaxe7xe3o do esquema de origem. 
-// Gerado em: 2020.12.09 xe0s 02:25:01 PM AMT 
+// Gerado em: 2020.12.14 xe0s 07:23:46 PM AMT 
 //
 
 
@@ -61,6 +61,8 @@ public class Status {
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Stat }
+     *
+     *
      */
     public List<Stat> getStat() {
         if (stat == null) {

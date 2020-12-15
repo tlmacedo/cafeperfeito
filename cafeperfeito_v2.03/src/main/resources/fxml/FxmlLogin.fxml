@@ -11,10 +11,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
-<AnchorPane styleClass="fxml-login" stylesheets="@../style/min/cafeperfeito.min.css"
-            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="br.com.tlmacedo.cafeperfeito.controller.ControllerLogin">
+<AnchorPane stylesheets="@../style/min/cafeperfeito.min.css" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.tlmacedo.cafeperfeito.controller.ControllerLogin">
     <children>
         <VBox prefHeight="180.0" prefWidth="451.0">
             <children>
@@ -30,10 +28,13 @@
                                 <Image url="@../image/ico/ic_usuario_dp32.png"/>
                             </image>
                         </ImageView>
-                        <JFXComboBox labelFloat="true" prefWidth="390.0" promptText="Usuario">
+                        <JFXComboBox fx:id="jfxCboUsuario" labelFloat="true" prefWidth="390.0" promptText="Usuario">
                             <HBox.margin>
                                 <Insets top="5.0"/>
                             </HBox.margin>
+                            <padding>
+                                <Insets left="5.0" right="5.0"/>
+                            </padding>
                         </JFXComboBox>
                     </children>
                     <VBox.margin>
@@ -50,10 +51,13 @@
                                 <Image url="@../image/ico/ic_password_dp32.png"/>
                             </image>
                         </ImageView>
-                        <JFXPasswordField labelFloat="true" prefWidth="390.0" promptText="Senha">
+                        <JFXPasswordField fx:id="jfxPswSenha" labelFloat="true" prefWidth="390.0" promptText="Senha">
                             <HBox.margin>
                                 <Insets top="5.0"/>
                             </HBox.margin>
+                            <padding>
+                                <Insets left="5.0" right="5.0"/>
+                            </padding>
                         </JFXPasswordField>
                     </children>
                     <VBox.margin>
@@ -70,12 +74,12 @@
                                 <Image url="@../image/ico/assinatura_logo.png"/>
                             </image>
                         </ImageView>
-                        <JFXButton fx:id="btnOK" text="OK">
+                        <JFXButton fx:id="jfxBtnOk" defaultButton="true" text="OK">
                             <HBox.margin>
                                 <Insets left="205.0" top="3.0"/>
                             </HBox.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnCancela" text="Cancela">
+                        <JFXButton fx:id="jfxBtnCancela" cancelButton="true" text="Cancela">
                             <HBox.margin>
                                 <Insets left="10.0" top="3.0"/>
                             </HBox.margin>

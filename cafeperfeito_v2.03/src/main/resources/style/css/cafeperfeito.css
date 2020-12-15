@@ -48,10 +48,17 @@
     -fx-text-fill: #ff6600;
 }
 
-.combo-box {
+.jfx-combo-box, .combo-box {
     -fx-font-family: "Segoe UI Semibold";
     -fx-font-size: 10px;
     -fx-font-style: normal;
+    -jfx-focus-color: #FF6600;
+    -jfx-unfocus-color: #e9e9e9;
+    -jfx-label-float: true;
+}
+
+.fxml-login .jfx-combo-box, .fxml-login .combo-box {
+    -fx-padding: 0 5;
 }
 
 .label {
@@ -210,17 +217,35 @@
     -fx-font-size: 12px;
 }
 
-.password-field {
+.jfx-password-field, .password-field {
     -fx-font-size: 10px;
     -fx-font-family: "Segoe UI Semibold";
     -fx-text-fill: white;
+    -jfx-focus-color: #FF6600;
+    -jfx-unfocus-color: #e9e9e9;
+    -jfx-label-float: true;
 }
 
-.text-field {
+.fxml-login .jfx-password-field, .fxml-login .password-field {
+    -fx-padding: 0 5;
+}
+
+.jfx-text-field, .text-field {
     -fx-font-size: 10px;
     -fx-font-family: "Segoe UI Semibold";
     -fx-text-fill: white;
     -fx-prompt-text-fill: #91939b;
+    -jfx-focus-color: #FF6600;
+    -jfx-unfocus-color: #e9e9e9;
+    -jfx-label-float: true;
+}
+
+.fxml-login .jfx-text-field, .fxml-login .text-field {
+    -fx-padding: 0 5;
+}
+
+.jfx-text-field.a-direita, .text-field.a-direita {
+    -fx-alignment: center-right;
 }
 
 .titled-pane > .title {

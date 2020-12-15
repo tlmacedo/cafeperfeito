@@ -1,5 +1,6 @@
 package br.com.tlmacedo.cafeperfeito.service;
 
+import br.com.tlmacedo.cafeperfeito.controller.ControllerPrincipal;
 import com.jfoenix.controls.JFXToolbar;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
@@ -21,6 +22,7 @@ public class ServiceToolBar {
     private Timeline timeline;
     private final JFXToolbar jfxToolbar;
     private final String toolDataBase, toolHorarioLog;
+    private Label stbLblCenter;
 
     public ServiceToolBar(JFXToolbar jfxToolbar, Label stb_lblLeft, Label stb_lblCenter, Label stb_lblRight) {
         this.jfxToolbar = jfxToolbar;
@@ -39,11 +41,17 @@ public class ServiceToolBar {
         getTimeline().setCycleCount(Animation.INDEFINITE);
         getTimeline().play();
 
+        setStbLblCenter(stb_lblCenter);
+
         stb_lblLeft.setText(
                 String.format("Usuário[%02d]: %s",
-                        2,
-                        StringUtils.capitalize("thiago")));
+                        ControllerPrincipal.getUsuarioLogado().getId(),
+                        StringUtils.capitalize(ControllerPrincipal.getUsuarioLogado().getApelido())));
 
+    }
+
+    public void teclas(String teclas) {
+        getStbLblCenter().setText(teclas);
     }
 
 
@@ -65,5 +73,13 @@ public class ServiceToolBar {
 
     public String getToolHorarioLog() {
         return toolHorarioLog;
+    }
+
+    public Label getStbLblCenter() {
+        return stbLblCenter;
+    }
+
+    public void setStbLblCenter(Label stbLblCenter) {
+        this.stbLblCenter = stbLblCenter;
     }
 }

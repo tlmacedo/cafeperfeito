@@ -1,11 +1,16 @@
-.combo-box {
+.jfx-combo-box, .combo-box {
   -fx-font-family: $fontFamily;
   -fx-font-size: $fontSizeh6;
   -fx-font-style: normal;
 
-  //.view-login & { //view-cadastro-empresa &, .view-cadastro-produto & {
-  //  -fx-font-size: $fontSizeh5;
-  //}
+  -jfx-focus-color: $corJFX-Focus;
+  -jfx-unfocus-color: $corJFX-Unforcus;
+  -jfx-label-float: true;
+
+  .fxml-login & {
+    -fx-padding: 0 5;
+  }
+
 }
 
 

@@ -10,7 +10,7 @@ public class GerarArquivo_configSisXML {
     //    public static TConfig configSistema;
     private static final String MYLOCALE = "pt_br";
     private static final String PATHRESOURCES = "/src/main/resources";
-    private static final String VERSAO = "2.02";
+    private static final String VERSAO = "2.03";
 
     public static void main(String... args) {
         try {
@@ -147,8 +147,8 @@ public class GerarArquivo_configSisXML {
             stat.setDescricao("[F12-Sair]");
 
             TConfig.Paths paths = new TConfig.Paths();
-            paths.setVersaoDanfeNFe("2.01");
-            paths.setVersaoRecibo("2.01");
+            paths.setVersaoDanfeNFe(VERSAO);
+            paths.setVersaoRecibo(VERSAO);
             paths.setPathDanfeNFe(String.format("/relatorio_v%1$s/recibo_v%1$s.jasper", paths.getVersaoDanfeNFe()));
             paths.setPathRecibo(String.format("/relatorio_v%1$s/danfe_v%1$s.jasper", paths.getVersaoRecibo()));
             paths.setPathSalvarArquivo(PATHRESOURCES);
@@ -177,8 +177,8 @@ public class GerarArquivo_configSisXML {
             TConfig.Fxml.Principal principal = new TConfig.Fxml.Principal();
             principal.setFxml(paths.getPathFXML() + "FxmlPrincipal.fxml");
             principal.setTitulo("Café Perfeito");
-            principal.setIconeAtivo(paths.getPathIconeSistema() + "../ic_coffee_ativo_dp24.png");
-            principal.setIconeDesativo(paths.getPathIconeSistema() + "../ic_coffee_inativo_dp24.png");
+            principal.setIconeAtivo(paths.getPathIconeSistema().replace("/principal", "") + "ic_coffee_ativo_dp24.png");
+            principal.setIconeInativo(paths.getPathIconeSistema().replace("/principal", "") + "ic_coffee_inativo_dp24.png");
             fxml.setPrincipal(principal);
 
             TConfig.Fxml.CadastroProduto cadastroProduto = new TConfig.Fxml.CadastroProduto();

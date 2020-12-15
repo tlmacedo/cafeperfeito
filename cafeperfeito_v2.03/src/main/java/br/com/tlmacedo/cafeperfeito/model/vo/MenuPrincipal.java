@@ -58,6 +58,11 @@ public class MenuPrincipal implements Serializable {
         return menuLabel.get();
     }
 
+    @Transient
+    public String get_menu_label() {
+        return getMenuLabel().toLowerCase();
+    }
+
     public StringProperty menuLabelProperty() {
         return menuLabel;
     }

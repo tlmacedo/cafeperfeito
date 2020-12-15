@@ -65,10 +65,10 @@
         </splash-imagens>
     </personalizacao>
     <paths>
-        <versaoDanfeNFe>2.01</versaoDanfeNFe>
-        <versaoRecibo>2.01</versaoRecibo>
-        <pathDanfeNFe>/relatorio_v2.01/recibo_v2.01.jasper</pathDanfeNFe>
-        <pathRecibo>/relatorio_v2.01/danfe_v2.01.jasper</pathRecibo>
+        <versaoDanfeNFe>2.03</versaoDanfeNFe>
+        <versaoRecibo>2.03</versaoRecibo>
+        <pathDanfeNFe>/relatorio_v2.03/recibo_v2.03.jasper</pathDanfeNFe>
+        <pathRecibo>/relatorio_v2.03/danfe_v2.03.jasper</pathRecibo>
         <pathSalvarArquivo>/src/main/resources</pathSalvarArquivo>
         <pathIconeSistema>/image/ico/principal/</pathIconeSistema>
         <pathStyleSheets>/style/</pathStyleSheets>
@@ -92,8 +92,8 @@
         <principal>
             <fxml>/fxml/FxmlPrincipal.fxml</fxml>
             <titulo>Café Perfeito</titulo>
-            <iconeAtivo>/image/ico/principal/../ic_coffee_ativo_dp24.png</iconeAtivo>
-            <iconeDesativo>/image/ico/principal/../ic_coffee_inativo_dp24.png</iconeDesativo>
+            <iconeAtivo>/image/ico/ic_coffee_ativo_dp24.png</iconeAtivo>
+            <iconeInativo>/image/ico/ic_coffee_inativo_dp24.png</iconeInativo>
         </principal>
         <cadastroProduto>
             <fxml>/fxml/FxmlCadastroProduto.fxml</fxml>

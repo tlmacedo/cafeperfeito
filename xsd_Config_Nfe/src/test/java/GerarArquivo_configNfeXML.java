@@ -9,7 +9,7 @@ import java.math.BigInteger;
 public class GerarArquivo_configNfeXML {
 
     private static final String PATHRESOURCES = "/src/main/resources";
-    private static final String VERSAO = "2.02";
+    private static final String VERSAO = "2.03";
 
     private static MyInfNfe MYINFNFE = new MyInfNfe();
 

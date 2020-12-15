@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementaxe7xe3o de Referxeancia (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificaxe7xf5es neste arquivo serxe3o perdidas apxf3s a recompilaxe7xe3o do esquema de origem. 
-// Gerado em: 2020.12.09 xe0s 02:25:00 PM AMT 
+// Gerado em: 2020.12.14 xe0s 07:23:44 PM AMT 
 //
 
 
@@ -57,8 +57,10 @@ public class MyForm {
     /**
      * Define o valor da propriedade status.
      *
-     * @param value allowed object is
-     *              {@link Status }
+     * @param value
+     *     allowed object is
+     *     {@link Status }
+     *
      */
     public void setStatus(Status value) {
         this.status = value;
@@ -67,8 +69,10 @@ public class MyForm {
     /**
      * ObtxE9m o valor da propriedade name.
      *
-     * @return possible object is
-     * {@link String }
+     * @return
+     *     possible object is
+     *     {@link String }
+     *
      */
     public String getName() {
         return name;
@@ -77,8 +81,10 @@ public class MyForm {
     /**
      * Define o valor da propriedade name.
      *
-     * @param value allowed object is
-     *              {@link String }
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *
      */
     public void setName(String value) {
         this.name = value;
