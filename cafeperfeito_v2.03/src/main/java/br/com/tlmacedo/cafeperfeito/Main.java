@@ -11,14 +11,12 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        new ServiceConfigSis().getVariaveisSistema();
-//        new ServiceConfigSis().getVariaveisSistemaSimples();
 
-//        new ViewLogin().openViewLogin(false);
+//        new ServiceConfigSis(false).getVariaveisSistema();
+        new ServiceConfigSis(true).getVariaveisSistema();
 
-        new View(FORM_VIEW.LOGIN).loadForm();
-
-//        new ViewPrincipal().openView();
+//        new View(FORM_VIEW.LOGIN).loadForm();
+        new View(FORM_VIEW.PRINCIPAL).loadForm();
 
     }
 }

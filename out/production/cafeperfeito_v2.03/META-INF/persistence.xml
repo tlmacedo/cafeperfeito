@@ -8,6 +8,8 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <class>br.com.tlmacedo.cafeperfeito.model.vo.Colaborador</class>
+        <class>br.com.tlmacedo.cafeperfeito.model.vo.ConfigSituacaoCadastro</class>
+        <class>br.com.tlmacedo.cafeperfeito.model.vo.Empresa</class>
         <class>br.com.tlmacedo.cafeperfeito.model.vo.MenuPrincipal</class>
         <class>br.com.tlmacedo.cafeperfeito.model.vo.Usuario</class>
 

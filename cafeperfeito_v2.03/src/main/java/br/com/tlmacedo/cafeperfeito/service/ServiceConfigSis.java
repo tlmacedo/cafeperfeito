@@ -1,6 +1,9 @@
 package br.com.tlmacedo.cafeperfeito.service;
 
 import br.com.cafeperfeito.xsd.config_sis.config.TConfig;
+import br.com.tlmacedo.cafeperfeito.controller.ControllerLogin;
+import br.com.tlmacedo.cafeperfeito.model.dao.UsuarioDAO;
+import br.com.tlmacedo.cafeperfeito.model.vo.Usuario;
 import br.com.tlmacedo.nfe.service.ServiceUtilXml;
 import javafx.scene.image.Image;
 
@@ -19,12 +22,10 @@ public class ServiceConfigSis {
 
     private FileReader arqConfgSistema = null;
 
-    public ServiceConfigSis() throws FileNotFoundException {
+    public ServiceConfigSis(boolean loadUser01) throws FileNotFoundException {
         arqConfgSistema = new FileReader(getClass().getClassLoader().getResource("configSis.xml").getFile());
-//        if (UsuarioLogado.getUsuario() == null) {
-//            UsuarioDAO usuarioDAO = new UsuarioDAO();
-//            UsuarioLogado.setUsuario(usuarioDAO.getById(Usuario.class, 1L));
-//        }
+        if (loadUser01)
+            ControllerLogin.setUsuario(new UsuarioDAO().getById(Usuario.class, 1L));
         new ServiceConfigNFe().getVariaveisNFe();
     }
 

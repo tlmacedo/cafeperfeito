@@ -9,6 +9,7 @@ import br.com.tlmacedo.cafeperfeito.model.vo.Usuario;
 import br.com.tlmacedo.cafeperfeito.service.ServiceComandoTecladoMouse;
 import br.com.tlmacedo.cafeperfeito.service.ServiceToolBar;
 import br.com.tlmacedo.cafeperfeito.view.View;
+import com.jfoenix.controls.JFXTabPane;
 import com.jfoenix.controls.JFXToolbar;
 import com.jfoenix.controls.JFXTreeView;
 import javafx.beans.property.SimpleStringProperty;
@@ -18,7 +19,6 @@ import javafx.event.EventHandler;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tab;
-import javafx.scene.control.TabPane;
 import javafx.scene.control.TreeItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -54,7 +54,7 @@ public class ControllerPrincipal implements Initializable, ModeloCafePerfeito {
     public ImageView imgMenuPrincipalRetrair;
     public Label lblImagePrincipal;
     public BorderPane panePrincipal;
-    public TabPane tabPanePrincipal;
+    public JFXTabPane jfxTabPanePrincipal;
     public JFXToolbar jfxToolBarPrincipal;
     public Label stb_lblLeft;
     public Label stb_lblCenter;
@@ -123,7 +123,7 @@ public class ControllerPrincipal implements Initializable, ModeloCafePerfeito {
                 if (CODE_KEY_SHIFT_CTRL_NEGATIVO.match(keyEvent) || CHAR_KEY_SHIFT_CTRL_NEGATIVO.match(keyEvent))
                     getImgMenuPrincipalRetrair().fireEvent(ServiceComandoTecladoMouse.clickMouse(1));
                 if (keyEvent.getCode() == KeyCode.F12) {
-                    if (getTabPanePrincipal().getTabs().size() == 0)
+                    if (getJfxTabPanePrincipal().getTabs().size() == 0)
                         fechar();
                 }
                 if (keyEvent.isShiftDown() && keyEvent.isControlDown()) {
@@ -135,7 +135,7 @@ public class ControllerPrincipal implements Initializable, ModeloCafePerfeito {
         });
         getPanePrincipal().addEventHandler(KeyEvent.KEY_PRESSED, getEventHandler_Principal());
 
-        getTabPanePrincipal().getTabs().addListener((ListChangeListener<? super Tab>) c -> {
+        getJfxTabPanePrincipal().getTabs().addListener((ListChangeListener<? super Tab>) c -> {
 
             getStagePrincipal().getIcons().set(0, c.getList().size() == 0
                     ? View.getIcon0() : View.getIcon1());
@@ -207,8 +207,8 @@ public class ControllerPrincipal implements Initializable, ModeloCafePerfeito {
     }
 
     private int tabJaAberta(MenuPrincipal menuPrincipal) {
-        for (int tabId = 0; tabId < getTabPanePrincipal().getTabs().size(); tabId++) {
-            if (getTabPanePrincipal().getTabs().get(tabId).getText().equals(menuPrincipal.getMenuLabel()))
+        for (int tabId = 0; tabId < getJfxTabPanePrincipal().getTabs().size(); tabId++) {
+            if (getJfxTabPanePrincipal().getTabs().get(tabId).getText().equals(menuPrincipal.getMenuLabel()))
                 return tabId;
         }
         return -1;
@@ -222,13 +222,13 @@ public class ControllerPrincipal implements Initializable, ModeloCafePerfeito {
         if ((tabId = tabJaAberta(menuPrincipal)) < 0) {
             Tab tab = new View(view).loadTab(menuPrincipal.getMenuLabel());
             if (!tab.equals(null)) {
-                tabId = getTabPanePrincipal().getTabs().size();
-                getTabPanePrincipal().getTabs().add(tab);
+                tabId = getJfxTabPanePrincipal().getTabs().size();
+                getJfxTabPanePrincipal().getTabs().add(tab);
             }
         }
-        if (getTabPanePrincipal().getTabs().size() > 0) {
-            getTabPanePrincipal().getSelectionModel().select(tabId);
-            getTabPanePrincipal().getSelectionModel().getSelectedItem().setOnCloseRequest(event -> {
+        if (getJfxTabPanePrincipal().getTabs().size() > 0) {
+            getJfxTabPanePrincipal().getSelectionModel().select(tabId);
+            getJfxTabPanePrincipal().getSelectionModel().getSelectedItem().setOnCloseRequest(event -> {
 //                if (!serviceStatusBar.getLblTeclas().getText().toLowerCase().contains("sair")) {
 //                    alertMensagem = new ServiceAlertMensagem();
 //                    alertMensagem.setCabecalho("Opção não permitida!");
@@ -376,12 +376,12 @@ public class ControllerPrincipal implements Initializable, ModeloCafePerfeito {
         this.panePrincipal = panePrincipal;
     }
 
-    public TabPane getTabPanePrincipal() {
-        return tabPanePrincipal;
+    public JFXTabPane getJfxTabPanePrincipal() {
+        return jfxTabPanePrincipal;
     }
 
-    public void setTabPanePrincipal(TabPane tabPanePrincipal) {
-        this.tabPanePrincipal = tabPanePrincipal;
+    public void setJfxTabPanePrincipal(JFXTabPane jfxTabPanePrincipal) {
+        this.jfxTabPanePrincipal = jfxTabPanePrincipal;
     }
 
     public JFXToolbar getJfxToolBarPrincipal() {
