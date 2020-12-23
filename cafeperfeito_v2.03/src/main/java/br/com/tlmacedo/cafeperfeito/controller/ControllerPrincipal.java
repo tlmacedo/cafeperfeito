@@ -2,8 +2,8 @@ package br.com.tlmacedo.cafeperfeito.controller;
 
 import br.com.tlmacedo.cafeperfeito.interfaces.ModeloCafePerfeito;
 import br.com.tlmacedo.cafeperfeito.model.dao.MenuPrincipalDAO;
-import br.com.tlmacedo.cafeperfeito.model.enums.FORM_VIEW;
-import br.com.tlmacedo.cafeperfeito.model.enums.TB_PRINCIPAL;
+import br.com.tlmacedo.cafeperfeito.model.enums.EnumToolBar_Principal;
+import br.com.tlmacedo.cafeperfeito.model.enums.EnumFormView;
 import br.com.tlmacedo.cafeperfeito.model.vo.MenuPrincipal;
 import br.com.tlmacedo.cafeperfeito.model.vo.Usuario;
 import br.com.tlmacedo.cafeperfeito.service.ServiceComandoTecladoMouse;
@@ -101,7 +101,7 @@ public class ControllerPrincipal implements Initializable, ModeloCafePerfeito {
         setServiceToolBar(new ServiceToolBar(getJfxToolBarPrincipal(), getStb_lblLeft(), getStb_lblCenter(), getStb_lblRight()));
         getStagePrincipal().getIcons().setAll(View.getIcon0());
         getLblImagePrincipal().setVisible(true);
-        getServiceToolBar().teclas(TB_PRINCIPAL.PRINCIPAL.getDescricao());
+        getServiceToolBar().teclas(EnumToolBar_Principal.PRINCIPAL.getDescricao());
 
     }
 
@@ -141,7 +141,7 @@ public class ControllerPrincipal implements Initializable, ModeloCafePerfeito {
                     ? View.getIcon0() : View.getIcon1());
             getLblImagePrincipal().setVisible(c.getList().size() == 0);
             if (c.getList().size() == 0)
-                getServiceToolBar().teclas(TB_PRINCIPAL.PRINCIPAL.getDescricao());
+                getServiceToolBar().teclas(EnumToolBar_Principal.PRINCIPAL.getDescricao());
         });
 
         getJfxMenuTreeViewPrincipal().setOnMouseClicked(mouseEvent -> {
@@ -217,7 +217,7 @@ public class ControllerPrincipal implements Initializable, ModeloCafePerfeito {
     private void addNewTab(MenuPrincipal menuPrincipal) {
 
         if (menuPrincipal == null) return;
-        FORM_VIEW view = FORM_VIEW.toEnum(menuPrincipal.getMenu().toUpperCase());
+        EnumFormView view = EnumFormView.toEnum(menuPrincipal.getMenu().toUpperCase());
         int tabId;
         if ((tabId = tabJaAberta(menuPrincipal)) < 0) {
             Tab tab = new View(view).loadTab(menuPrincipal.getMenuLabel());

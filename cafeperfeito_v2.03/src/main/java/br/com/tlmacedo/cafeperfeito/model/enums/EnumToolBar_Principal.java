@@ -4,31 +4,31 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public enum TB_PRINCIPAL {
+public enum EnumToolBar_Principal {
 
     PRINCIPAL(0, "");
 
     private Integer cod;
     private String descricao;
 
-    TB_PRINCIPAL(Integer cod, String descricao) {
+    EnumToolBar_Principal(Integer cod, String descricao) {
         this.cod = cod;
         this.descricao = descricao;
     }
 
-    public static TB_PRINCIPAL toEnum(Integer codigo) {
+    public static EnumToolBar_Principal toEnum(Integer codigo) {
 
         if (codigo == null) return null;
-        for (TB_PRINCIPAL toolBar : TB_PRINCIPAL.values())
+        for (EnumToolBar_Principal toolBar : EnumToolBar_Principal.values())
             if (toolBar.getCod().equals(codigo))
                 return toolBar;
         throw new IllegalArgumentException("Id inválido!");
 
     }
 
-    public static List<TB_PRINCIPAL> getList() {
-        List<TB_PRINCIPAL> list = Arrays.asList(TB_PRINCIPAL.values());
-        list.sort(Comparator.comparing(TB_PRINCIPAL::getDescricao));
+    public static List<EnumToolBar_Principal> getList() {
+        List<EnumToolBar_Principal> list = Arrays.asList(EnumToolBar_Principal.values());
+        list.sort(Comparator.comparing(EnumToolBar_Principal::getDescricao));
         return list;
     }
 

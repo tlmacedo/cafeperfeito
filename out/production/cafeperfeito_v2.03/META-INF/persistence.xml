@@ -10,7 +10,10 @@
         <class>br.com.tlmacedo.cafeperfeito.model.vo.Colaborador</class>
         <class>br.com.tlmacedo.cafeperfeito.model.vo.ConfigSituacaoCadastro</class>
         <class>br.com.tlmacedo.cafeperfeito.model.vo.Empresa</class>
+        <class>br.com.tlmacedo.cafeperfeito.model.vo.Endereco</class>
         <class>br.com.tlmacedo.cafeperfeito.model.vo.MenuPrincipal</class>
+        <class>br.com.tlmacedo.cafeperfeito.model.vo.Municipio</class>
+        <class>br.com.tlmacedo.cafeperfeito.model.vo.Uf</class>
         <class>br.com.tlmacedo.cafeperfeito.model.vo.Usuario</class>
 
         <properties>

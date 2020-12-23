@@ -11,26 +11,36 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane fx:id="panePrincipal" prefHeight="810.0" prefWidth="1600.0" stylesheets="@../style/min/cafeperfeito.min.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.tlmacedo.cafeperfeito.controller.ControllerPrincipal">
+<BorderPane fx:id="panePrincipal" prefHeight="810.0" prefWidth="1600.0" stylesheets="@../style/min/cafeperfeito.min.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="br.com.tlmacedo.cafeperfeito.controller.ControllerPrincipal">
     <left>
         <JFXScrollPane BorderPane.alignment="CENTER">
             <children>
                 <AnchorPane>
                     <children>
-                        <JFXTreeView fx:id="jfxMenuTreeViewPrincipal" prefHeight="790.0" prefWidth="248.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                        <ImageView fx:id="imgMenuPrincipalExpande" fitHeight="24.0" fitWidth="24.0" layoutX="112.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="5.0">
+                        <JFXTreeView fx:id="jfxMenuTreeViewPrincipal" prefHeight="790.0" prefWidth="248.0"
+                                     AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                     AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                        <ImageView fx:id="imgMenuPrincipalExpande" fitHeight="24.0" fitWidth="24.0" layoutX="112.0"
+                                   layoutY="383.0" pickOnBounds="true" preserveRatio="true"
+                                   AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="5.0">
                             <image>
-                                <Image url="@../image/ico/ic_circle_mais_dp24.png" />
+                                <Image url="@../image/ico/ic_circle_mais_dp24.png"/>
                             </image>
                         </ImageView>
-                        <ImageView fx:id="imgMenuPrincipalRetrair" fitHeight="24.0" fitWidth="24.0" layoutX="112.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                        <ImageView fx:id="imgMenuPrincipalRetrair" fitHeight="24.0" fitWidth="24.0" layoutX="112.0"
+                                   layoutY="383.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="5.0"
+                                   AnchorPane.topAnchor="5.0">
                             <image>
-                                <Image url="@../image/ico/ic_circle_menos_dp24.png" />
+                                <Image url="@../image/ico/ic_circle_menos_dp24.png"/>
                             </image>
                         </ImageView>
-                        <Label fx:id="lblCopyRight" alignment="BOTTOM_RIGHT" contentDisplay="CENTER" layoutY="770.0" prefHeight="20.0" prefWidth="248.0" styleClass="copyright" text="CAFEPERFEITO" textAlignment="RIGHT">
+                        <Label fx:id="lblCopyRight" alignment="BOTTOM_RIGHT" contentDisplay="CENTER" layoutY="770.0"
+                               prefHeight="20.0" prefWidth="248.0" styleClass="copyright" text="CAFEPERFEITO"
+                               textAlignment="RIGHT">
                             <padding>
-                                <Insets bottom="5.0" right="10.0" />
+                                <Insets bottom="5.0" right="10.0"/>
                             </padding>
                         </Label>
                     </children>
@@ -41,23 +51,26 @@
     <bottom>
         <JFXToolbar fx:id="jfxToolBarPrincipal" prefHeight="20.0" BorderPane.alignment="CENTER">
             <left>
-                <Label fx:id="stb_lblLeft" prefHeight="16.0" prefWidth="248.0" text="Label" BorderPane.alignment="CENTER">
+                <Label fx:id="stb_lblLeft" prefHeight="16.0" prefWidth="248.0" text="Label"
+                       BorderPane.alignment="CENTER">
                     <padding>
-                        <Insets left="10.0" />
+                        <Insets left="10.0"/>
                     </padding>
                 </Label>
             </left>
             <center>
-                <Label fx:id="stb_lblCenter" prefHeight="16.0" prefWidth="1200.0" text="Label" BorderPane.alignment="CENTER">
+                <Label fx:id="stb_lblCenter" prefHeight="16.0" prefWidth="1200.0" text="Label"
+                       BorderPane.alignment="CENTER">
                     <padding>
-                        <Insets left="10.0" />
+                        <Insets left="10.0"/>
                     </padding>
                 </Label>
             </center>
             <right>
-                <Label fx:id="stb_lblRight" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="150.0" text="Label" BorderPane.alignment="CENTER">
+                <Label fx:id="stb_lblRight" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="150.0" text="Label"
+                       BorderPane.alignment="CENTER">
                     <padding>
-                        <Insets right="10.0" />
+                        <Insets right="10.0"/>
                     </padding>
                 </Label>
             </right>
@@ -66,8 +79,12 @@
     <center>
         <AnchorPane styleClass="pane-principal" BorderPane.alignment="CENTER">
             <children>
-                <JFXTabPane fx:id="jfxTabPanePrincipal" prefHeight="790.0" prefWidth="1352.0" tabDragPolicy="REORDER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                <Label fx:id="lblImagePrincipal" prefHeight="790.0" prefWidth="1352.0" styleClass="img_background_principal" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                <JFXTabPane fx:id="jfxTabPanePrincipal" prefHeight="790.0" prefWidth="1352.0" tabDragPolicy="REORDER"
+                            AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                            AnchorPane.topAnchor="0.0"/>
+                <Label fx:id="lblImagePrincipal" prefHeight="790.0" prefWidth="1352.0"
+                       styleClass="img_background_principal" wrapText="true" AnchorPane.bottomAnchor="0.0"
+                       AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
             </children>
         </AnchorPane>
     </center>

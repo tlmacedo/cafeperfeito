@@ -2,11 +2,7 @@ package br.com.tlmacedo.cafeperfeito.controller;
 
 import br.com.tlmacedo.cafeperfeito.interfaces.ModeloCafePerfeito;
 import br.com.tlmacedo.cafeperfeito.model.dao.MenuPrincipalDAO;
-import br.com.tlmacedo.cafeperfeito.model.dao.SaidaProdutoDAO;
 import br.com.tlmacedo.cafeperfeito.model.vo.MenuPrincipal;
-import br.com.tlmacedo.cafeperfeito.model.vo.SaidaProduto;
-import br.com.tlmacedo.cafeperfeito.model.vo.SaidaProdutoNfe;
-import br.com.tlmacedo.cafeperfeito.nfe.Nfe;
 import br.com.tlmacedo.cafeperfeito.service.ServiceComandoTecladoMouse;
 import br.com.tlmacedo.cafeperfeito.service.ServiceStatusBar;
 import br.com.tlmacedo.cafeperfeito.view.*;
@@ -62,7 +58,7 @@ public class ControllerPrincipal implements Initializable, ModeloCafePerfeito {
     private String tabSelecionada = "";
     private EventHandler<KeyEvent> eventHandlerPrincipal;
     private Image icoJanelaAtivado = new Image(getClass().getResource(TCONFIG.getFxml().getPrincipal().getIconeAtivo()).toString());
-    private Image icoJanelaDesativado = new Image(getClass().getResource(TCONFIG.getFxml().getPrincipal().getIconeDesativo()).toString());
+    private Image icoJanelaDesativado = new Image(getClass().getResource(TCONFIG.getFxml().getPrincipal().getIconeInativo()).toString());
     private ServiceStatusBar serviceStatusBar;
     public static String lastKey;
 

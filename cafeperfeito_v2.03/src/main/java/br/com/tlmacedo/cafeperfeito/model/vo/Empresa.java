@@ -10,6 +10,8 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity(name = "Empresa")
 @Table(name = "empresa")
@@ -39,6 +41,8 @@ public class Empresa implements Serializable {
     private ObjectProperty<BigDecimal> limite = new SimpleObjectProperty<>();
     private IntegerProperty prazoPadrao = new SimpleIntegerProperty();
     private BooleanProperty diaUtilPrazo = new SimpleBooleanProperty();
+
+    private List<Endereco> enderecoList = new ArrayList<>();
 
     public Empresa() {
     }
@@ -297,6 +301,15 @@ public class Empresa implements Serializable {
 
     public void setDiaUtilPrazo(boolean diaUtilPrazo) {
         this.diaUtilPrazo.set(diaUtilPrazo);
+    }
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    public List<Endereco> getEnderecoList() {
+        return enderecoList;
+    }
+
+    public void setEnderecoList(List<Endereco> enderecoList) {
+        this.enderecoList = enderecoList;
     }
 
     @Override

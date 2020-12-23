@@ -1,1 +1,155 @@
-<?xml version="1.0" encoding="UTF-8"?><infMyNfe><meusBancos><Bancos><banco id="0" nome="BANCO NUBANK" agencia="0001" conta="90.846.088-3" padrão="false"/><banco id="1" nome="BANCO ITAÚ" agencia="1677" conta="35.456-3" padrão="false"/><banco id="2" nome="BANCO SANTANDER" agencia="3273" conta="2.011.754-7" padrão="true"/></Bancos></meusBancos><myConfig><certificadoCfgs/><certificadoToken>tokenSafeNet5100.cfg</certificadoToken><certificadoCacerts>NfeCacerts</certificadoCacerts><portaSSl>443</portaSSl><versao>4.00</versao><indSinc>0</indSinc><natOp>0</natOp><mod>55</mod><serie>1</serie><tpNF>1</tpNF><idDest>1</idDest><cMunFG>1302603</cMunFG><tpImp>1</tpImp><tpEmis>1</tpEmis><tpAmb>2</tpAmb><finNFe>1</finNFe><indPres>3</indPres><procEmi>0</procEmi><verProc>2.02</verProc><indPag>1</indPag><cPais>1058</cPais><nPais>BRASIL</nPais><CRT>3</CRT><infAdic>TOTAL R$ %s*t*DT. VENC.: %s*n*DADOS BANCARIOS PARA TRANSFERENCIA*n*BANCO %s AG: %s C/C: %s</infAdic><homCNPJ>99999999000191</homCNPJ><homRazao>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</homRazao><infRespTecs><infRespTec id="1" cnpj="08009246000136" xContato="THIAGO LEIROS MACEDO" email="tl.macedo@hotmail.com" fone="92 98168-6148"/><infRespTec id="2" cnpj="08009246000136" xContato="CARLA FIGUEIREDO LEIROS MACEDO" email="carlinha.figueiredo32@hotmail.com" fone="92 99241-2974"/></infRespTecs></myConfig><ide><natOps><natOp id="0" descricao="Dentro Do Estado"/><natOp id="1" descricao="Fora Do Estado"/><natOp id="2" descricao="Fora Do País"/></natOps><indPags><indPag id="0" descricao="Pagamento á vista"/><indPag id="1" descricao="Pagamento a prazo"/><indPag id="2" descricao="Outros"/></indPags><mods><mod id="55" descricao="55"/><mod id="1" descricao="01"/><mod id="57" descricao="57"/><mod id="65" descricao="Nfc-e"/></mods><idDests><idDest id="1" descricao="Operação interna"/><idDest id="2" descricao="Operação interestadual"/><idDest id="3" descricao="Operação com exterior"/></idDests><tpImps><tpImp id="0" descricao="Sem geração de DANFE"/><tpImp id="1" descricao="DANFE normal, Retrato"/><tpImp id="2" descricao="DANFE normal, Paisagem"/><tpImp id="3" descricao="DANFE Simplificado"/><tpImp id="4" descricao="DANFE NFC-e"/><tpImp id="5" descricao="DANFE NFC-e em mensagem eletrônica"/></tpImps><tpEmiss><tpEmis id="1" descricao="Emissão normal"/><tpEmis id="2" descricao="Contingência FS-IA"/><tpEmis id="3" descricao="Contingência SCAN"/><tpEmis id="4" descricao="Contingência DPEC"/><tpEmis id="5" descricao="Contingência FS-DA"/><tpEmis id="6" descricao="Contingência SVC-AN"/><tpEmis id="7" descricao="Contingência SVC-RS"/><tpEmis id="9" descricao="Contingência off-line da NFC-e"/></tpEmiss><tpAmbs><tpAmb id="1" descricao="Produção"/><tpAmb id="2" descricao="Homologação"/></tpAmbs><finNFes><finNFe id="1" descricao="NF-e normal"/><finNFe id="2" descricao="NF-e complementar"/><finNFe id="3" descricao="NF-e de ajuste"/><finNFe id="4" descricao="Devolução de mercadoria"/></finNFes><indFinals><indFinal id="0" descricao="Normal"/><indFinal id="1" descricao="Consumidor final"/></indFinals><indPress><indPres id="0" descricao="Não se aplica"/><indPres id="1" descricao="Operação presencial"/><indPres id="2" descricao="Operação não presencial, pela Internet"/><indPres id="3" descricao="Operação não presencial, Teleatendimento"/><indPres id="4" descricao="NFC-e em operação com entrega a domicílio"/><indPres id="9" descricao="Operação não presencial, outros"/></indPress><procEmis><procEmi id="0" descricao="Emissão de NF-e com aplicativo do contribuinte"/><procEmi id="1" descricao="Emissão de NF-e avulsa pelo Fisco"/><procEmi id="2" descricao="Emissão de NF-e avulsa, pelo contribuinte com seu certificado digital, através do site do Fisco"/><procEmi id="3" descricao="Emissão NF-e pelo contribuinte com aplicativo fornecido pelo Fisco"/></procEmis></ide><emit><crts><crt id="1" descricao="Simples Nacional"/><crt id="2" descricao="Simples Nacional, excesso sublimite de receita bruta"/><crt id="3" descricao="Regime Normal. (v2.0)"/></crts></emit><dest><indIEDests><indIEDest id="1" descricao="Contribuinte ICMS"/><indIEDest id="2" descricao="Contribuinte isento de ICMS"/><indIEDest id="9" descricao="Não Contribuinte"/></indIEDests></dest><transp><modFretes><modFrete id="0" descricao="Por conta do emitente"/><modFrete id="1" descricao="Por conta do destinatário/remetente"/><modFrete id="2" descricao="Por conta de terceiros"/><modFrete id="9" descricao="Sem frete"/></modFretes></transp><sefaz><statuss><status id="1" descricao="Digitação" simplificada="DIGITACAO"/><status id="2" descricao="Assinada" simplificada="ASSINADA"/><status id="100" descricao="Autorizado o uso da NF-e" simplificada="AUTORIZADA"/><status id="102" descricao="Inutilização de número homologado" simplificada="INUTILIZADA"/><status id="103" descricao="Lote recebido com sucesso" simplificada="LOTE_RECEBIDO"/><status id="104" descricao="Lote processado" simplificada="LOTE_PROCESSADO"/><status id="105" descricao="Lote em processamento" simplificada="LOTE_PROCESSAMENTO"/><status id="106" descricao="Lote não localizado" simplificada="LOTE_NAO_LOCALIZADO"/><status id="108" descricao="Paralização para manutenção" simplificada="PARALIZACAO_MANUTENCAO"/><status id="109" descricao="Paralização por problemas tecnicos" simplificada="PARALIZACAO_PROBLEMAS"/><status id="110" descricao="Uso Denegado" simplificada="DENEGADA"/><status id="111" descricao="Consulta cadastro com uma ocorrência" simplificada="CONSULTA_CAD_UMA_OCORRENCIA"/><status id="112" descricao="Consulta cadastro com mais de uma ocorrência" simplificada="CONSULTA_CAD_VAIRAS_OCORRENCIAS"/></statuss></sefaz></infMyNfe>
+<?xml version="1.0" encoding="UTF-8"?>
+<infMyNfe>
+    <meusBancos>
+        <Bancos>
+            <banco id="0" nome="BANCO NUBANK" agencia="0001" conta="90.846.088-3" padrão="false"/>
+            <banco id="1" nome="BANCO ITAÚ" agencia="1677" conta="35.456-3" padrão="false"/>
+            <banco id="2" nome="BANCO SANTANDER" agencia="3273" conta="2.011.754-7" padrão="true"/>
+        </Bancos>
+    </meusBancos>
+    <myConfig>
+        <certificadoCfgs/>
+        <certificadoToken>tokenSafeNet5100.cfg</certificadoToken>
+        <certificadoCacerts>NfeCacerts</certificadoCacerts>
+        <portaSSl>443</portaSSl>
+        <versao>4.00</versao>
+        <indSinc>0</indSinc>
+        <natOp>0</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <tpNF>1</tpNF>
+        <idDest>1</idDest>
+        <cMunFG>1302603</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <tpAmb>2</tpAmb>
+        <finNFe>1</finNFe>
+        <indPres>3</indPres>
+        <procEmi>0</procEmi>
+        <verProc>2.02</verProc>
+        <indPag>1</indPag>
+        <cPais>1058</cPais>
+        <nPais>BRASIL</nPais>
+        <CRT>3</CRT>
+        <infAdic>TOTAL R$ %s*t*DT. VENC.: %s*n*DADOS BANCARIOS PARA TRANSFERENCIA*n*BANCO %s AG: %s C/C: %s</infAdic>
+        <homCNPJ>99999999000191</homCNPJ>
+        <homRazao>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</homRazao>
+        <infRespTecs>
+            <infRespTec id="1" cnpj="08009246000136" xContato="THIAGO LEIROS MACEDO" email="tl.macedo@hotmail.com"
+                        fone="92 98168-6148"/>
+            <infRespTec id="2" cnpj="08009246000136" xContato="CARLA FIGUEIREDO LEIROS MACEDO"
+                        email="carlinha.figueiredo32@hotmail.com" fone="92 99241-2974"/>
+        </infRespTecs>
+    </myConfig>
+    <ide>
+        <natOps>
+            <natOp id="0" descricao="Dentro Do Estado"/>
+            <natOp id="1" descricao="Fora Do Estado"/>
+            <natOp id="2" descricao="Fora Do País"/>
+        </natOps>
+        <indPags>
+            <indPag id="0" descricao="Pagamento á vista"/>
+            <indPag id="1" descricao="Pagamento a prazo"/>
+            <indPag id="2" descricao="Outros"/>
+        </indPags>
+        <mods>
+            <mod id="55" descricao="55"/>
+            <mod id="1" descricao="01"/>
+            <mod id="57" descricao="57"/>
+            <mod id="65" descricao="Nfc-e"/>
+        </mods>
+        <idDests>
+            <idDest id="1" descricao="Operação interna"/>
+            <idDest id="2" descricao="Operação interestadual"/>
+            <idDest id="3" descricao="Operação com exterior"/>
+        </idDests>
+        <tpImps>
+            <tpImp id="0" descricao="Sem geração de DANFE"/>
+            <tpImp id="1" descricao="DANFE normal, Retrato"/>
+            <tpImp id="2" descricao="DANFE normal, Paisagem"/>
+            <tpImp id="3" descricao="DANFE Simplificado"/>
+            <tpImp id="4" descricao="DANFE NFC-e"/>
+            <tpImp id="5" descricao="DANFE NFC-e em mensagem eletrônica"/>
+        </tpImps>
+        <tpEmiss>
+            <tpEmis id="1" descricao="Emissão normal"/>
+            <tpEmis id="2" descricao="Contingência FS-IA"/>
+            <tpEmis id="3" descricao="Contingência SCAN"/>
+            <tpEmis id="4" descricao="Contingência DPEC"/>
+            <tpEmis id="5" descricao="Contingência FS-DA"/>
+            <tpEmis id="6" descricao="Contingência SVC-AN"/>
+            <tpEmis id="7" descricao="Contingência SVC-RS"/>
+            <tpEmis id="9" descricao="Contingência off-line da NFC-e"/>
+        </tpEmiss>
+        <tpAmbs>
+            <tpAmb id="1" descricao="Produção"/>
+            <tpAmb id="2" descricao="Homologação"/>
+        </tpAmbs>
+        <finNFes>
+            <finNFe id="1" descricao="NF-e normal"/>
+            <finNFe id="2" descricao="NF-e complementar"/>
+            <finNFe id="3" descricao="NF-e de ajuste"/>
+            <finNFe id="4" descricao="Devolução de mercadoria"/>
+        </finNFes>
+        <indFinals>
+            <indFinal id="0" descricao="Normal"/>
+            <indFinal id="1" descricao="Consumidor final"/>
+        </indFinals>
+        <indPress>
+            <indPres id="0" descricao="Não se aplica"/>
+            <indPres id="1" descricao="Operação presencial"/>
+            <indPres id="2" descricao="Operação não presencial, pela Internet"/>
+            <indPres id="3" descricao="Operação não presencial, Teleatendimento"/>
+            <indPres id="4" descricao="NFC-e em operação com entrega a domicílio"/>
+            <indPres id="9" descricao="Operação não presencial, outros"/>
+        </indPress>
+        <procEmis>
+            <procEmi id="0" descricao="Emissão de NF-e com aplicativo do contribuinte"/>
+            <procEmi id="1" descricao="Emissão de NF-e avulsa pelo Fisco"/>
+            <procEmi id="2"
+                     descricao="Emissão de NF-e avulsa, pelo contribuinte com seu certificado digital, através do site do Fisco"/>
+            <procEmi id="3" descricao="Emissão NF-e pelo contribuinte com aplicativo fornecido pelo Fisco"/>
+        </procEmis>
+    </ide>
+    <emit>
+        <crts>
+            <crt id="1" descricao="Simples Nacional"/>
+            <crt id="2" descricao="Simples Nacional, excesso sublimite de receita bruta"/>
+            <crt id="3" descricao="Regime Normal. (v2.0)"/>
+        </crts>
+    </emit>
+    <dest>
+        <indIEDests>
+            <indIEDest id="1" descricao="Contribuinte ICMS"/>
+            <indIEDest id="2" descricao="Contribuinte isento de ICMS"/>
+            <indIEDest id="9" descricao="Não Contribuinte"/>
+        </indIEDests>
+    </dest>
+    <transp>
+        <modFretes>
+            <modFrete id="0" descricao="Por conta do emitente"/>
+            <modFrete id="1" descricao="Por conta do destinatário/remetente"/>
+            <modFrete id="2" descricao="Por conta de terceiros"/>
+            <modFrete id="9" descricao="Sem frete"/>
+        </modFretes>
+    </transp>
+    <sefaz>
+        <statuss>
+            <status id="1" descricao="Digitação" simplificada="DIGITACAO"/>
+            <status id="2" descricao="Assinada" simplificada="ASSINADA"/>
+            <status id="100" descricao="Autorizado o uso da NF-e" simplificada="AUTORIZADA"/>
+            <status id="102" descricao="Inutilização de número homologado" simplificada="INUTILIZADA"/>
+            <status id="103" descricao="Lote recebido com sucesso" simplificada="LOTE_RECEBIDO"/>
+            <status id="104" descricao="Lote processado" simplificada="LOTE_PROCESSADO"/>
+            <status id="105" descricao="Lote em processamento" simplificada="LOTE_PROCESSAMENTO"/>
+            <status id="106" descricao="Lote não localizado" simplificada="LOTE_NAO_LOCALIZADO"/>
+            <status id="108" descricao="Paralização para manutenção" simplificada="PARALIZACAO_MANUTENCAO"/>
+            <status id="109" descricao="Paralização por problemas tecnicos" simplificada="PARALIZACAO_PROBLEMAS"/>
+            <status id="110" descricao="Uso Denegado" simplificada="DENEGADA"/>
+            <status id="111" descricao="Consulta cadastro com uma ocorrência"
+                    simplificada="CONSULTA_CAD_UMA_OCORRENCIA"/>
+            <status id="112" descricao="Consulta cadastro com mais de uma ocorrência"
+                    simplificada="CONSULTA_CAD_VAIRAS_OCORRENCIAS"/>
+        </statuss>
+    </sefaz>
+</infMyNfe>

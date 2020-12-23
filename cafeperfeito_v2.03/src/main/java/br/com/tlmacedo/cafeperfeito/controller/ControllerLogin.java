@@ -3,7 +3,7 @@ package br.com.tlmacedo.cafeperfeito.controller;
 
 import br.com.tlmacedo.cafeperfeito.interfaces.ModeloCafePerfeito;
 import br.com.tlmacedo.cafeperfeito.model.dao.UsuarioDAO;
-import br.com.tlmacedo.cafeperfeito.model.enums.FORM_VIEW;
+import br.com.tlmacedo.cafeperfeito.model.enums.EnumFormView;
 import br.com.tlmacedo.cafeperfeito.model.vo.Usuario;
 import br.com.tlmacedo.cafeperfeito.service.ServiceCryptografia;
 import br.com.tlmacedo.cafeperfeito.service.ServiceTremeView;
@@ -122,7 +122,7 @@ public class ControllerLogin implements Initializable, ModeloCafePerfeito {
                 return;
             }
 //            System.out.printf("000: %s\n", getClass().getResource("image/ico/ic_coffee_ativo_dp24.png"));
-            new View(FORM_VIEW.PRINCIPAL).loadForm();
+            new View(EnumFormView.PRINCIPAL).loadForm();
             fechar();
         });
 

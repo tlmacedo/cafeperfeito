@@ -1,7 +1,7 @@
 package br.com.tlmacedo.cafeperfeito;
 
 
-import br.com.tlmacedo.cafeperfeito.model.enums.FORM_VIEW;
+import br.com.tlmacedo.cafeperfeito.model.enums.EnumFormView;
 import br.com.tlmacedo.cafeperfeito.service.ServiceConfigSis;
 import br.com.tlmacedo.cafeperfeito.view.View;
 import javafx.application.Application;
@@ -16,7 +16,7 @@ public class Main extends Application {
         new ServiceConfigSis(true).getVariaveisSistema();
 
 //        new View(FORM_VIEW.LOGIN).loadForm();
-        new View(FORM_VIEW.PRINCIPAL).loadForm();
+        new View(EnumFormView.PRINCIPAL).loadForm();
 
     }
 }

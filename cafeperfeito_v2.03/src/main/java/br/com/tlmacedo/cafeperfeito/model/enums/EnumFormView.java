@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public enum FORM_VIEW {
+public enum EnumFormView {
 
     LOGIN(0, "Login"),
     PRINCIPAL(1, "Principal"),
@@ -13,30 +13,30 @@ public enum FORM_VIEW {
     private Integer cod;
     private String descricao;
 
-    FORM_VIEW(Integer cod, String descricao) {
+    EnumFormView(Integer cod, String descricao) {
         this.cod = cod;
         this.descricao = descricao;
     }
 
-    public static FORM_VIEW toEnum(Integer codigo) {
+    public static EnumFormView toEnum(Integer codigo) {
         if (codigo == null) return null;
-        for (FORM_VIEW view : FORM_VIEW.values())
+        for (EnumFormView view : EnumFormView.values())
             if (view.getCod().equals(codigo))
                 return view;
         throw new IllegalArgumentException("Id inválido!");
     }
 
-    public static FORM_VIEW toEnum(String descricao) {
+    public static EnumFormView toEnum(String descricao) {
         if (descricao == null) return null;
-        for (FORM_VIEW view : FORM_VIEW.values())
+        for (EnumFormView view : EnumFormView.values())
             if (view.toString().equals(descricao))
                 return view;
         throw new IllegalArgumentException("Descricao inválida!");
     }
 
-    public static List<FORM_VIEW> getList() {
-        List<FORM_VIEW> list = Arrays.asList(FORM_VIEW.values());
-        list.sort(Comparator.comparing(FORM_VIEW::getDescricao));
+    public static List<EnumFormView> getList() {
+        List<EnumFormView> list = Arrays.asList(EnumFormView.values());
+        list.sort(Comparator.comparing(EnumFormView::getDescricao));
         return list;
     }
 

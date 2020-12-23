@@ -1,6 +1,6 @@
 package br.com.tlmacedo.cafeperfeito.view;
 
-import br.com.tlmacedo.cafeperfeito.model.enums.FORM_VIEW;
+import br.com.tlmacedo.cafeperfeito.model.enums.EnumFormView;
 import br.com.tlmacedo.cafeperfeito.service.ServiceOpenView;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -22,7 +22,7 @@ public class View {
     private static Image Icon0, Icon1;
     private String fxmlPath, fxmlTitle, fxmlStyle, fxmlIcon0, fxmlIcon1;
 
-    public View(FORM_VIEW formView) {
+    public View(EnumFormView formView) {
 
         setStage(new Stage());
 
