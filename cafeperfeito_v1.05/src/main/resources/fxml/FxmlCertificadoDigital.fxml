@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.*?>
+<AnchorPane fx:id="pnlCertificadosDigitais" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" styleClass="view-certificado_digital"
+            xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="br.com.tlmacedo.cafeperfeito.controller.ControllerCertificadoDigital">
+    <children>
+        <VBox prefHeight="500.0" prefWidth="750.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                       minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="750.0"
+                       styleClass="lbl_titulo" text="certificados digitais." textFill="WHITE">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets top="5.0"/>
+                    </VBox.margin>
+                </Label>
+                <JFXComboBox fx:id="cboCertificadosDigitais" maxHeight="-Infinity" maxWidth="-Infinity"
+                             minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="730.0"
+                             promptText="Selecione um certificado para apresentar como identificação:"
+                             styleClass="cbo_certificado">
+                    <VBox.margin>
+                        <Insets left="10.0" top="10.0"/>
+                    </VBox.margin>
+                </JFXComboBox>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                      prefHeight="105.0" prefWidth="730.0">
+                    <children>
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                               prefHeight="15.0" prefWidth="730.0"
+                               text="Identificação do Titular do Certificado Digital:">
+                            <styleClass>
+                                <String fx:value="lbl_h5"/>
+                                <String fx:value="lbl_negrito"/>
+                            </styleClass>
+                        </Label>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                              prefHeight="90.0" prefWidth="730.0">
+                            <children>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="90.0" prefWidth="130.0">
+                                    <children>
+                                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="168.0"
+                                               styleClass="lbl_h6" text="Nome Comum (CN): "/>
+                                        <Label layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="168.0" styleClass="lbl_h6" text="Empresa (O):"/>
+                                        <Label layoutX="10.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="168.0" styleClass="lbl_h6" text="Unid. Organizacional (OU):"/>
+                                        <Label layoutX="10.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="168.0" styleClass="lbl_h6" text="Localidade (L): "/>
+                                        <Label layoutX="10.0" layoutY="55.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="168.0" styleClass="lbl_h6" text="Estado (ST):"/>
+                                        <Label layoutX="10.0" layoutY="70.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="168.0" styleClass="lbl_h6" text="País (C):"/>
+                                    </children>
+                                </VBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="90.0" prefWidth="600.0">
+                                    <children>
+                                        <Label fx:id="lblTitularNomeComum_CN" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="558.0" styleClass="lbl_h6"/>
+                                        <Label fx:id="lblTitularEmpresa_O" layoutX="10.0" layoutY="10.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="558.0"
+                                               styleClass="lbl_h6" wrapText="true"/>
+                                        <Label fx:id="lblTitularEmpresa_OU" layoutX="10.0" layoutY="25.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="558.0"
+                                               styleClass="lbl_h6"/>
+                                        <Label fx:id="lblTitularLocalidade_L" layoutX="10.0" layoutY="40.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="558.0"
+                                               styleClass="lbl_h6"/>
+                                        <Label fx:id="lblTitularEstado_ST" layoutX="10.0" layoutY="55.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="558.0"
+                                               styleClass="lbl_h6"/>
+                                        <Label fx:id="lblTitularPais_C" layoutX="10.0" layoutY="70.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="558.0"
+                                               styleClass="lbl_h6"/>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="10.0" top="10.0"/>
+                    </VBox.margin>
+                </VBox>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                      prefHeight="75.0" prefWidth="730.0">
+                    <children>
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                               prefHeight="15.0" prefWidth="730.0" text="Identificação da Autoridade Certificadora:">
+                            <styleClass>
+                                <String fx:value="lbl_h5"/>
+                                <String fx:value="lbl_negrito"/>
+                            </styleClass>
+                        </Label>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                              prefHeight="60.0" prefWidth="730.0">
+                            <children>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="60.0" prefWidth="130.0">
+                                    <children>
+                                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="168.0"
+                                               styleClass="lbl_h6" text="Nome Comum (CN): "/>
+                                        <Label layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="168.0" styleClass="lbl_h6" text="Empresa (O):"/>
+                                        <Label layoutX="10.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="168.0" styleClass="lbl_h6" text="Unid. Organizacional (OU):"/>
+                                        <Label layoutX="10.0" layoutY="70.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="168.0" styleClass="lbl_h6" text="País (C):"/>
+                                    </children>
+                                </VBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="60.0" prefWidth="600.0">
+                                    <children>
+                                        <Label fx:id="lblCertificadoraNomeComum_CN" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefHeight="15.0" prefWidth="558.0" styleClass="lbl_h6"/>
+                                        <Label fx:id="lblCertificadoraEmpresa_O" layoutX="10.0" layoutY="10.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="558.0"
+                                               styleClass="lbl_h6"/>
+                                        <Label fx:id="lblCertificadoraOrganizacional_OU" layoutX="10.0" layoutY="25.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="558.0"
+                                               styleClass="lbl_h6"/>
+                                        <Label fx:id="lblCertificadoraPais_C" layoutX="10.0" layoutY="70.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="558.0"
+                                               styleClass="lbl_h6"/>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="10.0" top="10.0"/>
+                    </VBox.margin>
+                </VBox>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                      prefHeight="60.0" prefWidth="730.0">
+                    <children>
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                               prefHeight="15.0" prefWidth="730.0" text="Detalhes do Certificado Digital:">
+                            <styleClass>
+                                <String fx:value="lbl_h5"/>
+                                <String fx:value="lbl_negrito"/>
+                            </styleClass>
+                        </Label>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                              prefHeight="45.0" prefWidth="730.0">
+                            <children>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="45.0" prefWidth="130.0">
+                                    <children>
+                                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="168.0"
+                                               styleClass="lbl_h6" text="Dispositivo de Segurança:"/>
+                                        <Label layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="168.0" styleClass="lbl_h6" text="Validade Inicio:"/>
+                                        <Label layoutX="10.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="168.0" styleClass="lbl_h6" text="Validade Fim:"/>
+                                    </children>
+                                </VBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="45.0" prefWidth="600.0">
+                                    <children>
+                                        <Label fx:id="lblCertificadoDispositivoSeguranca" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefHeight="15.0" prefWidth="558.0" styleClass="lbl_h6"/>
+                                        <Label fx:id="lblCertificadoValidadeInicio" layoutX="10.0" layoutY="10.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="558.0"
+                                               styleClass="lbl_h6"/>
+                                        <Label fx:id="lblCertificadoValidadeFim" layoutX="10.0" layoutY="25.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="558.0"
+                                               styleClass="lbl_h6"/>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="10.0" top="10.0"/>
+                    </VBox.margin>
+                </VBox>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                      prefHeight="90.0" prefWidth="730.0">
+                    <children>
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                               prefHeight="15.0" prefWidth="730.0"
+                               text="Identificação do Responsável pelo Certificado:">
+                            <styleClass>
+                                <String fx:value="lbl_h5"/>
+                                <String fx:value="lbl_negrito"/>
+                            </styleClass>
+                        </Label>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                              prefHeight="75.0" prefWidth="730.0">
+                            <children>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="75.0" prefWidth="130.0">
+                                    <children>
+                                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="168.0"
+                                               styleClass="lbl_h6" text="Nome:"/>
+                                        <Label layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="168.0" styleClass="lbl_h6" text="RG:"/>
+                                        <Label layoutX="10.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="168.0" styleClass="lbl_h6" text="CPF:"/>
+                                        <Label layoutX="10.0" layoutY="70.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="168.0" styleClass="lbl_h6" text="data nascimento:"/>
+                                        <Label layoutX="10.0" layoutY="55.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="168.0" styleClass="lbl_h6" text="email:"/>
+                                    </children>
+                                </VBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="75.0" prefWidth="600.0">
+                                    <children>
+                                        <Label fx:id="lblResponsavelNome" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0"
+                                               prefWidth="558.0" styleClass="lbl_h6"/>
+                                        <Label fx:id="lblResponsavelRG" layoutX="10.0" layoutY="10.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="558.0"
+                                               styleClass="lbl_h6"/>
+                                        <Label fx:id="lblResponsavelCPF" layoutX="10.0" layoutY="25.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="558.0"
+                                               styleClass="lbl_h6"/>
+                                        <Label fx:id="lblResponsavelDtNascimento" layoutX="10.0" layoutY="70.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="558.0"
+                                               styleClass="lbl_h6"/>
+                                        <Label fx:id="lblResponsavelEmail" layoutX="10.0" layoutY="55.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefHeight="15.0" prefWidth="558.0"
+                                               styleClass="lbl_h6"/>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="10.0" top="10.0"/>
+                    </VBox.margin>
+                </VBox>
+                <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="200.0">
+                    <children>
+                        <JFXButton fx:id="btnCancela" cancelButton="true" prefHeight="30.0" prefWidth="100.0"
+                                   styleClass="btn_cancel" text="Cancela">
+                            <graphic>
+                                <Label styleClass="btn_cancel"/>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnOK" defaultButton="true" prefHeight="30.0" prefWidth="90.0"
+                                   styleClass="btn_ok" text="Ok">
+                            <HBox.margin>
+                                <Insets left="10.0"/>
+                            </HBox.margin>
+                            <graphic>
+                                <Label styleClass="btn_ok"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

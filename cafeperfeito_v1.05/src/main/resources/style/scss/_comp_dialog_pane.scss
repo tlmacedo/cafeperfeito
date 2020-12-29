@@ -1,0 +1,81 @@
+.dialog-pane {
+  -fx-pref-width: $sisWidthDialogPane;
+  -fx-pref-height: $sisHeightDialogPane;
+  -fx-background-color: $sisColor_transparent;
+
+  .header-panel {
+    -fx-background-color: $sisColor_transparent;
+
+    .label {
+      -fx-text-fill: $sisColor_white;
+      -fx-font-size: $fontSizeh4;
+      -fx-font-weight: bold;
+      -fx-font-style: italic;
+    }
+  }
+
+  .content {
+    &.label {
+      -fx-text-fill: $sisColor_black;
+      -fx-font-size: $fontSizeh5;
+      -fx-font-weight: bold;
+    }
+
+  }
+
+  .button-bar {
+    -fx-background-color: $sisColor_transparent;
+  }
+
+  &.dialog_yes_no, &.dialog_ok, &.dialog_combo_box, &.dialog_text_box {
+    -fx-pref-width: $sisWidthDialogPane_YES_NO;
+    -fx-pref-height: $sisHeightDialogPane_YES_NO;
+    -fx-background-image: url($painelDialogPane_YES_NO);
+  }
+
+  &.dialog_text_field_e_combo_box {
+    -fx-pref-width: $sisWidthDialogPane_text_field_e_combo_box;
+    -fx-pref-height: $sisHeightDialogPane_text_field_e_combo_box;
+    -fx-background-image: url($painelDialogPane_text_field_e_combo_box);
+  }
+
+  &.dialog-pane-transparent {
+    -fx-pref-width: $sisWidthDialogPane_Loading;
+    -fx-pref-height: $sisHeightDialogPane_Loading;
+    -fx-background-color: $corTransparenciaPreta;
+    //-fx-background-color: #FFC107;
+    -fx-background-radius: 8;
+
+    .label {
+      &.msg {
+        -fx-wrap-text: true;
+        -fx-padding: 15 0 2 0;
+        -fx-alignment: center-left;
+        -fx-pref-width: ($sisWidthDialogPane_Loading - 15);
+        -fx-text-fill: $sisColor_whiteblack;
+        -fx-font-size: $fontSizeh4;
+        -fx-font-weight: bold;
+
+        .text {
+          //-fx-stroke: $sisColor_black; // $corTransparenciaBranca;
+          //-fx-stroke-width: 1;
+        }
+      }
+    }
+
+    .progress-bar {
+      -fx-pref-width: ($sisWidthDialogPane_Loading - 20);
+      //-fx-pref-height: 40;
+      //-fx-padding: 5 0;
+    }
+
+    .jfx-combo-box, .combo-box {
+      -fx-pref-width: ($sisWidthDialogPane - 20);
+    }
+
+    .jfx-text-field, .text-field {
+      -fx-pref-width: ($sisWidthDialogPane - 40);
+    }
+  }
+}
+

@@ -1,0 +1,9 @@
+.label {
+  &.usuario-login {
+    -fx-background-image: url("../../image/ico/principal/ic_usuario_dp24.png") no-repeat center;
+  }
+
+  &.usuario-senha {
+    -fx-background-image: url("../../image/ico/principal/ic_key_dp24.png") no-repeat center;
+  }
+}

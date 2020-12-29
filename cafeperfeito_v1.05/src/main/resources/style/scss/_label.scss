@@ -1,0 +1,89 @@
+.label {
+  -fx-font-family: $fontFamily;
+  -fx-text-fill: $sisColor_black;
+  -fx-font-size: $fontSizeh6;
+  -fx-font-style: normal;
+
+  &.h1 {
+    -fx-text-fill: $corSecundaria;
+    -fx-font-size: $fontSizeh2;
+    -fx-font-weight: bold;
+    -fx-alignment: Center;
+  }
+
+  &.menu-principal {
+    -fx-padding: 0 10;
+    -fx-background-color: $sisColor_whiteblack;
+    -fx-text-fill: $corPricipal;
+    -fx-font-size: $fontSizeh4;
+    -fx-font-weight: bold;
+  }
+
+  &.label-tab-total-label {
+    -fx-background-color: $sisColor_transparent;
+    -fx-text-fill: $sisColor_black;
+    -fx-alignment: center-right;
+    -fx-font-weight: bold;
+    -fx-font-size: $fontSizeh7;
+  }
+
+  &.label-tab-total-valor {
+    //-fx-padding: 0 0;
+    -fx-background-color: $sisColor_whiteblack;
+    -fx-text-fill: $sisColor_black;
+    -fx-alignment: center-right;
+    -fx-font-weight: bold;
+    -fx-font-size: $fontSizeh5;
+  }
+
+  &.label-total-label {
+    //-fx-padding: 0 10;
+    -fx-background-color: $sisColor_transparent;
+    -fx-text-fill: $sisColor_black;
+    -fx-alignment: center-right;
+    -fx-font-weight: bold;
+    -fx-font-size: $fontSizeh4;
+  }
+
+  &.label-total-valor {
+    //-fx-padding: 0 0;
+    -fx-background-color: $sisColor_whiteblack;
+    -fx-text-fill: $sisColor_black;
+    -fx-alignment: center-right;
+    -fx-font-weight: bold;
+    -fx-font-size: $fontSizeh2;
+  }
+
+  &.copyright {
+    -fx-alignment: bottom-right;
+    -fx-padding: 0 10;
+    -fx-font-family: $fontFamily;
+    -fx-text-fill: $corPricipal;
+    -fx-font-size: $fontSizeh5;
+    -fx-opacity: 0.6;
+  }
+
+  &.dialog-update-msg {
+    -fx-wrap-text: true;
+    -fx-padding: 20 0 2 0;
+    -fx-alignment: center-left;
+    //-fx-pref-width: ( $sisWidthDialogPane_Loading - 15);
+    -fx-text-fill: $sisColor_whiteblack;
+    -fx-font-size: $fontSizeh4;
+    -fx-font-weight: bold;
+  }
+
+  .lbl_ico_cliente {
+    -fx-background-image: url("../../image/ico/principal/ic_cliente_dp16.png") no-repeat center;
+  }
+
+  .lbl_ico_fornecedor {
+    -fx-background-image: url("../../image/ico/principal/ic_fornecedor_dp16.png") no-repeat center;
+  }
+
+  .lbl_ico_transportadora {
+    -fx-background-image: url("../../image/ico/principal/ic_transportadora_dp16.png") no-repeat center;
+  }
+
+}
+

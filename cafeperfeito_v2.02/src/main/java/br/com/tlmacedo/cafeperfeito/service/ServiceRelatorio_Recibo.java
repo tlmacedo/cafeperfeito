@@ -2,15 +2,14 @@ package br.com.tlmacedo.cafeperfeito.service;
 
 import br.com.tlmacedo.cafeperfeito.model.dao.RecebimentoDAO;
 import br.com.tlmacedo.cafeperfeito.model.enums.RelatorioTipo;
-import br.com.tlmacedo.cafeperfeito.model.vo.ContasAReceber;
-import br.com.tlmacedo.cafeperfeito.model.vo.Recebimento;
-import br.com.tlmacedo.cafeperfeito.model.vo.SaidaProdutoProduto;
-import br.com.tlmacedo.cafeperfeito.model.vo.UsuarioLogado;
+import br.com.tlmacedo.cafeperfeito.model.vo.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import static br.com.tlmacedo.cafeperfeito.interfaces.Regex_Convert.DTF_DATAHORA_HM;
 
 public class ServiceRelatorio_Recibo {
 
@@ -28,20 +27,32 @@ public class ServiceRelatorio_Recibo {
         List list = new ArrayList();
         list.add(getRecebimento());
 
-        final String[] descricaoProduto = new String[1];
-        int qtd = getRecebimento().contasAReceberProperty().getValue().saidaProdutoProperty().getValue().getSaidaProdutoProdutoList().stream()
-                .filter(produto -> {
-                    if (produto.descricaoProperty().getValue().toLowerCase().contains("supremo")) {
-                        descricaoProduto[0] = produto.getDescricao();
-                        return true;
-                    }
-                    return false;
-                })
-                .mapToInt(SaidaProdutoProduto::getQtd).sum();
+        String paramReferenteA = null;
+        try {
+            SaidaProdutoNfe nfe = getRecebimento().getContasAReceber().getSaidaProduto().getSaidaProdutoNfeList().get(0);
+            paramReferenteA = String.format("NF:(%d) série:(%d) emissão: %s", nfe.getNumero(), nfe.getSerie(),
+                    nfe.getDtHoraEmissao().format(DTF_DATAHORA_HM));
+        } catch (Exception ex) {
+            if (!(ex instanceof IndexOutOfBoundsException)) {
+                ex.printStackTrace();
+            } else {
+                final String[] descricaoProduto = new String[1];
+                int qtd = getRecebimento().contasAReceberProperty().getValue().saidaProdutoProperty().getValue().getSaidaProdutoProdutoList().stream()
+                        .filter(produto -> {
+                            if (produto.descricaoProperty().getValue().toLowerCase().contains("supremo")) {
+                                descricaoProduto[0] = produto.getDescricao();
+                                return true;
+                            }
+                            return false;
+                        })
+                        .mapToInt(SaidaProdutoProduto::getQtd).sum();
 
+                paramReferenteA = String.format("%02d KG de %s", qtd, descricaoProduto[0]);
+            }
+        }
         Map paramentros = new HashMap();
         paramentros.put("valorExtenso", new ServiceNumeroExtenso(getRecebimento().valorProperty().get()).toString().toUpperCase());
-        paramentros.put("referenteA", String.format("%02d KG de %s", qtd, descricaoProduto[0]).toUpperCase());
+        paramentros.put("referenteA", paramReferenteA.toUpperCase());
         new ServiceRelatorio().gerar(RelatorioTipo.RECIBO, paramentros, list);
     }
 

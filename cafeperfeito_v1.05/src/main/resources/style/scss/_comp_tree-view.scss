@@ -1,0 +1,18 @@
+.tree-view {
+  -fx-font-family: $fontFamily;
+  -fx-text-fill: $sisColor_whiteblack;
+  -fx-font-size: $fontSizeh5;
+
+  .column-header {
+    -fx-background-color: transparent;
+
+    .label {
+      -fx-font-size: $fontSizeh4;
+      -fx-font-family: $fontFamily;
+    }
+  }
+
+  &:focused {
+    -fx-background-color: -fx-focus-color;
+  }
+}

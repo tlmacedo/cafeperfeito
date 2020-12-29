@@ -1,0 +1,13 @@
+.jfx-text-area, .text-area {
+  -fx-alignment: center-left;
+  -fx-font-family: $fontFamily;
+  -fx-font-style: normal;
+  -fx-text-fill: $sisColor_black;
+  -fx-font-size: $fontSizeh6;
+
+  -jfx-focus-color: $corJFX-Focus;
+  -jfx-unfocus-color: $corJFX-Unforcus;
+  -jfx-label-float: true;
+
+  -fx-padding: 5;
+}

@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="painelViewSaidaProduto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0"
+            prefHeight="780.0" prefWidth="1350.0" stylesheets="@../style/css/cafeperfeito.css"
+            xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="br.com.tlmacedo.cafeperfeito.controller.ControllerSaidaProduto">
+    <children>
+        <TitledPane fx:id="tpnDadosSaida" collapsible="false" focusTraversable="false" layoutX="5.0" layoutY="5.0"
+                    minHeight="0.0" minWidth="0.0" prefHeight="390.0" prefWidth="1340.0" text="Dados da saida">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="1338.0">
+                    <children>
+                        <TitledPane fx:id="tpnCadastroProduto" collapsible="false" focusTraversable="false"
+                                    layoutX="5.0" layoutY="5.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0"
+                                    prefWidth="1330.0" text="Cadastro de produto">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="1330.0">
+                                    <children>
+                                        <JFXTextField fx:id="txtPesquisaProduto"
+                                                      accessibleText="len::80;type::TEXTO;value::;seteditable::;"
+                                                      labelFloat="true" layoutX="5.0" layoutY="10.0" maxHeight="20.0"
+                                                      prefColumnCount="8" prefHeight="20.0" prefWidth="360.0"
+                                                      promptText="Pesquisar produto">
+                                            <tooltip>
+                                                <Tooltip text="campo de pesquisa."/>
+                                            </tooltip>
+                                        </JFXTextField>
+                                        <!--                                        <Label fx:id="lblStatus"-->
+                                        <!--                                               accessibleText="len::;type::;value::[];seteditable::;binding::true;"-->
+                                        <!--                                               layoutX="380.0" layoutY="20.0" styleClass="lbl-informacoes"-->
+                                        <!--                                               text="[Status]">-->
+                                        <!--                                            <tooltip>-->
+                                        <!--                                                <Tooltip text="informações de status"/>-->
+                                        <!--                                            </tooltip>-->
+                                        <!--                                        </Label>-->
+                                        <Label fx:id="lblRegistrosLocalizados"
+                                               accessibleText="len::;type::;value::     registros localizados.;seteditable::;binding::true"
+                                               layoutX="440.0" layoutY="20.0" styleClass="lbl-informacoes"
+                                               text="Registros localizados">
+                                            <tooltip>
+                                                <Tooltip text="Quantidade de registros localizados"/>
+                                            </tooltip>
+                                        </Label>
+                                        <TreeTableView fx:id="ttvProduto"
+                                                       accessibleText="len::;type::;value::;seteditable::;"
+                                                       layoutX="5.0" layoutY="40.0" minHeight="0.0" minWidth="0.0"
+                                                       nodeOrientation="LEFT_TO_RIGHT" prefHeight="135.0"
+                                                       prefWidth="1320.0">
+                                            <tooltip>
+                                                <Tooltip text="tabela com lista de produto"/>
+                                            </tooltip>
+                                        </TreeTableView>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </TitledPane>
+                        <TitledPane fx:id="tpnInformacaoVenda" collapsible="false" focusTraversable="false"
+                                    layoutX="5.0" layoutY="210.0" minHeight="0.0" minWidth="0.0" prefHeight="155.0"
+                                    prefWidth="1330.0" text="Detalhes da venda">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="1330.0">
+                                    <children>
+                                        <JFXComboBox fx:id="cboCliente" accessibleText="value::;" labelFloat="true"
+                                                     layoutX="5.0" layoutY="10.0" maxHeight="-Infinity"
+                                                     maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                                     prefHeight="20.0" prefWidth="375.0" promptText="Cliente">
+                                            <tooltip>
+                                                <Tooltip text="cliente"/>
+                                            </tooltip>
+                                        </JFXComboBox>
+                                        <JFXDatePicker fx:id="dtpVencimento"
+                                                       accessibleText="len::;type::;value::;seteditable::;binding::true;"
+                                                       defaultColor="#ff6600" layoutX="390.0" layoutY="10.0"
+                                                       maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                                       minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                                       promptText="dt venc.">
+                                            <tooltip>
+                                                <Tooltip text="data de vencimento da venda"/>
+                                            </tooltip>
+                                        </JFXDatePicker>
+                                        <JFXDatePicker fx:id="dtpSaida"
+                                                       accessibleText="len::;type::;value::now;seteditable::;"
+                                                       defaultColor="#ff6600" layoutX="490.0" layoutY="10.0"
+                                                       maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                                       minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                                       promptText="dt saida">
+                                            <tooltip>
+                                                <Tooltip text="data de saida da venda"/>
+                                            </tooltip>
+                                        </JFXDatePicker>
+                                        <!--                                        <JFXTextField fx:id="txtPrazo"-->
+                                        <!--                                                      accessibleText="len::12;type::moeda;decimal::2;seteditable::false;"-->
+                                        <!--                                                      layoutX="490.0" layoutY="10.0" maxHeight="-Infinity"-->
+                                        <!--                                                      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"-->
+                                        <!--                                                      prefHeight="20.0" prefWidth="90.0" promptText="Total tributo: R$"-->
+                                        <!--                                                      styleClass="a-direita">-->
+                                        <!--                                            <tooltip>-->
+                                        <!--                                                <Tooltip text="valor líquido total do tributo da nfe de entrada"/>-->
+                                        <!--                                            </tooltip>-->
+                                        <!--                                        </JFXTextField>-->
+                                        <Label fx:id="labelClientePrazo" layoutX="590.0" prefHeight="16.0"
+                                               prefWidth="90.0" styleClass="label-tab-total-label" text="Prazo"/>
+                                        <Label fx:id="lblClientePrazo" layoutX="590.0" layoutY="13.0" prefHeight="18.0"
+                                               prefWidth="90.0" styleClass="label-tab-total-valor" text="Prazo">
+                                            <tooltip>
+                                                <Tooltip text="prazo para pagamento do cliente"/>
+                                            </tooltip>
+                                        </Label>
+                                        <Label fx:id="labelClienteLimite" layoutX="690.0" prefHeight="16.0"
+                                               prefWidth="90.0" styleClass="label-tab-total-label" text="Limite"/>
+                                        <Label fx:id="lblClienteLimite" layoutX="690.0" layoutY="13.0" prefHeight="18.0"
+                                               prefWidth="90.0" styleClass="label-tab-total-valor" text="Limite">
+                                            <tooltip>
+                                                <Tooltip text="limite de crédito do cliente"/>
+                                            </tooltip>
+                                        </Label>
+                                        <Label fx:id="labelClienteAberto" layoutX="790.0" prefHeight="16.0"
+                                               prefWidth="90.0" styleClass="label-tab-total-label" text="Utilizado"/>
+                                        <Label fx:id="lblClienteAberto" layoutX="790.0" layoutY="13.0" prefHeight="18.0"
+                                               prefWidth="90.0" styleClass="label-tab-total-valor" text="Limite">
+                                            <tooltip>
+                                                <Tooltip text="valor do limite utilizado"/>
+                                            </tooltip>
+                                        </Label>
+                                        <Label fx:id="labelClienteDisponivel" layoutX="890.0" prefHeight="16.0"
+                                               prefWidth="90.0" styleClass="label-tab-total-label" text="Disponível"/>
+                                        <Label fx:id="lblClienteDisponivel" layoutX="890.0" layoutY="13.0"
+                                               prefHeight="18.0" prefWidth="90.0" styleClass="label-tab-total-valor"
+                                               text="Limite">
+                                            <tooltip>
+                                                <Tooltip text="valor disponível para pedidos"/>
+                                            </tooltip>
+                                        </Label>
+                                        <TitledPane fx:id="tpnNfeVenda" focusTraversable="false" layoutX="5.0"
+                                                    layoutY="40.0" minHeight="0.0" minWidth="0.0" prefHeight="90.0"
+                                                    prefWidth="1320.0" text="Emissão de Nfe">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                                    <children>
+                                                        <TabPane minHeight="0.0" minWidth="0.0" prefHeight="70.0"
+                                                                 prefWidth="1318.0">
+                                                            <tabs>
+                                                                <Tab text="Dados da NF-e">
+                                                                    <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0"
+                                                                                    prefHeight="40.0"
+                                                                                    prefWidth="1318.0">
+                                                                            <children>
+                                                                                <JFXTextField
+                                                                                        fx:id="txtNfeNaturezaOperacao"
+                                                                                        accessibleText="len::60;type::TEXTO;value::;seteditable::;"
+                                                                                        layoutX="5.0" layoutY="10.0"
+                                                                                        maxHeight="-Infinity"
+                                                                                        maxWidth="-Infinity"
+                                                                                        minHeight="0.0" minWidth="0.0"
+                                                                                        prefHeight="20.0"
+                                                                                        prefWidth="180.0"
+                                                                                        promptText="Natureza da Operação">
+                                                                                    <tooltip>
+                                                                                        <Tooltip
+                                                                                                text="natureza da operação"/>
+                                                                                    </tooltip>
+                                                                                </JFXTextField>
+                                                                                <JFXTextField fx:id="txtNfeNumero"
+                                                                                              accessibleText="len::11;type::nfe_numero;value::;seteditable::;"
+                                                                                              layoutX="195.0"
+                                                                                              layoutY="10.0"
+                                                                                              maxHeight="-Infinity"
+                                                                                              maxWidth="-Infinity"
+                                                                                              minHeight="-Infinity"
+                                                                                              minWidth="-Infinity"
+                                                                                              prefHeight="20.0"
+                                                                                              prefWidth="75.0"
+                                                                                              promptText="Número"
+                                                                                              styleClass="a-direita">
+                                                                                    <tooltip>
+                                                                                        <Tooltip
+                                                                                                text="número da nfe de saida"/>
+                                                                                    </tooltip>
+                                                                                </JFXTextField>
+                                                                                <JFXTextField fx:id="txtNfeSerie"
+                                                                                              accessibleText="len::3;type::numero;value::;seteditable::;"
+                                                                                              layoutX="280.0"
+                                                                                              layoutY="10.0"
+                                                                                              maxHeight="-Infinity"
+                                                                                              maxWidth="-Infinity"
+                                                                                              minHeight="-Infinity"
+                                                                                              minWidth="-Infinity"
+                                                                                              prefHeight="20.0"
+                                                                                              prefWidth="60.0"
+                                                                                              promptText="Série"
+                                                                                              styleClass="a-direita">
+                                                                                    <tooltip>
+                                                                                        <Tooltip
+                                                                                                text="série da nfe de saida"/>
+                                                                                    </tooltip>
+                                                                                </JFXTextField>
+                                                                                <JFXComboBox fx:id="cboNfeModelo"
+                                                                                             accessibleText="value::2;"
+                                                                                             focusColor="#ff6600"
+                                                                                             labelFloat="true"
+                                                                                             layoutX="350.0"
+                                                                                             layoutY="10.0"
+                                                                                             maxHeight="-Infinity"
+                                                                                             maxWidth="-Infinity"
+                                                                                             minHeight="-Infinity"
+                                                                                             minWidth="-Infinity"
+                                                                                             prefHeight="20.0"
+                                                                                             prefWidth="60.0"
+                                                                                             promptText="Modelo">
+                                                                                    <tooltip>
+                                                                                        <Tooltip
+                                                                                                text="modelo da nfe de saida"/>
+                                                                                    </tooltip>
+                                                                                </JFXComboBox>
+                                                                                <JFXDatePicker fx:id="dtpNfeEmissao"
+                                                                                               accessibleText="len::;type::;value::now;seteditable::;"
+                                                                                               defaultColor="#ff6600"
+                                                                                               layoutX="420.0"
+                                                                                               layoutY="10.0"
+                                                                                               maxHeight="-Infinity"
+                                                                                               maxWidth="-Infinity"
+                                                                                               minHeight="0.0"
+                                                                                               minWidth="0.0"
+                                                                                               prefHeight="20.0"
+                                                                                               prefWidth="90.0"
+                                                                                               promptText="Dt emissão">
+                                                                                    <tooltip>
+                                                                                        <Tooltip
+                                                                                                text="data de emissão da nfe de saida"/>
+                                                                                    </tooltip>
+                                                                                </JFXDatePicker>
+                                                                                <JFXTimePicker fx:id="tmpNfeEmissao"
+                                                                                               accessibleText="value::now;"
+                                                                                               defaultColor="#ff6600"
+                                                                                               editable="true"
+                                                                                               layoutX="520.0"
+                                                                                               layoutY="10.0"
+                                                                                               maxHeight="-Infinity"
+                                                                                               maxWidth="-Infinity"
+                                                                                               minHeight="0.0"
+                                                                                               minWidth="0.0"
+                                                                                               prefHeight="20.0"
+                                                                                               prefWidth="90.0"
+                                                                                               promptText="Hora emissão">
+                                                                                    <tooltip>
+                                                                                        <Tooltip
+                                                                                                text="Hora emissão da nfe de saida"/>
+                                                                                    </tooltip>
+                                                                                </JFXTimePicker>
+                                                                                <JFXDatePicker fx:id="dtpNfeSaida"
+                                                                                               accessibleText="value::now;"
+                                                                                               defaultColor="#ff6600"
+                                                                                               layoutX="620.0"
+                                                                                               layoutY="10.0"
+                                                                                               maxHeight="-Infinity"
+                                                                                               maxWidth="-Infinity"
+                                                                                               minHeight="0.0"
+                                                                                               minWidth="0.0"
+                                                                                               prefHeight="20.0"
+                                                                                               prefWidth="90.0"
+                                                                                               promptText="Dt Saida">
+                                                                                    <tooltip>
+                                                                                        <Tooltip
+                                                                                                text="data de saida da nfe"/>
+                                                                                    </tooltip>
+                                                                                </JFXDatePicker>
+                                                                                <JFXTimePicker fx:id="tmpNfeSaida"
+                                                                                               accessibleText="value::now;"
+                                                                                               defaultColor="#ff6600"
+                                                                                               editable="true"
+                                                                                               layoutX="720.0"
+                                                                                               layoutY="10.0"
+                                                                                               maxHeight="-Infinity"
+                                                                                               maxWidth="-Infinity"
+                                                                                               minHeight="0.0"
+                                                                                               minWidth="0.0"
+                                                                                               prefHeight="20.0"
+                                                                                               prefWidth="90.0"
+                                                                                               promptText="Hora Saida">
+                                                                                    <tooltip>
+                                                                                        <Tooltip
+                                                                                                text="Hora de saida da nfe"/>
+                                                                                    </tooltip>
+                                                                                </JFXTimePicker>
+                                                                                <JFXComboBox
+                                                                                        fx:id="cboNfeDestinoOperacao"
+                                                                                        accessibleText="value::3;"
+                                                                                        focusColor="#ff6600"
+                                                                                        labelFloat="true"
+                                                                                        layoutX="820.0" layoutY="10.0"
+                                                                                        maxHeight="-Infinity"
+                                                                                        maxWidth="-Infinity"
+                                                                                        minHeight="-Infinity"
+                                                                                        minWidth="-Infinity"
+                                                                                        prefHeight="20.0"
+                                                                                        prefWidth="145.0"
+                                                                                        promptText="Destino da operação">
+                                                                                    <tooltip>
+                                                                                        <Tooltip
+                                                                                                text="Identificador de local de destino da operação"/>
+                                                                                    </tooltip>
+                                                                                </JFXComboBox>
+                                                                                <JFXComboBox
+                                                                                        fx:id="cboNfeConsumidorFinal"
+                                                                                        accessibleText="value::0;"
+                                                                                        focusColor="#ff6600"
+                                                                                        labelFloat="true"
+                                                                                        layoutX="975.0" layoutY="10.0"
+                                                                                        maxHeight="-Infinity"
+                                                                                        maxWidth="-Infinity"
+                                                                                        minHeight="-Infinity"
+                                                                                        minWidth="-Infinity"
+                                                                                        prefHeight="20.0"
+                                                                                        prefWidth="100.0"
+                                                                                        promptText="Consumidor final">
+                                                                                    <tooltip>
+                                                                                        <Tooltip
+                                                                                                text="Indica operação com Consumidor final"/>
+                                                                                    </tooltip>
+                                                                                </JFXComboBox>
+                                                                                <JFXComboBox
+                                                                                        fx:id="cboNfeTipoAtendimento"
+                                                                                        accessibleText="value::2;"
+                                                                                        focusColor="#ff6600"
+                                                                                        labelFloat="true"
+                                                                                        layoutX="1085.0" layoutY="10.0"
+                                                                                        maxHeight="-Infinity"
+                                                                                        maxWidth="-Infinity"
+                                                                                        minHeight="-Infinity"
+                                                                                        minWidth="-Infinity"
+                                                                                        prefHeight="20.0"
+                                                                                        prefWidth="185.0"
+                                                                                        promptText="Tipo atendimento">
+                                                                                    <tooltip>
+                                                                                        <Tooltip
+                                                                                                text="Indicador de presença do comprador no estabelecimento comercial no momento da operação"/>
+                                                                                    </tooltip>
+                                                                                </JFXComboBox>
+                                                                            </children>
+                                                                        </AnchorPane>
+                                                                    </content>
+                                                                </Tab>
+                                                                <Tab text="Transporte">
+                                                                    <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0"
+                                                                                    prefHeight="40.0"
+                                                                                    prefWidth="1318.0">
+                                                                            <children>
+                                                                                <JFXComboBox
+                                                                                        fx:id="cboNfeModalidadeFrete"
+                                                                                        accessibleText="value::5;"
+                                                                                        focusColor="#ff6600"
+                                                                                        labelFloat="true" layoutX="5.0"
+                                                                                        layoutY="10.0"
+                                                                                        maxHeight="-Infinity"
+                                                                                        maxWidth="-Infinity"
+                                                                                        minHeight="-Infinity"
+                                                                                        minWidth="-Infinity"
+                                                                                        prefHeight="20.0"
+                                                                                        prefWidth="350.0"
+                                                                                        promptText="Modalidade do frete">
+                                                                                    <tooltip>
+                                                                                        <Tooltip
+                                                                                                text="Indicador de presença do comprador no estabelecimento comercial no momento da operação"/>
+                                                                                    </tooltip>
+                                                                                </JFXComboBox>
+                                                                                <JFXComboBox fx:id="cboNfeTransportador"
+                                                                                             accessibleText="value::;"
+                                                                                             labelFloat="true"
+                                                                                             layoutX="365.0"
+                                                                                             layoutY="10.0"
+                                                                                             maxHeight="-Infinity"
+                                                                                             maxWidth="-Infinity"
+                                                                                             minHeight="-Infinity"
+                                                                                             minWidth="-Infinity"
+                                                                                             prefHeight="20.0"
+                                                                                             prefWidth="485.0"
+                                                                                             promptText="Transportador">
+                                                                                    <tooltip>
+                                                                                        <Tooltip
+                                                                                                text="transportadora da nfe de saida"/>
+                                                                                    </tooltip>
+                                                                                </JFXComboBox>
+                                                                            </children>
+                                                                        </AnchorPane>
+                                                                    </content>
+                                                                </Tab>
+                                                                <Tab text="Cobrança">
+                                                                    <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0"
+                                                                                    prefHeight="40.0"
+                                                                                    prefWidth="1318.0">
+                                                                            <children>
+                                                                                <JFXTextField
+                                                                                        fx:id="txtNfeCobrancaNumero"
+                                                                                        accessibleText="len::60;type::TEXTO;value::;seteditable::;"
+                                                                                        alignment="CENTER_RIGHT"
+                                                                                        layoutX="5.0" layoutY="10.0"
+                                                                                        maxHeight="-Infinity"
+                                                                                        maxWidth="-Infinity"
+                                                                                        minHeight="0.0" minWidth="0.0"
+                                                                                        prefHeight="20.0"
+                                                                                        prefWidth="180.0"
+                                                                                        promptText="Cobrança número">
+                                                                                    <tooltip>
+                                                                                        <Tooltip
+                                                                                                text="Cobrança número"/>
+                                                                                    </tooltip>
+                                                                                </JFXTextField>
+                                                                            </children>
+                                                                        </AnchorPane>
+                                                                    </content>
+                                                                </Tab>
+                                                                <Tab text="Informações Adicionais">
+                                                                    <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0"
+                                                                                    prefHeight="40.0"
+                                                                                    prefWidth="1318.0">
+                                                                            <children>
+                                                                                <JFXTextField
+                                                                                        fx:id="txtNfeInformacaoAdicional"
+                                                                                        accessibleText="len::5000;type::TEXTO;value::;seteditable::;"
+                                                                                        layoutX="5.0" layoutY="10.0"
+                                                                                        maxHeight="-Infinity"
+                                                                                        maxWidth="-Infinity"
+                                                                                        minHeight="0.0" minWidth="0.0"
+                                                                                        prefHeight="20.0"
+                                                                                        prefWidth="1308.0"
+                                                                                        promptText="Informações complementares de interesse do contribuinte">
+                                                                                    <tooltip>
+                                                                                        <Tooltip
+                                                                                                text="Informações complementares"/>
+                                                                                    </tooltip>
+                                                                                </JFXTextField>
+                                                                            </children>
+                                                                        </AnchorPane>
+                                                                    </content>
+                                                                </Tab>
+                                                            </tabs>
+                                                        </TabPane>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </TitledPane>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </TitledPane>
+                    </children>
+                </AnchorPane>
+            </content>
+            <font>
+                <Font name="SansSerif Bold Italic" size="11.0"/>
+            </font>
+        </TitledPane>
+        <TitledPane fx:id="tpnItensSaida" collapsible="false" focusTraversable="false" layoutX="5.0" layoutY="400.0"
+                    minHeight="0.0" minWidth="0.0" prefHeight="375.0" prefWidth="1340.0" text="Itens da saida">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="1330.0">
+                    <children>
+                        <TableView fx:id="tvItensSaida" accessibleText="len::;type::;value::;seteditable::;"
+                                   layoutX="5.0" layoutY="5.0" minHeight="0.0" minWidth="0.0"
+                                   nodeOrientation="LEFT_TO_RIGHT" prefHeight="280.0" prefWidth="1330.0">
+                            <tooltip>
+                                <Tooltip text="tabela com lista de produto"/>
+                            </tooltip>
+                        </TableView>
+                        <Label fx:id="labelQtdItem" layoutX="360.0" layoutY="161.0" prefHeight="20.0" prefWidth="120.0"
+                               styleClass="label-total-label" text="Qtd Itens" AnchorPane.bottomAnchor="30.0"/>
+                        <Label fx:id="lblQtdItem" layoutX="360.0" layoutY="186.0" prefHeight="20.0" prefWidth="120.0"
+                               styleClass="label-total-valor" text="Qtd Itens" AnchorPane.bottomAnchor="0.0"/>
+                        <Label fx:id="labelQtdTotal" layoutX="500.0" layoutY="165.0" prefHeight="20.0" prefWidth="150.0"
+                               styleClass="label-total-label" text="Qtd Total" AnchorPane.bottomAnchor="30.0"/>
+                        <Label fx:id="lblQtdTotal" layoutX="500.0" layoutY="190.0" prefHeight="20.0" prefWidth="150.0"
+                               styleClass="label-total-valor" text="Qtd Total" AnchorPane.bottomAnchor="0.0"/>
+                        <Label fx:id="labelQtdVolume" layoutX="670.0" layoutY="165.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-label" text="Qtd Volumes"
+                               AnchorPane.bottomAnchor="30.0"/>
+                        <Label fx:id="lblQtdVolume" layoutX="670.0" layoutY="190.0" prefHeight="20.0" prefWidth="150.0"
+                               styleClass="label-total-valor" text="Qtd Volumes" AnchorPane.bottomAnchor="0.0"/>
+                        <Label fx:id="labelTotalBruto" layoutX="840.0" layoutY="165.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-label" text="Total Bruto"
+                               AnchorPane.bottomAnchor="30.0"/>
+                        <Label fx:id="lblTotalBruto" layoutX="840.0" layoutY="190.0" prefHeight="20.0" prefWidth="150.0"
+                               styleClass="label-total-valor" text="Total Bruto" AnchorPane.bottomAnchor="0.0"/>
+                        <Label fx:id="labelTotalDesconto" layoutX="1010.0" layoutY="165.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-label" text="Total Desconto"
+                               AnchorPane.bottomAnchor="30.0"/>
+                        <Label fx:id="lblTotalDesconto" layoutX="1010.0" layoutY="190.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-valor" text="Total Desconto"
+                               AnchorPane.bottomAnchor="0.0"/>
+                        <Label fx:id="labelTotalLiquido" layoutX="1180.0" layoutY="165.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-label" text="Total Líquido"
+                               AnchorPane.bottomAnchor="30.0"/>
+                        <Label fx:id="lblTotalLiquido" layoutX="1180.0" layoutY="190.0" prefHeight="20.0"
+                               prefWidth="150.0" styleClass="label-total-valor" text="Total Líquido"
+                               AnchorPane.bottomAnchor="0.0"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+    </children>
+</AnchorPane>

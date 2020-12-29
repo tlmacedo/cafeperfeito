@@ -1,0 +1,11 @@
+.titled-pane {
+  > .title {
+    > .text {
+
+      -fx-font-weight: bold;
+      -fx-font-style: normal;
+      -fx-font-size: $fontSizeh6;
+      -fx-font-family: $fontFamily;
+    }
+  }
+}

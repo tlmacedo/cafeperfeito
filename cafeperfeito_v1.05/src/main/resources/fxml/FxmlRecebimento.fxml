@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="painelViewRecebimento" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="0.0"
+            minWidth="0.0" prefHeight="105.0" prefWidth="220.0"
+            styleClass="view-entrada-produto" stylesheets="@../style/css/cafeperfeito.css"
+            xmlns="http://javafx.com/javafx/9"
+            fx:controller="br.com.tlmacedo.cafeperfeito.controller.ControllerRecebimento">
+    <children>
+        <TitledPane fx:id="tpnInformacaoRecebimento" collapsible="false" focusTraversable="false" layoutX="5.0"
+                    layoutY="5.0" minHeight="0.0" minWidth="0.0" prefHeight="95.0" prefWidth="210.0"
+                    text="Informações de recebimento">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="147.0" prefWidth="1338.0">
+                    <children>
+                        <JFXComboBox fx:id="cboTipoPagamento"
+                                     accessibleText="value::;"
+                                     labelFloat="true" layoutX="5.0" layoutY="10.0" maxHeight="-Infinity"
+                                     maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="20.0"
+                                     prefWidth="95.0" promptText="Tip. Pagamento">
+                            <tooltip>
+                                <Tooltip text="Tipo de pagamento para a conta a receber"/>
+                            </tooltip>
+                        </JFXComboBox>
+                        <JFXTextField fx:id="txtParcelas" accessibleText="len::3;type::numero;value::;seteditable::;"
+                                      layoutX="110.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="50.0"
+                                      promptText="Parcelas" styleClass="a-direita">
+                            <tooltip>
+                                <Tooltip text="Qtd de parcelas"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtDocumento" accessibleText="len::13;type::numero;value::;seteditable::;"
+                                      layoutX="110.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                      promptText="Documento" styleClass="a-direita">
+                            <tooltip>
+                                <Tooltip text="Documento do recebimento"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXDatePicker fx:id="dtpVencimento" accessibleText="len::;type::;value::;seteditable::;"
+                                       defaultColor="#ff6600" layoutX="5.0" layoutY="40.0" maxHeight="-Infinity"
+                                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0"
+                                       prefWidth="90.0" promptText="Vencimento">
+                            <tooltip>
+                                <Tooltip text="data de vencimento do recebimento"/>
+                            </tooltip>
+                        </JFXDatePicker>
+                        <JFXTextField fx:id="txtValor"
+                                      accessibleText="len::12;type::moeda;decimal::2;value::0,00;seteditable::false;"
+                                      layoutX="105.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="95.0"
+                                      promptText="Valor" styleClass="a-direita">
+                            <tooltip>
+                                <Tooltip text="valor valor do recebimento"/>
+                            </tooltip>
+                        </JFXTextField>
+                    </children>
+                </AnchorPane>
+            </content>
+            <font>
+                <Font name="SansSerif Bold Italic" size="11.0"/>
+            </font>
+        </TitledPane>
+    </children>
+</AnchorPane>

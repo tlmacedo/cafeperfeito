@@ -1,0 +1,33 @@
+.jfx-text-field, .text-field {
+  -fx-alignment: center-left;
+  -fx-font-family: $fontFamily;
+  -fx-font-style: normal;
+  -fx-text-fill: $sisColor_black;
+  -fx-font-size: $fontSizeh6;
+
+  -jfx-focus-color: $corJFX-Focus;
+  -jfx-unfocus-color: $corJFX-Unforcus;
+  -jfx-label-float: true;
+
+  &.a-direita {
+    -fx-alignment: center-right;
+  }
+
+  .campo-total {
+    -fx-font-size: $fontSizeh4;
+  }
+
+  :disabled {
+    -fx-opacity: 1.0;
+  }
+
+  :focused {
+    -fx-background-color: #ff6600;
+    -fx-opacity: 0.5;
+  }
+
+  .view-cadastro-empresa & {
+
+  }
+}
+

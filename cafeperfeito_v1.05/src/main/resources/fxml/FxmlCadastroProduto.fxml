@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="painelViewCadastroProduto" maxHeight="-Infinity"
+            maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1350.0"
+            styleClass="view-cadastro-produto" stylesheets="@../style/css/cafeperfeito.css"
+            xmlns="http://javafx.com/javafx/9"
+            fx:controller="br.com.tlmacedo.cafeperfeito.controller.ControllerCadastroProduto">
+    <children>
+        <TitledPane fx:id="tpnCadastroProduto" collapsible="false" focusTraversable="false" layoutX="5.0" layoutY="5.0"
+                    prefHeight="180.0" prefWidth="1340.0" text="Cadastro de produto">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="142.0" prefWidth="1278.0">
+                    <children>
+                        <JFXTextField fx:id="txtPesquisaProduto"
+                                      accessibleText="len::80;type::TEXTO;value::;seteditable::;" labelFloat="true"
+                                      layoutX="10.0" layoutY="10.0" maxHeight="20.0" prefColumnCount="8"
+                                      prefHeight="20.0" prefWidth="360.0" promptText="Pesquisar produto">
+                            <tooltip>
+                                <Tooltip text="campo de pesquisa."/>
+                            </tooltip>
+                        </JFXTextField>
+                        <Label fx:id="lblStatus" accessibleText="len::;type::;value::[];seteditable::;" layoutX="380.0"
+                               layoutY="20.0" styleClass="lbl-informacoes" text="[Status]">
+                            <tooltip>
+                                <Tooltip text="informações de status"/>
+                            </tooltip>
+                        </Label>
+                        <Label fx:id="lblRegistrosLocalizados"
+                               accessibleText="len::;type::;value::     registros localizados.;seteditable::;"
+                               layoutX="440.0" layoutY="20.0" styleClass="lbl-informacoes" text="Registros localizados">
+                            <tooltip>
+                                <Tooltip text="Quantidade de registros localizados"/>
+                            </tooltip>
+                        </Label>
+                        <TreeTableView fx:id="tTvProduto" accessibleText="len::;type::;value::;seteditable::;"
+                                       layoutX="5.0" layoutY="37.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="110.0"
+                                       prefWidth="1330.0">
+                            <tooltip>
+                                <Tooltip text="tabela com lista de produto"/>
+                            </tooltip>
+                        </TreeTableView>
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+        <TitledPane fx:id="tpnDadoCadastral" collapsible="false" focusTraversable="false" layoutX="5.0" layoutY="190.0"
+                    prefHeight="590.0" prefWidth="1340.0" text="Dados Cadastrais">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="142.0" prefWidth="1278.0">
+                    <children>
+                        <JFXTextField fx:id="txtCodigo" accessibleText="len::15;type::TEXTO;value::;seteditable::;"
+                                      layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="125.0"
+                                      promptText="Código" styleClass="a-direita" text="Código">
+                            <tooltip>
+                                <Tooltip text="código do produto"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtDescricao" accessibleText="len::150;type::TEXTO;value::;seteditable::;"
+                                      layoutX="145.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="455.0"
+                                      promptText="Descrição" text="Descrição">
+                            <tooltip>
+                                <Tooltip text="descrição do produto"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtPeso"
+                                      accessibleText="len::9;type::peso;decimal::3;value::0,000;seteditable::;"
+                                      layoutX="610.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                      promptText="Peso" styleClass="a-direita" text="Peso">
+                            <tooltip>
+                                <Tooltip text="peso do produto"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="cboUnidadeComercial" labelFloat="true" layoutX="710.0" layoutY="10.0"
+                                     accessibleText="value::;"
+                                     maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                     minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0" promptText="Und com">
+                            <tooltip>
+                                <Tooltip text="unidade comercial do produto"/>
+                            </tooltip>
+                        </JFXComboBox>
+                        <JFXComboBox fx:id="cboSituacaoSistema" labelFloat="true" layoutX="810.0" layoutY="10.0"
+                                     accessibleText="value::;"
+                                     maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                     minWidth="-Infinity" prefHeight="20.0" prefWidth="130.0"
+                                     promptText="Situação produto">
+                            <tooltip>
+                                <Tooltip text="situação do produto no sistema"/>
+                            </tooltip>
+                        </JFXComboBox>
+                        <JFXTextField fx:id="txtPrecoFabrica"
+                                      accessibleText="len::12;type::moeda;decimal::2;value::0,00;seteditable::;"
+                                      layoutX="10.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                      promptText="Preço Fab. (R$)" styleClass="a-direita" text="Preço fab. (R$)">
+                            <tooltip>
+                                <Tooltip text="preço de fabrica do produto"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtMargem"
+                                      accessibleText="len::12;type::moeda;decimal::2;value::0,00;seteditable::;"
+                                      layoutX="110.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                      promptText="Margem (%)" styleClass="a-direita" text="Margem (%)">
+                            <tooltip>
+                                <Tooltip text="margem do produto"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtPrecoConsumidor"
+                                      accessibleText="len::12;type::moeda;decimal::2;value::0,00;seteditable::;"
+                                      layoutX="210.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                      promptText="Preço Cons. (R$)" styleClass="a-direita" text="Preço cons. (R$)">
+                            <tooltip>
+                                <Tooltip text="preço de consumidor do produto"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtVarejo" accessibleText="len::4;type::numero;value::1;seteditable::;"
+                                      layoutX="310.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="70.0"
+                                      promptText="Varejo (Und)" styleClass="a-direita" text="Varejo">
+                            <tooltip>
+                                <Tooltip text="quantidade de varejo no atacado"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtComissaoPorc"
+                                      accessibleText="len::12;type::moeda;decimal::2;value::0,00;seteditable::;"
+                                      layoutX="390.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                      promptText="Comissão (%)" styleClass="a-direita" text="Comissão (%)">
+                            <tooltip>
+                                <Tooltip text="comissão do produto"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtLucroBruto"
+                                      accessibleText="len::12;type::moeda;decimal::2;value::0,00;seteditable::false;"
+                                      layoutX="490.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                      promptText="Lucro Bruto (R$)" styleClass="a-direita" text="Lucro bruto (R$)">
+                            <tooltip>
+                                <Tooltip text="lucro bruto do produto"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtPrecoUltimoImpostoSefaz"
+                                      accessibleText="len::12;type::moeda;decimal::2;value::0,00;seteditable::;"
+                                      layoutX="590.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                      promptText="Útimo Imposto (R$)" styleClass="a-direita" text="Útimo Imposto (R$)">
+                            <tooltip>
+                                <Tooltip text="Último frete do produto"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtPrecoUltimoFrete"
+                                      accessibleText="len::12;type::moeda;decimal::2;value::0,00;seteditable::;"
+                                      layoutX="690.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                      promptText="Útimo Frete (R$)" styleClass="a-direita" text="Útimo frete (R$)">
+                            <tooltip>
+                                <Tooltip text="Último frete do produto"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtComissaoReal"
+                                      accessibleText="len::12;type::moeda;decimal::2;value::0,00;seteditable::false;"
+                                      layoutX="790.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                      promptText="Comissão (R$)" styleClass="a-direita" text="Comissão (R$)">
+                            <tooltip>
+                                <Tooltip text="valor R$ comissão do produto"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtLucroLiquido"
+                                      accessibleText="len::12;type::moeda;decimal::2;value::0,00;seteditable::false;"
+                                      layoutX="890.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                      promptText="Lucro Líquido (R$)" styleClass="a-direita" text="Lucro líquido (R$)">
+                            <tooltip>
+                                <Tooltip text="lucro líquido do produto"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtLucratividade"
+                                      accessibleText="len::12;type::moeda;decimal::2;value::0,00;seteditable::false;"
+                                      layoutX="990.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="90.0"
+                                      promptText="Lucratividade (%)" styleClass="a-direita" text="Lucratividade (%)">
+                            <tooltip>
+                                <Tooltip text="lucratividade do produto"/>
+                            </tooltip>
+                        </JFXTextField>
+                        <Label fx:id="lblDataCadastro"
+                               accessibleText="len::;type::;value::data de cadastro:;seteditable::;binding::true;"
+                               alignment="CENTER_RIGHT" layoutX="1000.0" layoutY="5.0" prefHeight="10.0"
+                               prefWidth="335.0" styleClass="lbl-informaçoes" text="DataCadastro" textAlignment="RIGHT">
+                            <tooltip>
+                                <Tooltip text="data de cadastro do produto no sistema"/>
+                            </tooltip>
+                        </Label>
+                        <Label fx:id="lblDataCadastroDiff"
+                               accessibleText="len::;type::;value::tempo de cadastro:;seteditable::;binding::true;"
+                               alignment="CENTER_RIGHT" layoutX="1000.0" layoutY="15.0" prefHeight="10.0"
+                               prefWidth="335.0" styleClass="lbl-informacoes" text="DataCadastroDiff"
+                               textAlignment="RIGHT">
+                            <tooltip>
+                                <Tooltip text="tempo que o produto está cadastrada no sistema"/>
+                            </tooltip>
+                        </Label>
+                        <Label fx:id="lblDataAtualizacao"
+                               accessibleText="len::;type::;value::data de atualização:;seteditable::;binding::true;"
+                               alignment="CENTER_RIGHT" layoutX="1000.0" layoutY="25.0" prefHeight="10.0"
+                               prefWidth="335.0" styleClass="lbl-informacoes" text="DataAtualizacao"
+                               textAlignment="RIGHT">
+                            <tooltip>
+                                <Tooltip text="data da ultima atualizacao feita no cadastro do produto no sistema"/>
+                            </tooltip>
+                        </Label>
+                        <Label fx:id="lblDataAtualizacaoDiff"
+                               accessibleText="len::;type::;value::tempo de atualização:;seteditable::;binding::true;"
+                               alignment="CENTER_RIGHT" layoutX="1000.0" layoutY="35.0" prefHeight="10.0"
+                               prefWidth="335.0" styleClass="lbl-informacoes" text="DataAtualizacaoDiff"
+                               textAlignment="RIGHT">
+                            <tooltip>
+                                <Tooltip
+                                        text="tempo que a foi feita a ultima atualizacao no cadastro do produto no sistema"/>
+                            </tooltip>
+                        </Label>
+                        <Label accessibleText="len::;type::;value::Códigos de barras;seteditable::;" layoutX="883.0"
+                               layoutY="68.0" prefHeight="19.0" prefWidth="138.0" styleClass="lbl-informacoes"
+                               text="Códigos de barras">
+                            <tooltip>
+                                <Tooltip text="códigos de barras do produto"/>
+                            </tooltip>
+                            <font>
+                                <Font name="System Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                        <JFXListView fx:id="codigoBarraList" accessibleText="len::;type::;value::;seteditable::;"
+                                     layoutX="883.0" layoutY="88.0" prefHeight="167.0" prefWidth="135.0"
+                                     styleClass="produtoCodBarra">
+                            <tooltip>
+                                <Tooltip text="códigos de barras do produto"/>
+                            </tooltip>
+                        </JFXListView>
+                        <TitledPane collapsible="false" focusTraversable="false" layoutX="5.0" layoutY="68.0"
+                                    maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                    minWidth="-Infinity" prefHeight="186.0" prefWidth="870.0" text="Fiscal">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="200.0">
+                                    <children>
+                                        <JFXComboBox fx:id="cboFiscalCestNcm" labelFloat="true" layoutX="5.0"
+                                                     accessibleText="value::;"
+                                                     layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                                     minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0"
+                                                     prefWidth="550.0" promptText="Cest_Ncm" visibleRowCount="4">
+                                            <tooltip>
+                                                <Tooltip text="origem fiscal do produto"/>
+                                            </tooltip>
+                                        </JFXComboBox>
+                                        <JFXTextField fx:id="txtFiscalGenero"
+                                                      accessibleText="len::2;type::numero;value::00;seteditable::;"
+                                                      layoutX="570.0" layoutY="10.0" maxHeight="-Infinity"
+                                                      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                                      prefHeight="20.0" prefWidth="90.0" promptText="Género"
+                                                      styleClass="a-direita" text="Gênero">
+                                            <tooltip>
+                                                <Tooltip text="género fiscal do produto"/>
+                                            </tooltip>
+                                        </JFXTextField>
+                                        <JFXTextField fx:id="txtFiscalNcm"
+                                                      accessibleText="len::;type::ncm;value::;seteditable::;"
+                                                      layoutX="670.0" layoutY="10.0" maxHeight="-Infinity"
+                                                      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                                      prefHeight="20.0" prefWidth="90.0" promptText="N.C.M."
+                                                      styleClass="a-direita" text="N.C.M.">
+                                            <tooltip>
+                                                <Tooltip text="código fiscal NCM do produto"/>
+                                            </tooltip>
+                                        </JFXTextField>
+                                        <JFXTextField fx:id="txtFiscalCest"
+                                                      accessibleText="len::;type::cest;value::;seteditable::;"
+                                                      layoutX="770.0" layoutY="10.0" maxHeight="-Infinity"
+                                                      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                                      prefHeight="20.0" prefWidth="90.0" promptText="CEST"
+                                                      styleClass="a-direita" text="CEST">
+                                            <tooltip>
+                                                <Tooltip text="código CEST do produto"/>
+                                            </tooltip>
+                                        </JFXTextField>
+                                        <JFXComboBox fx:id="cboFiscalCstOrigem" labelFloat="true" layoutX="5.0"
+                                                     accessibleText="value::;"
+                                                     layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                                     minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0"
+                                                     prefWidth="550.0" promptText="Origem">
+                                            <tooltip>
+                                                <Tooltip text="origem fiscal do produto"/>
+                                            </tooltip>
+                                        </JFXComboBox>
+                                        <JFXComboBox fx:id="cboFiscalIcms" labelFloat="true" layoutX="5.0"
+                                                     accessibleText="value::;"
+                                                     layoutY="70.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                                     minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0"
+                                                     prefWidth="550.0" promptText="ICMS">
+                                            <tooltip>
+                                                <Tooltip text="ICMS fiscal do produto"/>
+                                            </tooltip>
+                                        </JFXComboBox>
+                                        <JFXComboBox fx:id="cboFiscalPis" labelFloat="true" layoutX="5.0"
+                                                     accessibleText="value::;"
+                                                     layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                                     minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0"
+                                                     prefWidth="550.0" promptText="PIS">
+                                            <tooltip>
+                                                <Tooltip text="PIS fiscal do produto"/>
+                                            </tooltip>
+                                        </JFXComboBox>
+                                        <JFXComboBox fx:id="cboFiscalCofins" labelFloat="true" layoutX="5.0"
+                                                     accessibleText="value::;"
+                                                     layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                                     minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0"
+                                                     prefWidth="550.0" promptText="COFINS">
+                                            <tooltip>
+                                                <Tooltip text="COFINS fiscal do produto"/>
+                                            </tooltip>
+                                        </JFXComboBox>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </TitledPane>
+                        <Circle fx:id="imgCirculo" accessibleText="len::;type::;value::;seteditable::;" layoutX="1172.0"
+                                layoutY="208.0" radius="140.0" stroke="#ff6600" strokeType="INSIDE" strokeWidth="3.0">
+                            <fill>
+                                <RadialGradient centerX="0.5056179775280899" centerY="0.5" cycleMethod="REFLECT"
+                                                radius="1.0">
+                                    <stops>
+                                        <Stop color="#ff6600"/>
+                                        <Stop color="WHITE" offset="1.0"/>
+                                    </stops>
+                                </RadialGradient>
+                            </fill>
+                        </Circle>
+                    </children>
+                </AnchorPane>
+            </content>
+            <font>
+                <Font name="SansSerif Bold Italic" size="11.0"/>
+            </font>
+        </TitledPane>
+    </children>
+</AnchorPane>

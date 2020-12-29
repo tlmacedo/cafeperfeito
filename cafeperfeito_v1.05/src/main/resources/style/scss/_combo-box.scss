@@ -1,0 +1,14 @@
+.jfx-combo-box, .combo-box {
+  -fx-font-family: $fontFamily;
+  -fx-text-fill: $sisColor_black;
+  -fx-font-size: $fontSizeh6;
+  -fx-font-style: normal;
+
+  -jfx-focus-color: $corJFX-Focus;
+  -jfx-unfocus-color: $corJFX-Unforcus;
+  -jfx-label-float: true;
+
+  .view-login & {
+    -fx-font-size: $fontSizeh5;
+  }
+}

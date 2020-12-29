@@ -1,0 +1,10 @@
+.jfx-date-picker, .date-picker {
+  -fx-font-family: $fontFamily;
+  -fx-text-fill: $sisColor_black;
+  -fx-font-size: $fontSizeh5;
+  -fx-font-style: normal;
+
+  -jfx-focus-color: $corJFX-Focus;
+  -jfx-unfocus-color: $corJFX-Unforcus;
+  -jfx-label-float: true;
+}

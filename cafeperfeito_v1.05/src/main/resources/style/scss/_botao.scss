@@ -1,0 +1,33 @@
+.button {
+  //color: black;
+  -fx-font-size: $fontSizeh5;
+  -fx-text-fill: $corPricipal;
+  -fx-border-color: $corPricipal;
+  -fx-background-color: transparent;
+  -fx-border-radius: 8px;
+  -fx-background-radius: 8px;
+
+  -fx-text-alignment: center;
+  -fx-cursor: pointer;
+
+  &:hover {
+    -fx-text-fill: $corSecundaria;
+    -fx-background-color: $corPricipal;
+  }
+
+  &.btn-default {
+    -fx-graphic: url("../../image/ico/principal/ic_check_circulo_dp24.png") no-repeat center;
+
+    &:hover {
+      -fx-graphic: url("../../image/ico/secundario/ic_check_circulo_dp24.png") no-repeat center;
+    }
+  }
+
+  &.btn-cancel {
+    -fx-graphic: url("../../image/ico/principal/ic_error_circulo_dp24.png") no-repeat center;
+
+    &:hover {
+      -fx-graphic: url("../../image/ico/secundario/ic_error_circulo_dp24.png") no-repeat center;
+    }
+  }
+}

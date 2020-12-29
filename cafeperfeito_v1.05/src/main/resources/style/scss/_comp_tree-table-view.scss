@@ -1,0 +1,102 @@
+.tree-table-view {
+  .column-header {
+    -fx-pref-height: 24;
+
+    .label {
+      -fx-background-color: transparent;
+      -fx-alignment: center-left;
+      -fx-font-family: $fontFamily;
+      -fx-text-fill: $corPricipal;
+      -fx-font-size: $fontSizeh6;
+      -fx-padding: 0 4 0 0;
+    }
+  }
+
+  .tree-table-row-cell {
+    -fx-pref-height: 20;
+    -fx-background-color: $sisColor_whiteblack;
+    -fx-text-fill: $sisColor_black;
+    //-fx-background-insets: 0, 0 0 1 0;
+    &:odd {
+      -fx-background-color: $sisColor_whiteblack, derive($sisColor_whiteblack, -12%);
+      //-fx-background-insets: 0, 0 0 1 0;
+    }
+
+    &:selected {
+      -fx-background-color: -fx-selection-bar;
+      -fx-text-fill: -fx-selection-bar-text;
+      //-fx-background-insets: 3;
+    }
+
+    &:empty {
+      -fx-background-color: transparent;
+
+      .table-cell {
+        -fx-border-width: 0;
+      }
+    }
+
+    &.produto-estoque {
+      -fx-background-color: $corPricipal;
+
+      &:odd {
+        -fx-background-color: $corPricipal, derive($corPricipal, -12%);
+      }
+
+      &:selected {
+        -fx-background-color: -fx-selection-bar, derive($corPricipal, -30%);
+        -fx-text-fill: -fx-selection-bar-text;
+      }
+
+      &:empty {
+        -fx-background-color: transparent;
+
+        .table-cell {
+          -fx-border-width: 0;
+        }
+      }
+    }
+  }
+
+  .tree-table-cell {
+    -fx-background-color: transparent;
+    -fx-alignment: center-left;
+    -fx-font-family: $fontFamily;
+    -fx-font-size: $fontSizeh6;
+    -fx-text-fill: $sisColor_black;
+    -fx-padding: 0 4 0 0;
+
+    &.chkbox {
+      -fx-alignment: center;
+    }
+  }
+
+}
+
+//.cell {
+//  .produto-estoque {
+//    -fx-background-color: $corPricipal;
+//    -fx-alignment: center-left;
+//    -fx-font-family: $fontFamily;
+//    -fx-font-size: $fontSizeh5;
+//    -fx-text-fill: $sisColor_black;
+//    -fx-padding: 5;
+//
+//    &:odd {
+//      -fx-background-color: derive($corPricipal, +22%);
+//    }
+//
+//    &:filled:selected {
+//      -fx-background-color: -fx-selection-bar;
+//      -fx-text-fill: -fx-selection-bar-text;
+//      &:hover {
+//        -fx-background-color: -fx-selection-bar;
+//        -fx-text-fill: -fx-selection-bar-text;
+//      }
+//    }
+//    &:filled:hover {
+//      -fx-background-color: -fx-cell-hover-color;
+//      -fx-text-fill: -fx-text-inner-color;
+//    }
+//  }
+//}

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cteProc versao="3.00" xmlns="http://www.portalfiscal.inf.br/cte">
+    <CTe xmlns="http://www.portalfiscal.inf.br/cte">
+        <infCte versao="3.00" Id="CTe35180906186733000220570010005423021009457382">
+            <ide>
+                <cUF>35</cUF>
+                <cCT>00945738</cCT>
+                <CFOP>6353</CFOP>
+                <natOp>PREST. SERV. TRANSP. A ESTABELECIMENTO COMERCIAL</natOp>
+                <mod>57</mod>
+                <serie>1</serie>
+                <nCT>542302</nCT>
+                <dhEmi>2018-09-04T10:33:17-03:00</dhEmi>
+                <tpImp>1</tpImp>
+                <tpEmis>1</tpEmis>
+                <cDV>2</cDV>
+                <tpAmb>1</tpAmb>
+                <tpCTe>0</tpCTe>
+                <procEmi>0</procEmi>
+                <verProc>755</verProc>
+                <cMunEnv>3518800</cMunEnv>
+                <xMunEnv>GUARULHOS</xMunEnv>
+                <UFEnv>SP</UFEnv>
+                <modal>02</modal>
+                <tpServ>0</tpServ>
+                <cMunIni>3550308</cMunIni>
+                <xMunIni>SAO PAULO</xMunIni>
+                <UFIni>SP</UFIni>
+                <cMunFim>1302603</cMunFim>
+                <xMunFim>MANAUS</xMunFim>
+                <UFFim>AM</UFFim>
+                <retira>1</retira>
+                <indIEToma>1</indIEToma>
+                <toma3>
+                    <toma>3</toma>
+                </toma3>
+            </ide>
+            <compl>
+                <xCaracAd>1</xCaracAd>
+                <xCaracSer>T L MACEDO CC AEREO</xCaracSer>
+                <xEmi>LETICE NATHALIA CARD</xEmi>
+                <fluxo>
+                    <xOrig>CGH</xOrig>
+                    <xDest>MAO</xDest>
+                </fluxo>
+                <Entrega>
+                    <noPeriodo>
+                        <tpPer>4</tpPer>
+                        <dIni>2018-09-03</dIni>
+                        <dFim>2018-09-21</dFim>
+                    </noPeriodo>
+                    <comHora>
+                        <tpHor>2</tpHor>
+                        <hProg>23:59:00</hProg>
+                    </comHora>
+                </Entrega>
+                <xObs>VIST/RANIELE NF FOB M 0,19 /03/09/2018 // AEREO FRETE FOB CONF. CONSUL. DAVID 50 KG R$ 257,61 /
+                    LETICE 04/09/2018
+                </xObs>
+                <ObsCont xCampo="Obs1">
+                    <xTexto>FRETE A VISTA / ENDERECO DE ENTREGA: TV. NOVA OLINDA, 90 - JARDIM PETROPOLIS // TERCEIRA RUA
+                        DEPOIS DA BATERIA MOURA / VENDEDOR: DAVID DE MENDONCA RODRIGUES (FO
+                    </xTexto>
+                </ObsCont>
+                <ObsCont xCampo="Obs2">
+                    <xTexto>R) / LOCAL ENTREGA: TRAVESSA NOVA OLINDA, 090 PROX. BATERIA M, PETROPOLIS, MANAUS - AM /
+                        METRO CUBICO: 0,19
+                    </xTexto>
+                </ObsCont>
+            </compl>
+            <emit>
+                <CNPJ>06186733000220</CNPJ>
+                <IE>336942124118</IE>
+                <xNome>EXATA CARGO LTDA</xNome>
+                <xFant>EXATA CARGO GRU</xFant>
+                <enderEmit>
+                    <xLgr>AV PAPA JOAO PAULO I</xLgr>
+                    <nro>101</nro>
+                    <xBairro>JARDIM DAS NACOES</xBairro>
+                    <cMun>3518800</cMun>
+                    <xMun>GUARULHOS</xMun>
+                    <CEP>07183495</CEP>
+                    <UF>SP</UF>
+                    <fone>1120855771</fone>
+                </enderEmit>
+            </emit>
+            <rem>
+                <CNPJ>06981833000248</CNPJ>
+                <IE>635858196113</IE>
+                <xNome>TORREFACAO NISHIDA SAN LTDA ME</xNome>
+                <fone>1141231202</fone>
+                <enderReme>
+                    <xLgr>AV. ANTARTICO</xLgr>
+                    <nro>175</nro>
+                    <xBairro>VILA SAO JOAO</xBairro>
+                    <cMun>3548708</cMun>
+                    <xMun>SAO BERNARDO DO CAMPO</xMun>
+                    <CEP>09726150</CEP>
+                    <UF>SP</UF>
+                </enderReme>
+                <email>N@N.COM</email>
+            </rem>
+            <dest>
+                <CNPJ>08009246000136</CNPJ>
+                <IE>042171865</IE>
+                <xNome>T. L. MACEDO</xNome>
+                <fone>81686148</fone>
+                <enderDest>
+                    <xLgr>RUA TREZE DE MAIO</xLgr>
+                    <nro>159</nro>
+                    <xBairro>COROADO</xBairro>
+                    <cMun>1302603</cMun>
+                    <xMun>MANAUS</xMun>
+                    <CEP>69080440</CEP>
+                    <UF>AM</UF>
+                </enderDest>
+                <email>TL.MACEDO@HOTMAIL.COM</email>
+            </dest>
+            <vPrest>
+                <vTPrest>257.61</vTPrest>
+                <vRec>257.61</vRec>
+                <Comp>
+                    <xNome>FRETE PESO</xNome>
+                    <vComp>212.50</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>EXCEDENTE PESO</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>COLETA</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>EXCED COLETA</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>ENTREGA</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>EXCED ENTREGA</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>REDESPACHO</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>SECCAT</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>ITR</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>DESPACHO</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>GRIS</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>ADVALOREM</xNome>
+                    <vComp>2.31</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>PEDAGIO</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>TAXAS DIVERSAS</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>ACRESCIMO</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>SUFRAMA</xNome>
+                    <vComp>22.50</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>TDA</xNome>
+                    <vComp>10.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>TTD</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>EMERGENCIA</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>OUTROS</xNome>
+                    <vComp>0.00</vComp>
+                </Comp>
+                <Comp>
+                    <xNome>ICMS</xNome>
+                    <vComp>10.30</vComp>
+                </Comp>
+            </vPrest>
+            <imp>
+                <ICMS>
+                    <ICMS00>
+                        <CST>00</CST>
+                        <vBC>257.61</vBC>
+                        <pICMS>4.00</pICMS>
+                        <vICMS>10.30</vICMS>
+                    </ICMS00>
+                </ICMS>
+                <vTotTrib>10.30</vTotTrib>
+                <infAdFisco>RECOLHIMENTO DO ICMS ATE O 10 (DECIMO) DIA DO MES SUBSEQUENTE AO DA OCORRENCIA DO FATO
+                    GERADOR, AUTORIZADO PELO REGIME TRIBUTARIO DIFERENCIADO 80/14-PRORROGADO 147/15.;
+                </infAdFisco>
+            </imp>
+            <infCTeNorm>
+                <infCarga>
+                    <vCarga>700.00</vCarga>
+                    <proPred>OUTROS</proPred>
+                    <xOutCat>DIVERSOS</xOutCat>
+                    <infQ>
+                        <cUnid>01</cUnid>
+                        <tpMed>Peso Real</tpMed>
+                        <qCarga>50.0000</qCarga>
+                    </infQ>
+                    <infQ>
+                        <cUnid>01</cUnid>
+                        <tpMed>Peso Cubado</tpMed>
+                        <qCarga>50.0000</qCarga>
+                    </infQ>
+                    <infQ>
+                        <cUnid>01</cUnid>
+                        <tpMed>Peso Taxado</tpMed>
+                        <qCarga>50.0000</qCarga>
+                    </infQ>
+                    <infQ>
+                        <cUnid>01</cUnid>
+                        <tpMed>Tara Container</tpMed>
+                        <qCarga>0.0000</qCarga>
+                    </infQ>
+                    <infQ>
+                        <cUnid>03</cUnid>
+                        <tpMed>Volume</tpMed>
+                        <qCarga>10.0000</qCarga>
+                    </infQ>
+                    <infQ>
+                        <cUnid>00</cUnid>
+                        <tpMed>Metros Cubico</tpMed>
+                        <qCarga>0.1890</qCarga>
+                    </infQ>
+                </infCarga>
+                <infDoc>
+                    <infNFe>
+                        <chave>35180906981833000248550010000000931027894094</chave>
+                    </infNFe>
+                </infDoc>
+                <infModal versaoModal="3.00">
+                    <aereo>
+                        <dPrevAereo>2018-09-21</dPrevAereo>
+                        <natCarga>
+                            <cInfManu>99</cInfManu>
+                        </natCarga>
+                        <tarifa>
+                            <CL>G</CL>
+                            <vTar>4.25</vTar>
+                        </tarifa>
+                    </aereo>
+                </infModal>
+            </infCTeNorm>
+        </infCte>
+        <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+            <SignedInfo>
+                <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+                <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+                <Reference URI="#CTe35180906186733000220570010005423021009457382">
+                    <Transforms>
+                        <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                        <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+                    </Transforms>
+                    <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                    <DigestValue>BgqzQTzBYNZvsWL/RwSrGarMAnI=</DigestValue>
+                </Reference>
+            </SignedInfo>
+            <SignatureValue>
+                ePSn6C/GkoaEOx78QdEyI5xeYZzxpS4dfkoGYo+EigjLMcTM5brIfM2NiCOKp9P2AbuvdTw1GDF1xclA8AxDO/uJs84HAffKavOUzUO1oQTPzZ6byeVJV3ZL+KxyLCQJBTegD1KUORNF5J5pvPWtypU/nw/dU1WKlY8q/UDhRwWx4QS/Cr4Wg3qfKp84f5UKNIcs1GETF4bwDO0r3/FxDLiOoe3UeexgivHHEU6cuIa8aTL22PCDny0PLCbZeXI1eO7uRvypeR8r8dv9/cOXUYnLQxWluDfiNK7/EdQSuMoLty4aF7+cHc1+7P+kPLbCd8f/xfj/1o0FZcrUi1HDpA==
+            </SignatureValue>
+            <KeyInfo>
+                <X509Data>
+                    <X509Certificate>
+                        MIIIQTCCBimgAwIBAgIQObhOs7XhCpv4lIQzkZ656DANBgkqhkiG9w0BAQsFADCBgDELMAkGA1UEBhMCQlIxEzARBgNVBAoTCklDUC1CcmFzaWwxNjA0BgNVBAsTLVNlY3JldGFyaWEgZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQjEkMCIGA1UEAxMbQUMgSW5zdGl0dXRvIEZlbmFjb24gUkZCIEczMB4XDTE3MTEyMTE5NDc1M1oXDTE4MTEyMTE5NDc1M1owgekxCzAJBgNVBAYTAkJSMRMwEQYDVQQKDApJQ1AtQnJhc2lsMQswCQYDVQQIDAJBTTEPMA0GA1UEBwwGTWFuYXVzMTYwNAYDVQQLDC1TZWNyZXRhcmlhIGRhIFJlY2VpdGEgRmVkZXJhbCBkbyBCcmFzaWwgLSBSRkIxFjAUBgNVBAsMDVJGQiBlLUNOUEogQTExLTArBgNVBAsMJEF1dGVudGljYWRvIHBvciBBUiBJbnN0aXR1dG8gRmVuYWNvbjEoMCYGA1UEAwwfRVhBVEEgQ0FSR08gTFREQTowNjE4NjczMzAwMDE0OTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIQkihCH75c7Im35WdOP8oRqPbDvY6u2YdIfPlQiAYc/Mzqy718BwN4lKtiwu8kV2DTBpsorf3Fp3FPKbCZvBOLBzF7WY7uvBFbE+YwtwepHrmsg5rJ94tri2FWx7YxzAt1++wbNYU8Pj8MNCpP2lS1BSky0+C6vKwaNN3qiduJDeXoHqb/kqjjwOC65tYmFd22NyESfEuxakU9ftbMZmcxJ1QT4jIXnfkyS44PQCInlWYn7Jt2gVjXP+kMQfQms/On+2r5qs3/FFMf+WW7IouiqR8ZTceDfxDF13YAztfuZ+6W1+qLd3iFPzJ/b5NJCD6EgmFpHuWLcEN7u9MECxvUCAwEAAaOCA0owggNGMIHUBgNVHREEgcwwgcmgPQYFYEwBAwSgNAQyMTgwNTE5NzI0MTMxNzc4NTIxNTAwMDAwMDAwMDAwMDAwMDAwMDEwMzc0ODI1U1NQQU2gKQYFYEwBAwKgIAQeTUFOT0VMIERFIEpFU1VTIERFIFBBSVZBIFJPQ0hBoBkGBWBMAQMDoBAEDjA2MTg2NzMzMDAwMTQ5oBcGBWBMAQMHoA4EDDAwMDAwMDAwMDAwMIEpYWxleGFuZHJlLmNvbnRhYmlsaWRhZGVAZXhhdGFjYXJnby5jb20uYnIwCQYDVR0TBAIwADAfBgNVHSMEGDAWgBQmx5Q9eod+f0t4ioc94M+1zqmw2jCBhgYDVR0gBH8wfTB7BgZgTAECASIwcTBvBggrBgEFBQcCARZjaHR0cDovL2ljcC1icmFzaWwuYWNmZW5hY29uLmNvbS5ici9yZXBvc2l0b3Jpby9kcGMvQUMtSW5zdGl0dXRvLUZlbmFjb24tUkZCL0RQQ19BQ19JRmVuYWNvbl9SRkIucGRmMIHKBgNVHR8EgcIwgb8wXqBcoFqGWGh0dHA6Ly9pY3AtYnJhc2lsLmFjZmVuYWNvbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDSW5zdGl0dXRvRmVuYWNvblJGQkczL0xhdGVzdENSTC5jcmwwXaBboFmGV2h0dHA6Ly9pY3AtYnJhc2lsLm91dHJhbGNyLmNvbS5ici9yZXBvc2l0b3Jpby9sY3IvQUNJbnN0aXR1dG9GZW5hY29uUkZCRzMvTGF0ZXN0Q1JMLmNybDAOBgNVHQ8BAf8EBAMCBeAwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMIG7BggrBgEFBQcBAQSBrjCBqzBmBggrBgEFBQcwAoZaaHR0cDovL2ljcC1icmFzaWwuYWNmZW5hY29uLmNvbS5ici9yZXBvc2l0b3Jpby9jZXJ0aWZpY2Fkb3MvQUNfSW5zdGl0dXRvX0ZlbmFjb25fUkZCRzMucDdjMEEGCCsGAQUFBzABhjVodHRwOi8vb2NzcC1hYy1pbnN0aXR1dG8tZmVuYWNvbi1yZmIuY2VydGlzaWduLmNvbS5icjANBgkqhkiG9w0BAQsFAAOCAgEAgF4qH32xZHdXxAj/T3WNDVWa95aj0gOx8LsBW1LnKTR5JPDAff2iM39a8rk9k9RP1b6wf76HfXA4g3aO3+UvDVjEivYUvxe1659uPEGPd1S6e7A/FSSPpDiu0YcCAaCguuxL01oLHkTcf/TnLQpHLVIY1283XS2obv+VnWoZseC+ibgKGhTF0YTXEglJ3nPUtrHV6iMFbq0pcZ8bvmDMoPR8OEzpdhEPTqu+AtZu9aWYkqHiNoaVXhYo90jPJPiZAYuO6UOStio5ueHYUapfTml2V1Sb0d0Lbx0QH3wlutWmem++BNS+wJifjG3Bnjvr55AfOHrlwzJ4RD/fYLWmqrHMwwksuH+kF11185P+aiX5HgqgL7LBat9HVjjgDgOZ9xeNtw5sMXJP3gbacQFtsiaj2DlN4a3aGv/r/TkytkftkhvIF+gCmLY7ldXNQcWI6l9GEzOSgIpkmhAegxAdZ2OQG2iRnKZ1XYfqPEmhmEPrRFQTcpu9HKwSfwakkrV2/rJOm6wDVa5TX2TFr5CEY5ejG/vrVJN1dOUH7AEtOw0Ojtw+Kz64+hn+r/zy9j5BX+OcJ7nGrr67iUd/74h9P+cpBLik74xFjFbb3pCZYQDAfrnXNdJFIgAhW2vF/1OnWChkXYxfkNcFEt++yM1J80o9XxytKF0qZgGLo6sdt1M=
+                    </X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </Signature>
+    </CTe>
+    <protCTe versao="3.00">
+        <infProt>
+            <tpAmb>1</tpAmb>
+            <verAplic>SP-CTe-19-07-2018</verAplic>
+            <chCTe>35180906186733000220570010005423021009457382</chCTe>
+            <dhRecbto>2018-09-04T10:33:18-03:00</dhRecbto>
+            <nProt>135181279247661</nProt>
+            <digVal>BgqzQTzBYNZvsWL/RwSrGarMAnI=</digVal>
+            <cStat>100</cStat>
+            <xMotivo>Autorizado o uso do CT-e</xMotivo>
+        </infProt>
+    </protCTe>
+</cteProc>

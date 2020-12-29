@@ -1,0 +1,21 @@
+.view-login { //, .dialog-pane {
+  -fx-background-color: transparent;
+  -fx-background-size: cover;
+  -fx-background-image: url("../../image/painel/painel_base.png") no-repeat center;
+}
+
+.dialog-pane {
+  -fx-background-color: $sisColor_transparent;
+  -fx-background-radius: 8px;
+}
+
+.label {
+  &.img-background-principal {
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+    -fx-background-image: url("../../image/painel/principal.png") no-repeat center;
+  }
+}
+
+
+

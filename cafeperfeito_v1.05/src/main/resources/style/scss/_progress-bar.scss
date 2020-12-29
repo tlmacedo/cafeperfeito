@@ -1,0 +1,30 @@
+.progress-bar {
+  //-fx-background-color: yellow;
+  //-fx-background-radius: 10, 10, 10, 10;
+
+  .track {
+    //-fx-background-color: green;
+    //-fx-background-insets: 5;
+    //-fx-background-radius: 6, 6, 6, 6;
+  }
+
+  .bar {
+    -fx-background-color: $corPricipal;
+    //-fx-background-insets: 5, 5, 5, 5;
+    //-fx-background-radius: 4, 4, 4, 4;
+  }
+}
+
+.dialog-pane.progress-bar {
+  -fx-min-width: (width - 20px);
+  //-fx-pref-height: 40;
+  //-fx-padding: 5 0;
+}
+
+.progress-indicator {
+  -fx-progress-color: $corPricipal;
+
+  .indicator {
+    -fx-background-color: transparent;
+  }
+}

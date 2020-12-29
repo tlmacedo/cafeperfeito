@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmlDataAdapter class="net.sf.jasperreports.data.xml.XmlDataAdapterImpl">
+    <name>dtAdaptSIDTMDanfe.xml</name>
+    <dataFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="repositoryDataLocation">
+        <location>/Users/thiagomacedo/Desktop/NFe13190708009246000136550010000008721201907163-nfe.xml</location>
+    </dataFile>
+    <useConnection>true</useConnection>
+    <namespaceAware>false</namespaceAware>
+    <selectExpression></selectExpression>
+    <locale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://java.sun.com"
+            xsi:type="java:java.lang.String">pt_BR
+    </locale>
+    <timeZone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://java.sun.com"
+              xsi:type="java:java.lang.String">GMT
+    </timeZone>
+</xmlDataAdapter>

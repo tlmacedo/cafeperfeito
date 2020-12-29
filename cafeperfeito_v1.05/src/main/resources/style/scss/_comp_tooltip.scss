@@ -1,0 +1,11 @@
+.tooltip {
+  -fx-background-color: $sisColor_whiteblack;
+  -fx-font-family: $fontFamily;
+  -fx-text-fill: $sisColor_black;
+  -fx-font-size: $fontSizeh5;
+  -fx-alignment: center-left;
+  -fx-background-radius: 7px;
+  -fx-padding: 0.667em 0.75em 0.667em 0.75em;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0.0, 0, 3);
+
+}

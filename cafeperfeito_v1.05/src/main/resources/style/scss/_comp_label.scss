@@ -1,0 +1,97 @@
+
+.label {
+  -fx-font-family: $fontFamily;
+  -fx-text-fill: $sisColor_black;
+  -fx-font-size: $fontSizeh6;
+  -fx-font-style: normal;
+
+  &.usuario_login {
+    -fx-background-image: url($icoUsuarioLogin);
+  }
+
+  &.usuario_senha {
+    -fx-background-image: url($icoSenha);
+  }
+
+  &.lbl_btn_retrai_menu_view_principal {
+    -fx-background-image: url($icoCirculoNegativo);
+  }
+
+  &.lbl_btn_expande_menu_view_principal {
+    -fx-background-image: url($icoCirculoPositivo);
+  }
+
+  &.lbl_img_fundo_principal {
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+    -fx-background-image: url($painelViewPrincipal);
+  }
+
+  &.copyright {
+    -fx-alignment: bottom-right;
+    -fx-padding: 0 10;
+    -fx-font-family: $fontFamily;
+    -fx-text-fill: $corPricipal;
+    -fx-font-size: $fontSizeh5;
+    -fx-opacity: 0.6;
+  }
+
+  &.lbl_titulo {
+    -fx-text-fill: $sisColor_white;
+    -fx-font-size: $fontSizeh2;
+    -fx-font-weight: bold;
+    -fx-alignment: Center;
+  }
+
+  &.lbl_menu_principal {
+    -fx-padding: 0 10;
+    -fx-background-color: $sisColor_whiteblack;
+    -fx-text-fill: $sisColor_cafe-perfeito;
+    -fx-font-size: $fontSizeh4;
+    -fx-font-weight: bold;
+  }
+
+  &.lbl_negrito {
+    -fx-font-weight: bold;
+  }
+
+  &.lbl_h1 {
+    -fx-font-size: $fontSizeh1;
+  }
+
+  &.lbl_h2 {
+    -fx-font-size: $fontSizeh2;
+  }
+
+  &.lbl_h3 {
+    -fx-font-size: $fontSizeh3;
+  }
+
+  &.lbl_h4 {
+    -fx-font-size: $fontSizeh4;
+  }
+
+  &.lbl_h5 {
+    -fx-font-size: $fontSizeh5;
+  }
+
+  &.lbl_h6 {
+    -fx-font-size: $fontSizeh6;
+  }
+
+  &.lbl_ico_cliente {
+    -fx-background-image: url($icoEmpresaClienteAtivo);
+    -fx-pref-height: 24;
+  }
+
+  &.lbl_ico_fornecedor {
+    -fx-background-image: url($icoEmpresaFornecedorAtivo);
+    -fx-pref-height: 24;
+  }
+
+  &.lbl_ico_transportadora {
+    -fx-background-image: url($icoEmpresaTransportadoraAtivo);
+    -fx-pref-height: 24;
+  }
+
+}

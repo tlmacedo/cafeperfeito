@@ -1,0 +1,57 @@
+
+.jfx-tool-bar, .tool-bar {
+  -fx-background-color: $sisColor_transparent;
+  -fx-font-family: $fontFamily;
+  -fx-text-fill: $sisColor_black;
+  -fx-font-size: $fontSizeh5;
+  -fx-alignment: center-left;
+
+  .ico-relogio {
+    //-fx-padding: 1 10;
+    //-fx-font-size: $fontSizeh4;
+    //-fx-alignment: center;
+
+    -fx-padding: 3 4;
+    -fx-font-size: $fontSizeh5;
+    -fx-alignment: center-right;
+    -fx-background-image: url($icoRelogio);
+    -fx-background-repeat: no-repeat;
+  }
+
+  .hora {
+    -fx-padding: 2 4;
+    -fx-font-size: $fontSizeh5;
+    -fx-alignment: center-right;
+  }
+
+  .status-bar-usuario-logado {
+    -fx-pref-width: 250px;
+    -fx-padding: 2 10 2 5;
+    -fx-font-size: $fontSizeh5;
+  }
+
+  .status-bar-center {
+    -fx-padding: 2 10 2 5;
+    -fx-font-size: $fontSizeh5;
+    -fx-alignment: center-left;
+    //-fx-text-fill: $sisColor_green;
+  }
+
+  //&.viewPrincipal_StatusBarCenter {
+  //  -fx-padding: 0px 20px;
+  //  -fx-alignment: center;
+  //  -fx-background-color: $sisColor_transparent;
+  //  -fx-font-family: $fontFamily;
+  //  -fx-text-fill: $sisColor_black;
+  //  -fx-font-size: $fontSizeh5;
+  //}
+  //
+  //&.viewPrincipal_StatusBarRight {
+  //  -fx-padding: 0px 20px;
+  //  -fx-alignment: center-right;
+  //  -fx-background-color: $sisColor_transparent;
+  //  -fx-font-family: $fontFamily;
+  //  -fx-text-fill: $sisColor_black;
+  //  -fx-font-size: $fontSizeh6;
+  //}
+}

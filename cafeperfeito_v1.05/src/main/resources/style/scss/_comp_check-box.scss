@@ -1,0 +1,41 @@
+.jfx-check-box, .check-box {
+
+  -fx-font-family: $fontFamily;
+  -fx-font-style: normal;
+  -fx-text-fill: $sisColor_black;
+  -fx-font-size: $fontSizeh6;
+
+  -jfx-checked-color: #ff6600;
+  -jfx-unchecked-color: #000000;
+
+  .lbl_ico_cliente {
+    -fx-background-image: url($icoEmpresaClienteDesativo);
+  }
+
+  .lbl_ico_fornecedor {
+    -fx-background-image: url($icoEmpresaFornecedorDesativo);
+  }
+
+  .lbl_ico_transportadora {
+    -fx-background-image: url($icoEmpresaTransportadoraDesativo);
+  }
+
+  &:selected {
+    .lbl_ico_cliente {
+      -fx-background-image: url($icoEmpresaClienteAtivo);
+    }
+
+    .lbl_ico_fornecedor {
+      -fx-background-image: url($icoEmpresaFornecedorAtivo);
+    }
+
+    .lbl_ico_transportadora {
+      -fx-background-image: url($icoEmpresaTransportadoraAtivo);
+    }
+  }
+
+  :disabled {
+    -fx-opacity: 1.0;
+  }
+
+}

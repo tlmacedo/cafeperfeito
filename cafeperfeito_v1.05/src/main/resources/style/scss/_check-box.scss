@@ -1,0 +1,41 @@
+.jfx-check-box, .check-box {
+
+  -fx-font-family: $fontFamily;
+  -fx-font-style: normal;
+  -fx-text-fill: $sisColor_black;
+  -fx-font-size: $fontSizeh6;
+
+  -jfx-checked-color: #ff6600;
+  -jfx-unchecked-color: #000000;
+
+  .lbl_ico_cliente {
+    -fx-background-image: url("../../image/ico/principal/../black/ic_cliente_dp24.png") no-repeat center;
+  }
+
+  .lbl_ico_fornecedor {
+    -fx-background-image: url("../../image/ico/principal/../black/ic_fornecedor_dp24.png") no-repeat center;
+  }
+
+  .lbl_ico_transportadora {
+    -fx-background-image: url("../../image/ico/principal/../black/ic_transportadora_dp24.png") no-repeat center;
+  }
+
+  &:selected {
+    .lbl_ico_cliente {
+      -fx-background-image: url("../../image/ico/principal/ic_cliente_dp24.png") no-repeat center;
+    }
+
+    .lbl_ico_fornecedor {
+      -fx-background-image: url("../../image/ico/principal/ic_fornecedor_dp24.png") no-repeat center;
+    }
+
+    .lbl_ico_transportadora {
+      -fx-background-image: url("../../image/ico/principal/ic_transportadora_dp24.png") no-repeat center;
+    }
+  }
+
+  :disabled {
+    -fx-opacity: 1.0;
+  }
+
+}
