@@ -1,5 +1,27 @@
 package br.com.tlmacedo.cafeperfeito.service;
 
+import br.com.tlmacedo.cafeperfeito.controller.ControllerPrincipal;
+import br.com.tlmacedo.cafeperfeito.model.enums.EnumEnderecoTipo;
+import br.com.tlmacedo.cafeperfeito.model.vo.Endereco;
+import com.google.common.base.Splitter;
+import com.jfoenix.controls.JFXTextField;
+import javafx.scene.control.TextField;
+import org.apache.commons.lang3.StringUtils;
+
+import javax.swing.text.MaskFormatter;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.text.ParseException;
+import java.time.LocalDate;
+import java.time.format.TextStyle;
+import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import static br.com.tlmacedo.cafeperfeito.interfaces.Regex_Convert.*;
+import static br.com.tlmacedo.cafeperfeito.service.ServiceConfigSis.MY_LOCALE;
+import static br.com.tlmacedo.cafeperfeito.service.ServiceConfigSis.TCONFIG;
+
 public class ServiceMascara {
 
     private static Pattern pattern;
@@ -113,7 +135,7 @@ public class ServiceMascara {
     public static String getDataExtenso(String municipio, LocalDate localDate) {
         if (municipio == null) {
             Endereco endereco;
-            if ((endereco = UsuarioLogado.getUsuario().getLojaAtivo().getEndereco(TipoEndereco.PRINCIPAL)) != null)
+            if ((endereco = ControllerPrincipal.getUsuarioLogado().getLojaLocado().getEndereco(EnumEnderecoTipo.PRINCIPAL)) != null)
                 municipio = endereco.getMunicipio().getDescricao();
             else
                 municipio = TCONFIG.getInfLoja().getMunicipio();
@@ -250,6 +272,95 @@ public class ServiceMascara {
 //        });
     }
 
+    public void fieldMaskJFX(JFXTextField jfxTextField, String tipMascara) {
+        setMascara(tipMascara);
+        jfxTextField.textProperty().addListener((ov, o, n) -> {
+            StringBuilder resultado = new StringBuilder("");
+            int posicao = 0;
+            if (n != null && !n.equals("")) {
+                try {
+                    posicao = jfxTextField.getCaretPosition() + ((n.length() > o.length()) ? 1 : 0);
+                } catch (Exception ex) {
+                    posicao = 0;
+                }
+                String strValue = n != null ? n : "",
+                        value = n != null ? n : "",
+                        maskDigit = "";
+                if (getMascara().contains("#0.")) {
+                    if (strValue.equals(""))
+                        strValue = "0";
+                    int qtdMax = getMascara().replaceAll(".-/]", "").length();
+                    int qtdDecimal = (getMascara().replaceAll("\\D", "").length() - 1);
+                    if (strValue.length() > qtdMax)
+                        strValue = strValue.substring(0, qtdMax);
+                    resultado.append(formataNumeroDecimal(strValue, qtdDecimal));
+                } else if (getMascara().contains("(##) ")) {
+                    if (value.length() > 2) {
+                        resultado.append(getTelefone(value));
+                    } else {
+                        resultado.append(value);
+                    }
+                } else if (getMascara().equals("##############") || getMascara().equals("##############")) {
+                    if (value.length() >= 13 && Integer.valueOf(value.substring(1, 2)) <= 6)
+                        setMascara("##############");
+                    else
+                        setMascara("#############");
+                    resultado.append(value);
+                } else {
+                    if (strValue.length() > 0) {
+                        int digitado = 0;
+                        Pattern p = Pattern.compile(REGEX_PONTUACAO);
+                        Matcher m = p.matcher(getMascara());
+                        if (m.find())
+                            value = strValue.replaceAll("\\W", "");
+                        for (int i = 0; i < getMascara().length(); i++) {
+                            if (digitado < value.length()) {
+                                switch ((maskDigit = getMascara().substring(i, i + 1))) {
+                                    case "#":
+                                    case "0":
+                                        if (Character.isDigit(value.charAt(digitado))) {
+                                            resultado.append(value.substring(digitado, digitado + 1));
+                                            digitado++;
+                                        }
+                                        break;
+                                    case "U":
+                                    case "A":
+                                    case "L":
+                                        if ((Character.isLetterOrDigit(value.charAt(digitado))
+                                                || Character.isSpaceChar(value.charAt(digitado))
+                                                || Character.isDefined(value.charAt(digitado)))) {
+                                            if (maskDigit.equals("L"))
+                                                resultado.append(value.substring(digitado, digitado + 1).toLowerCase());
+                                            else
+                                                resultado.append(value.substring(digitado, digitado + 1).toUpperCase());
+                                            digitado++;
+                                        }
+                                        break;
+                                    case "?":
+                                    case "*":
+                                        resultado.append(value.substring(digitado, digitado + 1));
+                                        digitado++;
+                                        break;
+                                    default:
+                                        resultado.append(getMascara().substring(i, i + 1));
+                                        break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            int finalPosicao = posicao;
+//            Platform.runLater(() -> {
+            jfxTextField.setText(resultado.toString());
+//            Platform.runLater(() -> {
+            if (getMascara().contains(".0"))
+                jfxTextField.positionCaret(resultado.length());
+            else
+                jfxTextField.positionCaret(finalPosicao);
+        });
+//        });
+    }
 
     public static String getMascaraIE(String uf) {
 //        String caracter = ServiceVariaveisSistema.TCONFIG.getSis().getMaskCaracter().getDigit();
@@ -311,5 +422,54 @@ public class ServiceMascara {
             default:
                 return "##############";
         }
+    }
+
+    /**
+     * <p>
+     * <p>
+     * <p>
+     * <p>
+     * <p>
+     * <p>
+     */
+
+    public static Pattern getPattern() {
+        return pattern;
+    }
+
+    public static void setPattern(Pattern pattern) {
+        ServiceMascara.pattern = pattern;
+    }
+
+    public static Matcher getMatcher() {
+        return matcher;
+    }
+
+    public static void setMatcher(Matcher matcher) {
+        ServiceMascara.matcher = matcher;
+    }
+
+    public static MaskFormatter getFormatter() {
+        return formatter;
+    }
+
+    public static void setFormatter(MaskFormatter formatter) {
+        ServiceMascara.formatter = formatter;
+    }
+
+    public String getMascara() {
+        return mascara;
+    }
+
+    public void setMascara(String mascara) {
+        this.mascara = mascara;
+    }
+
+    public StringBuilder getResultado() {
+        return resultado;
+    }
+
+    public void setResultado(StringBuilder resultado) {
+        this.resultado = resultado;
     }
 }

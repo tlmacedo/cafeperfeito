@@ -1,6 +1,7 @@
 package br.com.tlmacedo.cafeperfeito.model.vo;
 
 import br.com.tlmacedo.cafeperfeito.model.enums.EnumClassificacaoJuridica;
+import br.com.tlmacedo.cafeperfeito.model.enums.EnumEnderecoTipo;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import javafx.beans.property.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -310,6 +311,18 @@ public class Empresa implements Serializable {
 
     public void setEnderecoList(List<Endereco> enderecoList) {
         this.enderecoList = enderecoList;
+    }
+
+    @Transient
+    public Endereco getEndereco(EnumEnderecoTipo enderecoTipo) {
+
+        if (enderecoTipo == null)
+            enderecoTipo = EnumEnderecoTipo.PRINCIPAL;
+        EnumEnderecoTipo finalEnderecoTipo = enderecoTipo;
+        return getEnderecoList().stream()
+                .filter(endereco -> endereco.getEnderecoTipo().equals(finalEnderecoTipo))
+                .findFirst().orElse(null);
+
     }
 
     @Override

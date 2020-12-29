@@ -25,7 +25,7 @@ public class Colaborador implements Serializable {
     private ObjectProperty<BigDecimal> salario = new SimpleObjectProperty<>();
     private BooleanProperty situacao = new SimpleBooleanProperty();
 
-    //private ObjectProperty<Empresa> lojaAtivo = new SimpleObjectProperty<>();
+    private ObjectProperty<Empresa> lojaLocado = new SimpleObjectProperty<>();
 
     private Blob imagem, imagemBack;
 
@@ -131,6 +131,19 @@ public class Colaborador implements Serializable {
 
     public void setSituacao(boolean situacao) {
         this.situacao.set(situacao);
+    }
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    public Empresa getLojaLocado() {
+        return lojaLocado.get();
+    }
+
+    public ObjectProperty<Empresa> lojaLocadoProperty() {
+        return lojaLocado;
+    }
+
+    public void setLojaLocado(Empresa lojaLocado) {
+        this.lojaLocado.set(lojaLocado);
     }
 
     @JsonIgnore

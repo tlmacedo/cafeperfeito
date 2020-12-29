@@ -70,6 +70,7 @@ public class ControllerPrincipal implements Initializable, ModeloCafePerfeito {
             fatorarObjetos();
             escutarTecla();
             fieldsFormat();
+            setControllerPrincipal(this);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -240,6 +241,13 @@ public class ControllerPrincipal implements Initializable, ModeloCafePerfeito {
 //                }
             });
         }
+
+    }
+
+    public static void fecharTab(Tab tab, EventHandler eventHandler) {
+
+        getControllerPrincipal().getJfxTabPanePrincipal().getTabs().remove(tab);
+        getControllerPrincipal().getPanePrincipal().removeEventFilter(KeyEvent.KEY_PRESSED, eventHandler);
 
     }
 

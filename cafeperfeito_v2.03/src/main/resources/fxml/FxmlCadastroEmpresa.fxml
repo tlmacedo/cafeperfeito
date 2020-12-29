@@ -17,9 +17,10 @@
             <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0">
                     <children>
-                        <JFXTextField labelFloat="true" layoutX="10.0" layoutY="10.0" prefHeight="21.0"
-                                      prefWidth="300.0" promptText="pesquisar empresas"/>
-                        <JFXTreeTableView layoutX="10.0" layoutY="40.0" prefHeight="200.0" prefWidth="1320.0"/>
+                        <JFXTextField fx:id="jfxTxtPesquisa" labelFloat="true" layoutX="10.0" layoutY="10.0"
+                                      prefHeight="21.0" prefWidth="300.0" promptText="pesquisar empresas"/>
+                        <JFXTreeTableView fx:id="jfxTtvEmpresa" layoutX="10.0" layoutY="40.0" prefHeight="200.0"
+                                          prefWidth="1320.0"/>
                     </children>
                 </AnchorPane>
             </content>
