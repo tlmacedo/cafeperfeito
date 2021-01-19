@@ -283,6 +283,8 @@ public class ControllerRecebimento implements Initializable, ModeloCafePerfeito 
     private boolean salvarRecebimento() {
         RecebimentoDAO recebimentoDAO = new RecebimentoDAO();
         try {
+            if (objectProperty().getValue() instanceof ContasAReceber)
+                recebimentoProperty().getValue().setContasAReceber((ContasAReceber) objectProperty().getValue());
             recebimentoDAO.transactionBegin();
             recebimentoProperty().setValue(
                     recebimentoDAO.setTransactionPersist(recebimentoProperty().getValue()));
