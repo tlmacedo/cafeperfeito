@@ -2,7 +2,7 @@ package br.com.tlmacedo.cafeperfeito.model.enums;
 
 public enum StatusBarContasAReceber {
 
-    DIGITACAO(0, "[Insert-Novo recebimento]  [Ctrl+P-Imprimir recibo]  [F4-Editar recebimento]  [F6-Cliente]  [F7-Pesquisa]  [F8-Datas]  [F9-Contas]  [F12-Sair]");
+    DIGITACAO(0, "[Insert-Novo recebimento]  [Ctrl+P-Imprimir recibo]  [Ctrl+O-Imprimir nfe]  [F4-Editar recebimento]  [F6-Cliente]  [F7-Pesquisa]  [F8-Datas]  [F9-Contas]  [F12-Sair]");
 
     private Integer cod;
     private String descricao;

@@ -41,11 +41,24 @@ public class ServiceStatusBar {
      */
 
     public boolean teclaValida(KeyEvent keyEvent) {
-        KeyCode keyCode = keyEvent.getCode();
-        return getStbTeclas().getText().toLowerCase().contains(
-                String.format("%s-", keyCode.equals(KeyCode.HELP) ?
-                        "insert"
-                        : keyCode.toString().toLowerCase()));
+        String tecla = keyEvent.getCode().getName().toLowerCase();
+        if (keyEvent.isControlDown())
+            if (!tecla.equals("ctrl"))
+                tecla = "ctrl+" + tecla;
+        if (keyEvent.getCode().equals(KeyCode.HELP))
+            tecla = tecla.replace("help", "insert");
+
+        System.out.printf("apertou: %s", tecla);
+        tecla = tecla + "-";
+        if (getStbTeclas().getText().toLowerCase().contains(tecla))
+            System.out.printf(" [valid]");
+        System.out.printf("...\n");
+        return getStbTeclas().getText().toLowerCase().contains(tecla);
+//        KeyCode keyCode = keyEvent.getCode();
+//        return getStbTeclas().getText().toLowerCase().contains(
+//                String.format("%s-", keyCode.equals(KeyCode.HELP) ?
+//                        "insert"
+//                        : keyCode.toString().toLowerCase()));
     }
 
     public ServiceStatusBar(ToolBar statusBar, Label lblUsuario, Label lblTeclas, Label lblRelogio) {

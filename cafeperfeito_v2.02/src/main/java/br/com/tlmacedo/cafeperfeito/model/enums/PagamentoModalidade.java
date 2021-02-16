@@ -18,7 +18,9 @@ public enum PagamentoModalidade {
     BAIXA_CREDITO(8, "Crédito baixado"),
     CREDITO(9, "Crédito"),
     BAIXA_DEBITO(10, "Débito baixado"),
-    DEBITO(11, "Débito");
+    DEBITO(11, "Débito"),
+    PIX_CNPJ(12, "pix-cnpj"),
+    PIX_CPF(13, "pix-cpf");
 
     private Integer cod;
     private String descricao;

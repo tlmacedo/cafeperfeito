@@ -227,8 +227,8 @@ public class ControllerContasAReceber implements Initializable, ModeloCafePerfei
 
                             new ServiceRelatorio_Recibo().imprimeRecibo(recebimento);
                             break;
-                        case Y:
-                            System.out.printf("apertou:%s...\n", keyEvent.getCode());
+                        case O:
+//                            System.out.printf("apertou:%s...\n", keyEvent.getCode());
                             if (!keyEvent.isControlDown() || getTtvContasAReceber().getSelectionModel().getSelectedItem() == null)
                                 return;
                             System.out.printf("tentando...\n");
@@ -263,22 +263,32 @@ public class ControllerContasAReceber implements Initializable, ModeloCafePerfei
         });
 
         getTtvContasAReceber().getSelectionModel().selectedItemProperty().addListener((ov, o, n) -> {
-            objectSelectProperty().setValue(n);
+            objectSelectProperty().setValue(n.getValue());
             String stb = statusBarProperty().getValue().getDescricao();
             try {
+                System.out.printf("tentando atualizar statusBar [%s]...\n", objectSelectProperty().getValue());
                 if (objectSelectProperty().getValue() instanceof ContasAReceber) {
                     if (((ContasAReceber) objectSelectProperty().getValue()).getRecebimentoList().size() == 0) {
-                        stb = stb.replace("  [Ctrl+P-Imprimir recibo]  [F4-Editar recebimento]  ", "");
+                        stb = stb.replace("  [Ctrl+P-Imprimir recibo]", "")
+                                .replace("  [F4-Editar recebimento]", "");
+                        System.out.printf("stb[1]: %s\n", stb);
                     } else {
                         if (((ContasAReceber) objectSelectProperty().getValue()).getRecebimentoList().stream().map(Recebimento::getValor).reduce(BigDecimal.ZERO, BigDecimal::add)
                                 .compareTo(((ContasAReceber) objectSelectProperty().getValue()).valorProperty().getValue()) >= 0)
                             stb = stb.replace("[Insert-Novo recebimento]  ", "");
+                        System.out.printf("stb[2]: %s\n", stb);
+                    }
+                    if (((ContasAReceber) objectSelectProperty().getValue()).getSaidaProduto().getSaidaProdutoNfeList().size() == 0) {
+                        stb = stb.replace("  [Ctrl+O-Imprimir nfe]", "");
+                        System.out.printf("stb[3]: %s\n", stb);
                     }
                 } else if (objectSelectProperty().getValue() instanceof Recebimento) {
                     stb = stb.replace("[Insert-Novo recebimento]  ", "");
+                    System.out.printf("stb[4]: %s\n", stb);
                 }
             } catch (Exception ex) {
                 stb = statusBarProperty().getValue().getDescricao();
+                System.out.printf("stb[err]: %s\n", stb);
             }
             ControllerPrincipal.getCtrlPrincipal().getServiceStatusBar().atualizaStatusBar(stb);
         });

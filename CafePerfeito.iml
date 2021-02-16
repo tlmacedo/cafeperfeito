@@ -25,16 +25,14 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="javaFX-15.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:16-ea+2" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:mac:16-ea+2" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:16-ea+2" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:mac:16-ea+2" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:16-ea+2" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:mac:16-ea+2" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:16-ea+2" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:mac:16-ea+2" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-swing:16-ea+2" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-swing:mac:16-ea+2" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:16-ea+2" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:mac:16-ea+2" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:16-ea+2" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:mac:16-ea+2" level="project" />
     <orderEntry type="library" name="Maven: javax.persistence:javax.persistence-api:2.2" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:5.4.22.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.3.2.Final" level="project" />
