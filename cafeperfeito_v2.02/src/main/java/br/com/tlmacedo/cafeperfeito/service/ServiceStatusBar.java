@@ -48,12 +48,8 @@ public class ServiceStatusBar {
         if (keyEvent.getCode().equals(KeyCode.HELP))
             tecla = tecla.replace("help", "insert");
 
-        System.out.printf("apertou: %s", tecla);
-        tecla = tecla + "-";
-        if (getStbTeclas().getText().toLowerCase().contains(tecla))
-            System.out.printf(" [valid]");
-        System.out.printf("...\n");
-        return getStbTeclas().getText().toLowerCase().contains(tecla);
+//        tecla = tecla + "-";
+        return getStbTeclas().getText().toLowerCase().contains(tecla + "-");
 //        KeyCode keyCode = keyEvent.getCode();
 //        return getStbTeclas().getText().toLowerCase().contains(
 //                String.format("%s-", keyCode.equals(KeyCode.HELP) ?
