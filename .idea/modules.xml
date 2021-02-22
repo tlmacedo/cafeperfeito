@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CafePerfeito.iml" filepath="$PROJECT_DIR$/CafePerfeito.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cafeperfeito_v1.05/cafeperfeito_v1.05.iml" filepath="$PROJECT_DIR$/cafeperfeito_v1.05/cafeperfeito_v1.05.iml" />
       <module fileurl="file://$PROJECT_DIR$/cafeperfeito_v2.02/cafeperfeito_v2.02.iml" filepath="$PROJECT_DIR$/cafeperfeito_v2.02/cafeperfeito_v2.02.iml" />
       <module fileurl="file://$PROJECT_DIR$/cafeperfeito_v2.03/cafeperfeito_v2.03.iml" filepath="$PROJECT_DIR$/cafeperfeito_v2.03/cafeperfeito_v2.03.iml" />
       <module fileurl="file://$PROJECT_DIR$/nfe_v400/nfe_v400.iml" filepath="$PROJECT_DIR$/nfe_v400/nfe_v400.iml" />
