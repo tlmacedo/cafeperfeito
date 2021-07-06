@@ -2,7 +2,6 @@ package br.com.tlmacedo.cafeperfeito.model.vo;
 
 import br.com.tlmacedo.cafeperfeito.model.enums.SituacaoProduto;
 import br.com.tlmacedo.cafeperfeito.model.enums.UndComercialProduto;
-import br.com.tlmacedo.cafeperfeito.service.ServiceImageUtil;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import javafx.beans.property.*;
 import javafx.scene.image.Image;
@@ -10,12 +9,9 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
-import javax.sql.rowset.serial.SerialBlob;
-import java.io.IOException;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.sql.Blob;
-import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -449,39 +445,41 @@ public class Produto implements Serializable, Cloneable {
     @JsonIgnore
     @Transient
     public Image getImagemProduto() {
-        try {
-            return ServiceImageUtil.getImageFromInputStream(getImgProduto().getBinaryStream());
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return null;
-        }
+        return null;
+//        try {
+//            return ServiceImageUtil.getImageFromInputStream(getImgProduto().getBinaryStream());
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//            return null;
+//        }
     }
 
     public void setImagemProduto(Image imagemProduto) {
-        try {
-            this.imgProduto = new SerialBlob(ServiceImageUtil.getInputStreamFromImage(imagemProduto).readAllBytes());
-        } catch (SQLException | IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            this.imgProduto = new SerialBlob(ServiceImageUtil.getInputStreamFromImage(imagemProduto).readAllBytes());
+//        } catch (SQLException | IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
     @JsonIgnore
     @Transient
     public Image getImagemProdutoBack() {
-        try {
-            return ServiceImageUtil.getImageFromInputStream(getImgProdutoBack().getBinaryStream());
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return null;
-        }
+        return null;
+//        try {
+//            return ServiceImageUtil.getImageFromInputStream(getImgProdutoBack().getBinaryStream());
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//            return null;
+//        }
     }
 
     public void setImagemProdutoBack(Image imagemProdutoBack) {
-        try {
-            this.imgProdutoBack = new SerialBlob(ServiceImageUtil.getInputStreamFromImage(imagemProdutoBack).readAllBytes());
-        } catch (SQLException | IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            this.imgProdutoBack = new SerialBlob(ServiceImageUtil.getInputStreamFromImage(imagemProdutoBack).readAllBytes());
+//        } catch (SQLException | IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
     @Transient

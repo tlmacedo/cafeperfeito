@@ -1,6 +1,5 @@
 package br.com.tlmacedo.cafeperfeito.model.vo;
 
-import br.com.tlmacedo.cafeperfeito.service.ServiceImageUtil;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import javafx.beans.property.*;
 import javafx.scene.image.Image;
@@ -8,7 +7,6 @@ import javafx.scene.image.Image;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Blob;
-import java.sql.SQLException;
 
 @Entity(name = "ProdutoCodigoBarra")
 @Table(name = "produto_codigo_barra")
@@ -75,17 +73,18 @@ public class ProdutoCodigoBarra implements Serializable {
     @JsonIgnore
     @Transient
     public Image getImagemCodigoBarra() {
-        try {
-            return ServiceImageUtil.getImageFromInputStream(getImgCodigoBarra().getBinaryStream());
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return null;
-        }
+        return null;
+//        try {
+//            return ServiceImageUtil.getImageFromInputStream(getImgCodigoBarra().getBinaryStream());
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//            return null;
+//        }
     }
 
     @Transient
     public void setImagemCodigoBarra(Image imagemCodigoBarra) {
-        setImgCodigoBarra((Blob) ServiceImageUtil.getInputStreamFromImage(imagemCodigoBarra));
+//        setImgCodigoBarra((Blob) ServiceImageUtil.getInputStreamFromImage(imagemCodigoBarra));
     }
 
     @Override

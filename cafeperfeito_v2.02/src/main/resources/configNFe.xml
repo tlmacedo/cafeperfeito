@@ -2,9 +2,9 @@
 <infMyNfe>
     <meusBancos>
         <Bancos>
-            <banco id="0" nome="BANCO NUBANK" agencia="0001" conta="90.846.088-3" padrão="false"/>
+            <banco id="0" nome="BANCO NUBANK" agencia="0001" conta="90.846.088-3" padrão="true"/>
             <banco id="1" nome="BANCO ITAÚ" agencia="1677" conta="35.456-3" padrão="false"/>
-            <banco id="2" nome="BANCO SANTANDER" agencia="3273" conta="2.011.754-7" padrão="true"/>
+            <banco id="2" nome="BANCO SANTANDER" agencia="3273" conta="2.011.754-7" padrão="false"/>
         </Bancos>
     </meusBancos>
     <myConfig>
