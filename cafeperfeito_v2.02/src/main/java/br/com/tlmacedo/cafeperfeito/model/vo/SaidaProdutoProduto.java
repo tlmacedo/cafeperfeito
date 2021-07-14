@@ -53,9 +53,13 @@ public class SaidaProdutoProduto implements Serializable {
         this.vlrEntradaBruto = new SimpleObjectProperty<>(vlrEntradaProperty().getValue()
                 .multiply(new BigDecimal(qtdProperty().getValue())));
         this.vlrUnitario = produtoEstoque.produtoProperty().getValue().precoVendaProperty();
+//        if (BigDecimal.ZERO.compareTo(vlrUnt) != 0 || vlrUnt == null)
+//            this.vlrUnitario = new SimpleObjectProperty<>(vlrUnt);
         this.vlrBruto = new SimpleObjectProperty<>(vlrUnitarioProperty().getValue()
                 .multiply(new BigDecimal(qtdProperty().getValue())));
         this.vlrDesconto = new SimpleObjectProperty<>(BigDecimal.ZERO.setScale(2));
+//        if (BigDecimal.ZERO.compareTo(vlrDesc) != 0 || vlrDesc == null)
+//            this.vlrDesconto = new SimpleObjectProperty<>(vlrDesc);
         if (!codigoCFOP.equals(TipoCodigoCFOP.COMERCIALIZACAO))
             this.vlrDesconto = new SimpleObjectProperty<>(vlrUnitarioProperty().getValue().multiply(new BigDecimal(qtdProperty().getValue())));
         this.vlrLiquido = new SimpleObjectProperty<>(vlrBrutoProperty().getValue().subtract(vlrDescontoProperty().getValue()));

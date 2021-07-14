@@ -327,6 +327,7 @@ public class TmodelSaidaProduto {
                                 .filter(saidaProdId -> saidaProdId.codigoCFOPProperty().getValue().equals(TipoCodigoCFOP.COMERCIALIZACAO))
                                 .collect(Collectors.summingInt(SaidaProdutoProduto::getQtd)) / condicoes.qtdMinimaProperty().getValue();
 
+
                         if (condicoes.valorProperty().getValue().compareTo(BigDecimal.ZERO) > 0)
                             saidaProdutosId.stream()
                                     .forEach(saidaProdId -> {
@@ -338,11 +339,21 @@ public class TmodelSaidaProduto {
                                             saidaProdId.vlrDescontoProperty().setValue(BigDecimal.ZERO);
                                     });
 
+                        if (condicoes.descontoProperty().getValue().compareTo(BigDecimal.ZERO) > 0)
+                            saidaProdutosId.stream().forEach(saidaProdId -> {
+                                if (fator > 0)
+                                    saidaProdId.vlrDescontoProperty().setValue(condicoes.descontoProperty().getValue()
+                                            .multiply(new BigDecimal(saidaProdId.qtdProperty().getValue())));
+                                else
+                                    saidaProdId.vlrDescontoProperty().setValue(BigDecimal.ZERO);
+                            });
+
                         if (fator > 0
                                 && condicoes.qtdMinimaProperty().getValue() > 0
                                 && (condicoes.bonificacaoProperty().getValue().compareTo(0) > 0
                                 || condicoes.retiradaProperty().getValue().compareTo(0) > 0)) {
                             prazoProperty().setValue(condicoes.prazoProperty().getValue());
+                            System.out.printf("passando por aqui!\n");
                             if (condicoes.bonificacaoProperty().getValue() == condicoes.qtdMinimaProperty().getValue()) {
                                 saidaProdutosId.stream()
                                         .forEach(saidaProdId -> saidaProdId.codigoCFOPProperty().setValue(TipoCodigoCFOP.BONIFICACAO));

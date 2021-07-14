@@ -265,6 +265,26 @@ public class ControllerSaidaProduto implements Initializable, ModeloCafePerfeito
                             && saidaProdutoProduto.produtoProperty().getValue().idProperty().getValue().intValue()
                             == estoqueEscolhido.produtoProperty().getValue().idProperty().getValue().intValue())
                     .findFirst().orElse(null)) == null) {
+//                System.out.printf("Empresa[%s]: %s\n", getEmpresa().getId(), getEmpresa());
+//                BigDecimal vlrUnt = null, vlrDesc = null;
+//                System.out.printf("vlrUnt: %s\tvlrDesc: %s\n", vlrUnt, vlrDesc);
+//                List<EmpresaCondicoes> empresaCondicoesList =
+//                        getEmpresa().getEmpresaCondicoes().stream().filter(empresaCondicoes ->
+//                                empresaCondicoes.produtoProperty().getValue().idProperty().getValue().intValue()
+//                                        == getEstoqueSelecionado().produtoProperty().getValue().idProperty().getValue().intValue()
+//                                        && empresaCondicoes.validadeProperty().getValue().compareTo(LocalDate.now()) <= 0)
+//                                .collect(Collectors.toList());
+//
+//                System.out.printf("empresaCondicoesList: %s\n", empresaCondicoesList);
+//                if (empresaCondicoesList.size() > 0) {
+//                    vlrUnt = empresaCondicoesList.stream().filter(empresaCondicoes ->
+//                            empresaCondicoes.valorProperty().getValue().compareTo(BigDecimal.ZERO) > 0)
+//                            .findFirst().get().valorProperty().getValue();
+//                    vlrDesc = empresaCondicoesList.stream().filter(empresaCondicoes ->
+//                            empresaCondicoes.descontoProperty().getValue().compareTo(BigDecimal.ZERO) > 0)
+//                            .findFirst().get().descontoProperty().getValue();
+//                }
+//                System.out.printf("vlrUnt: %s\tvlrDesc: %s\n", vlrUnt, vlrDesc);
                 getSaidaProdutoProdutoObservableList().add(new SaidaProdutoProduto(estoqueEscolhido, TipoCodigoCFOP.COMERCIALIZACAO, 1));
                 ControllerPrincipal.getCtrlPrincipal().getPainelViewPrincipal().fireEvent(ServiceComandoTecladoMouse.pressTecla(KeyCode.F8));
             } else {
@@ -2072,6 +2092,7 @@ public class ControllerSaidaProduto implements Initializable, ModeloCafePerfeito
     public void setProdutoObservableList(ObservableList<Produto> produtoObservableList) {
         this.produtoObservableList = produtoObservableList;
     }
+
 
     /**
      * END Getters e Setters
